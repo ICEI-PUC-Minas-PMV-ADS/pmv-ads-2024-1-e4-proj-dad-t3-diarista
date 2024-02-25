@@ -87,7 +87,7 @@ Existe uma grande oportunidade para melhorar a vida das diaristas através da cr
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+O projeto propõe o desenvolvimento de uma aplicação fullstack voltada para diaristas, visando aprimorar a eficiência operacional e a satisfação profissional. Focando em estratégias como simplificação do agendamento, controle de despesas e aumento da produtividade, a proposta busca criar uma solução prática e intuitiva para atender às demandas específicas desses profissionais, contribuindo para um ambiente de trabalho mais organizado e eficaz.
 
 ### Processo 1 – NOME DO PROCESSO
 
