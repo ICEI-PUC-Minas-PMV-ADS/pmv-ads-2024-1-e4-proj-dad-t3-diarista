@@ -41,14 +41,35 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 ### Análise da Situação Atual
 #### Problemas Enfrentados pelas Diaristas:
 
-1. Falta de ferramentas integradas para gestão de atividades e finanças.
-2. Dificuldade em se organizar e otimizar o tempo.
-3. Falta de planejamento financeiro.
+1. **Falta de ferramentas integradas para gestão de atividades e finanças:**
+   - Controle manual de horários, despesas e receitas em planilhas, cadernos ou aplicativos separados, gerando:
+     - Dificuldade na organização e acompanhamento das informações.
+     - Perda de tempo e risco de erros.
+     - Visão limitada da situação financeira.
+     - Dificuldade em calcular o valor ideal a ser cobrado por hora de serviço.
+     - Falta de controle sobre gastos e inadimplência.
+
+2. **Dificuldade em se organizar e otimizar o tempo:**
+   - Agendamento manual de serviços, levando a:
+     - Perda de tempo com ligações, mensagens e anotações.
+     - Dificuldade em conciliar horários e evitar conflitos.
+     - Risco de perder oportunidades de trabalho.
+     - Deslocamentos excessivos entre diferentes locais de trabalho.
+
+3. **Falta de planejamento financeiro:**
+   - Dificuldade em prever receitas e despesas, levando a:
+     - Instabilidade financeira.
+     - Dificuldade em realizar investimentos e alcançar objetivos financeiros.
+     - Sensação de insegurança e estresse.
 
 #### Modelo Atual:
 
-- Processo manual e fragmentado.
-- Falta de acesso a ferramentas digitais.
+- **Processo manual e fragmentado:**
+  - As diaristas gerenciam suas atividades e finanças de forma manual, utilizando planilhas, cadernos, aplicativos separados ou mesmo anotações em papel.
+  - Isso leva a um processo ineficiente, com alto risco de erros e perda de tempo.
+
+- **Falta de acesso a ferramentas digitais:**
+  - As ferramentas digitais existentes geralmente são complexas e pouco intuitivas para esse público.
 
 #### Oportunidades de Melhoria:
 
