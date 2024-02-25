@@ -1,6 +1,10 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Este projeto surge da imperativa necessidade de oferecer uma solução abrangente e eficiente para as diaristas, em meio aos desafios reais que enfrentam na gestão diária de suas atividades e finanças. Dados indicam que a falta de ferramentas integradas para o controle de horários, despesas e planejamento financeiro impacta diretamente na eficiência operacional desses profissionais.
+
+Com a missão de preencher essa lacuna, o projeto visa criar uma aplicação que simplifique o agendamento de serviços, proporcione um controle detalhado das despesas, registre a alocação de horas e antecipe gastos mensais. Através dessa iniciativa, buscamos não apenas otimizar as operações diárias das diaristas, mas também promover uma melhoria tangível em suas condições de trabalho.
+
+Este projeto representa um passo à frente na direção de proporcionar ferramentas práticas e intuitivas para as diaristas, contribuindo significativamente para aprimorar sua produtividade e satisfação profissional.
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
