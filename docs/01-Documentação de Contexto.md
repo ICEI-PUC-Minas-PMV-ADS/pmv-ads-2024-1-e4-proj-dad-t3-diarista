@@ -40,7 +40,7 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 
 Essa aplicação distribuída que tem como propósito auxiliar o processo de gestão diária de atividades e finanças, será direcionada as diaristas de todo o território nacional que desejam ferramentas práticas e intuitivas na hora de gerir suas vidas, como profissionais autônomos no mercado de trabalho.
 
-###Persona:
+### Persona:
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/55d78477-9bf6-48c3-87cf-e08aa87d4608)
 
 ### Matriz de Stakeholders 
