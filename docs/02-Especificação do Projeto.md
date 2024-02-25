@@ -175,7 +175,7 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 
 ![Simple Project Timeline](img/02-project-timeline.png)
 
-## Gestão de Orçamento
+## Gestão de Orçamento (Unitário, Agregado e por Semestre)
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-time5/assets/97962041/ddffe45d-64a6-4331-bd08-403a459f6074)
 
