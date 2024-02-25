@@ -39,8 +39,30 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 ## Modelagem do Processo de Negócio 
 
 ### Análise da Situação Atual
+#### Problemas Enfrentados pelas Diaristas:
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+1. Falta de ferramentas integradas para gestão de atividades e finanças.
+2. Dificuldade em se organizar e otimizar o tempo.
+3. Falta de planejamento financeiro.
+
+#### Modelo Atual:
+
+- Processo manual e fragmentado.
+- Falta de acesso a ferramentas digitais.
+
+#### Oportunidades de Melhoria:
+
+1. Implementar um sistema integrado para gestão de atividades e finanças.
+2. Oferecer recursos para otimização do tempo.
+3. Promover o planejamento financeiro.
+
+#### Conclusão:
+
+As diaristas enfrentam diversos desafios na gestão de suas atividades e finanças. A falta de ferramentas adequadas leva a um processo ineficiente, com perda de tempo, risco de erros e instabilidade financeira.
+
+#### Oportunidade:
+
+Existe uma grande oportunidade para melhorar a vida das diaristas através da criação de um aplicativo mobile intuitivo e acessível que integre todas as ferramentas necessárias para a gestão eficiente de suas atividades e finanças.
 
 ### Descrição Geral da Proposta
 
