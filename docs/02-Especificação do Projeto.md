@@ -82,9 +82,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-004| Planejamento Financeiro: Oferecer uma seção para as diaristas planejarem suas finanças, definindo metas de economia e gastos mensais.| ALTA |
 |RF-005| Acesso Web e Mobile: Disponibilizar a aplicação tanto na web quanto em dispositivos móveis (Android e iOS).| ALTA |
 |RF-006| Interface Intuitiva: Criar uma interface simples e amigável, considerando que o público-alvo são pessoas com baixa escolaridade.| ALTA |
-|RF-007| Controle de Horários: Registrar o início e término das atividades realizadas pelas diaristas para controle de horários e cumprimento de jornada.| MÉDIA |
-|RF-008| Histórico de Atividades: Manter um registro detalhado das atividades realizadas pelas diaristas, incluindo datas, serviços prestados e valores recebidos.| MÉDIA |
-|RF-009| Relatórios Financeiros Simples: Gerar relatórios básicos de ganhos e despesas para que as diaristas possam acompanhar sua situação financeira.| MÉDIA |
+|RF-007| Controle de Horários: Registrar o início e término das atividades realizadas pelas diaristas para controle de horários e cumprimento de jornada.| MEDIANA |
+|RF-008| Histórico de Atividades: Manter um registro detalhado das atividades realizadas pelas diaristas, incluindo datas, serviços prestados e valores recebidos.| MEDIANA |
+|RF-009| Relatórios Financeiros Simples: Gerar relatórios básicos de ganhos e despesas para que as diaristas possam acompanhar sua situação financeira.| MEDIANA |
 |RF-010| Notificações de Agendamento: Enviar lembretes automáticos para as diaristas sobre os agendamentos de atividades.| BAIXA |
 
 ### Requisitos não Funcionais
