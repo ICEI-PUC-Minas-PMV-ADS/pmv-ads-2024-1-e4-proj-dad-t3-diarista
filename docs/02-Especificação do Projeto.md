@@ -130,7 +130,18 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 > - [Diagrams](https://app.diagrams.net/)
 
 # Matriz de Rastreabilidade
+| Requisito/Artefato                  | Cadastro de Clientes | Agendamento de Serviços | Visualização da Agenda | Autenticação de Usuário | Controle de Despesas | Controle de Gastos | Validações de Entrada | Backup e Recuperação de Dados | Eficiência Operacional (RNF) | Controle de Horários (RNF) | Controle Financeiro (RNF) |
+|------------------------------------|----------------------|-------------------------|-------------------------|-------------------------|----------------------|---------------------|------------------------|-------------------------------|-----------------------------|---------------------------|---------------------------|
+| Cadastro de Clientes               | X                    |                         |                         |                         |                      |                     | X                      |                               |                             |                           |                           |
+| Agendamento de Serviços            |                      | X                       | X                       |                         |                      |                     |                        |                               |                             |                           |                           |
+| Visualização da Agenda             |                      |                         | X                       |                         |                      |                     |                        |                               |                             |                           |                           |
+| Autenticação de Usuário            |                      |                         |                         | X                       |                      |                     |                        |                               |                             |                           |                           |
+| Controle de Despesas               |                      |                         |                         |                         | X                    | X                   | X                      | X                             |                             |                           |                           |
+| Controle de Gastos                 |                      |                         |                         |                         |                      | X                   |                        |                               |                             |                           |                           |
+| Validações de Entrada              | X                    | X                       | X                       | X                       | X                    | X                   |                        | X                             |                             |                           |                           |
+| Backup e Recuperação de Dados      |                      |                         |                         |                         |                      |                     |                        | X                             |                             |                           |                           |
 
+<!--
 A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
 
 A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
@@ -141,6 +152,7 @@ A matriz deve contemplar todos os elementos relevantes que fazem parte do sistem
 > - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
 > - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
 > - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
+-->
 
 
 # Gerenciamento de Projeto
