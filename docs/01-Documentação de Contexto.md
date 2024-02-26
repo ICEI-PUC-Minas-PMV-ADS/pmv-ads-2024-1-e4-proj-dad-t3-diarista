@@ -24,6 +24,7 @@ Aqui você deve descrever os objetivos do trabalho indicando que o objetivo gera
 
 
 Como objetivos específicos, destacamos:
+
     • Criar uma interface intuitiva e de fácil navegação para os usuários, permitindo que as diaristas agendem suas atividades diárias incluindo data, horários, localidade, tipo de serviço, etc.
     • Disponibilizar funcionalidades que auxiliem o usuário no controle financeiro como entradas e saídas de gastos.
 
