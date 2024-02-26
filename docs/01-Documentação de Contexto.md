@@ -27,6 +27,8 @@ Como objetivos específicos, destacamos:
 
 ° Criar uma interface intuitiva e de fácil navegação para os usuários, permitindo que as diaristas agendem suas atividades diárias incluindo data, horários, localidade, tipo de serviço, etc.
 
+° Disponibilizar funcionalidades que auxiliem o usuário no controle financeiro como entradas e saídas de gastos.
+
 ## Justificativa
 
 Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
