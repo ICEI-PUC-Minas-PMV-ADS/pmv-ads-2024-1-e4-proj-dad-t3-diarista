@@ -7,6 +7,9 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 
 ![Untitled (1)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/117127986/3233ed58-4888-4382-89c1-98815be2bc59)
 
+![Untitled (2)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/117127986/6e3ced06-67c7-4489-a8ee-9e7be89e10b0)
+
+
 
 
 ## Histórias de Usuários
