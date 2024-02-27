@@ -1,23 +1,24 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+Análise e Desenv. de Sistemas
 
-`DISCIPLINA`
+DISCIPLINA: Projeto
 
-`SEMESTRE`
+EIXO 4 - 2024/1
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto tem como objetivo o desenvolvimento de um software prático e intuitivo para auxiliar na gestão de atividades diárias e no controle de finanças para diaristas. Buscamos facilitar a vida dessas profissionais, deixando algumas funcionalidades agrupadas em lugar que seja de fácil acesso, manutenção e transporte.
 
 ## Integrantes
-
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Astor Cezar de Souza Almeida
+* Danrley G. M. de Paula
+* Gabrielle Oliveira Santana
+* Julia Caroline Martins Ambrosio
+* Livia Rosa Castanheira
+* Saory Nayara Vieira Nakabori
 
 ## Orientador
 
-* Nome completo do professor 1
+* Leonardo Vilela Cardoso
 
 ## Instruções de utilização
 
