@@ -78,17 +78,12 @@ Existe uma grande oportunidade para melhorar a vida das diaristas através da cr
 
 O projeto propõe o desenvolvimento de uma aplicação fullstack voltada para diaristas, visando aprimorar a eficiência operacional e a satisfação profissional. Focando em estratégias como simplificação do agendamento, controle de despesas e aumento da produtividade, a proposta busca criar uma solução prática e intuitiva para atender às demandas específicas desses profissionais, contribuindo para um ambiente de trabalho mais organizado e eficaz.
 
-### Processo 1 – NOME DO PROCESSO
+### Processo 1 – Solução Inicial
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+Apresentamos o modelo do processo completo proposto para solução do problema proposto.
 
-![Processo 1](img/02-bpmn-proc1.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/97ebf5d9-e53e-4b3b-92fa-f4985162568d)
 
-### Processo 2 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
-
-![Processo 2](img/02-bpmn-proc2.png)
 
 ## Indicadores de Desempenho
 
