@@ -1,10 +1,11 @@
 # TÍTULO DO PROJETO
 
-Análise e Desenv. de Sistemas
 
-DISCIPLINA: Projeto
+`Análise e Desenv. de Sistemas`
 
-EIXO 4 - 2024/1
+`DISCIPLINA: Projeto`
+
+`EIXO 4 - 2024/1`
 
 O projeto tem como objetivo o desenvolvimento de um software prático e intuitivo para auxiliar na gestão de atividades diárias e no controle de finanças para diaristas. Buscamos facilitar a vida dessas profissionais, deixando algumas funcionalidades agrupadas em lugar que seja de fácil acesso, manutenção e transporte.
 
