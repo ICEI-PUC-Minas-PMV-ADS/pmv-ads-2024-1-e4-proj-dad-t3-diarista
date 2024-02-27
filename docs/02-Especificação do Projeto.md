@@ -167,7 +167,7 @@ As referências abaixo nos auxiliáram na geração do “Diagrama de Casos de U
 > - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
 > - [Diagrams](https://app.diagrams.net/)
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/35507eba-b6cb-4575-81bf-688ff5a75894)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/4d9723d4-558c-4dd5-a1b1-645286a78c04)
 
 
 # Matriz de Rastreabilidade
