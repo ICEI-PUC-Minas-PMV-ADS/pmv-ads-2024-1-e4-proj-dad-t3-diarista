@@ -20,8 +20,7 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
+O objetivo geral desse trabalho é desenvolver um software prático e intuitivo para auxiliar na gestão de atividades diárias e no controle de finanças para diaristas. Buscamos, assim, facilitar a vida dessas profissionais, deixando essas funcionalidades agrupadas em um só lugar que seja de fácil acesso, manutenção e transporte, considerando que o celular, por exemplo, é uma ferramenta para se instalar o sotfware.
 
 Como objetivos específicos, destacamos:
 
