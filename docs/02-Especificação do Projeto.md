@@ -142,8 +142,12 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue até o final do semestre, não podendo extrapolar a data de 30/06/2023; |
+|02| O projeto deve conter API; |
+|03| O sistema deverá se conectar com o banco de dados NoQLS - MongoDB;   |
+|04| O aplicativo deve ser construído no back-end através do Node.JS; |
+|05| O aplicativo deve ser construído no front-end através do React; |
+|06| A versão móvel do aplicativo deve ser construída através do React Native; |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
