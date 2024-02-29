@@ -110,7 +110,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-005| Dashboard Financeiro de Acesso Web e Mobile: Disponibilizar um dashboard de controle financeiro tanto na web quanto em dispositivos móveis (Android e iOS).| ALTA |
 |RF-006| Interface Intuitiva: Criar uma interface simples e amigável, considerando que o público-alvo são pessoas com baixa escolaridade.| ALTA |
 |RF-008| Histórico de Atividades: Manter um registro detalhado das atividades realizadas pelas diaristas, incluindo datas, serviços prestados e valores recebidos.| MEDIANA |
-|RF-009| Relatórios Financeiros Simples: Gerar relatórios básicos de ganhos e despesas para que as diaristas possam acompanhar sua situação financeira.| MEDIANA |
 |RF-010| Notificações de Agendamento: Enviar lembretes automáticos para as diaristas sobre os agendamentos de atividades.| BAIXA |
 
 ### Requisitos não Funcionais
