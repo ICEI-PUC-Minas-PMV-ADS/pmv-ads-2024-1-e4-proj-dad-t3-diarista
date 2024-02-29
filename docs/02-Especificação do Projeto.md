@@ -100,7 +100,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Login: O sistema deve permitir o login.| ALTA | 
+|RF-001| Login: Permitir que a diarista realize o login, para acessar todos as funcionalidade do sistema.| ALTA | 
 |RF-002| Cadastro de Diaristas: Permitir que as diaristas se cadastrem na plataforma, fornecendo informações básicas como nome, telefone e endereço.| ALTA | 
 |RF-003| Agendamento de Atividades: Possibilitar que as diaristas agendem suas atividades diárias, inserindo a data, horário, tipo de serviço e o valor da diária.| ALTA |
 |RF-004| Registro de Gastos: Permitir que as diaristas insiram suas despesas diárias, como transporte, alimentação e materiais de trabalho.| ALTA |
