@@ -15,9 +15,6 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 
 
 
-
-
-
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
@@ -177,7 +174,7 @@ As referências abaixo nos auxiliáram na geração do “Diagrama de Casos de U
 | Controle de Gastos                 |                      |                         |                         |                         |                      | X                   |                        |                               |                             |                           |                           |
 | Validações de Entrada              | X                    | X                       | X                       | X                       | X                    | X                   |                        | X                             |                             |                           |                           |
 | Backup e Recuperação de Dados      |                      |                         |                         |                         |                      |                     |                        | X                             |                             |                           |                           |
-
+| Cadastro de Clientes | X | | | | | | X | | | | |
 <!--
 A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
 
