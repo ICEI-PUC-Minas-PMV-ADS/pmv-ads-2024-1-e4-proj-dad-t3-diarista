@@ -110,6 +110,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-008| Histórico de Atividades: Manter um registro detalhado das atividades realizadas pelas diaristas, incluindo datas, serviços prestados e valores recebidos.| MEDIANA |
 |RF-009| Cadastro de Clientes: Possibilitar que as diaristas cadastrem os clientes, adicionando nome, telefone e local da diária. | MEDIANA |
 |RF-010| Avaliação da Diária: Permitir que as diaristas se cadastrem na plataforma a avaliação da diária, registrando uma nota 😁😀😊😐😑, para melhorar os atendimentos.| BAIXA |
+|RF-011| Filtro de Clientes: Permitir que as diaristas tenham o acesso a relação do clientes. | BAIXA |
+|RF-012| Lembretes de Atividades: Enviar notificações ou lembretes para as diaristas sobre atividades agendadas. | BAIXA |
 
 ### Requisitos não Funcionais
 
