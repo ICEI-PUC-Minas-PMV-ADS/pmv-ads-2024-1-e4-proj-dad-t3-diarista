@@ -26,7 +26,7 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-O objetivo geral desse trabalho é desenvolver um software prático e intuitivo para auxiliar na gestão de atividades diárias e no controle de finanças para diaristas. Buscamos, assim, facilitar a vida dessas profissionais, deixando essas funcionalidades agrupadas em um só lugar que seja de fácil acesso, manutenção e transporte, considerando que o navegador ou o celular são ferramenta de acesso para o sistema.
+O objetivo geral desse trabalho é desenvolver um software prático e intuitivo para auxiliar na gestão de atividades diárias e no controle de finanças para diaristas. Buscamos, assim, facilitar a vida dessas profissionais, deixando essas funcionalidades agrupadas em um só lugar que seja de fácil acesso, manutenção e transporte, considerando que o navegador e o celular são ferramenta de acesso para o sistema.
 
 Como objetivos específicos, destacamos:
 
