@@ -107,7 +107,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-002| Agendamento de Atividades: Possibilitar que as diaristas agendem suas atividades diárias, inserindo a data, horário, tipo de serviço, valor da diária e o nome do cliente.| ALTA |
 |RF-003| Registro de Gastos: Permitir que as diaristas insiram suas despesas diárias, como transporte, alimentação e materiais de trabalho.| ALTA |
 |RF-004| Planejamento Financeiro: Oferecer uma seção para as diaristas planejarem suas finanças, definindo metas de economia de gastos mensais e agendamento de atividades.| ALTA |
-|RF-005| Acesso Web e Mobile: Disponibilizar a aplicação tanto na web quanto em dispositivos móveis (Android e iOS).| ALTA |
+|RF-005| Dashboard Financeiro de Acesso Web e Mobile: Disponibilizar um dashboard de controle financeiro tanto na web quanto em dispositivos móveis (Android e iOS).| ALTA |
 |RF-006| Interface Intuitiva: Criar uma interface simples e amigável, considerando que o público-alvo são pessoas com baixa escolaridade.| ALTA |
 |RF-007| Controle de Horários: Registrar o início e término das atividades realizadas pelas diaristas para controle de horários e cumprimento de jornada.| MEDIANA |
 |RF-008| Histórico de Atividades: Manter um registro detalhado das atividades realizadas pelas diaristas, incluindo datas, serviços prestados e valores recebidos.| MEDIANA |
