@@ -100,13 +100,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Cadastro de Diaristas: Permitir que as diaristas se cadastrem na plataforma, fornecendo informações básicas como nome, telefone e endereço.| ALTA | 
-|RF-002| Agendamento de Atividades: Possibilitar que as diaristas agendem suas atividades diárias, inserindo a data, horário, tipo de serviço, valor da diária e o nome do cliente.| ALTA |
-|RF-003| Registro de Gastos: Permitir que as diaristas insiram suas despesas diárias, como transporte, alimentação e materiais de trabalho.| ALTA |
-|RF-004| Planejamento Financeiro: Oferecer uma seção para as diaristas planejarem suas finanças, definindo metas de economia de gastos mensais e agendamento de atividades.| ALTA |
-|RF-005| Dashboard Financeiro de Acesso Web e Mobile: Disponibilizar um dashboard de controle financeiro tanto na web quanto em dispositivos móveis (Android e iOS).| ALTA |
-|RF-006| Interface Intuitiva: Criar uma interface simples e amigável, considerando que o público-alvo são pessoas com baixa escolaridade.| ALTA |
+|RF-001| Login: O sistema deve permitir o login.| ALTA | 
+|RF-002| Cadastro de Diaristas: Permitir que as diaristas se cadastrem na plataforma, fornecendo informações básicas como nome, telefone e endereço.| ALTA | 
+|RF-003| Agendamento de Atividades: Possibilitar que as diaristas agendem suas atividades diárias, inserindo a data, horário, tipo de serviço e o valor da diária.| ALTA |
+|RF-004| Registro de Gastos: Permitir que as diaristas insiram suas despesas diárias, como transporte, alimentação e materiais de trabalho.| ALTA |
+|RF-005| Planejamento Financeiro: Oferecer uma seção para as diaristas planejarem suas finanças, definindo metas de economia de gastos mensais e agendamento de atividades.| ALTA |
+|RF-006| Dashboard Financeiro de Acesso Web e Mobile: Disponibilizar um dashboard de controle financeiro (relatórios de ganhos e gastos) tanto na web quanto em dispositivos móveis (Android e iOS).| ALTA |
+|RF-007| Interface Intuitiva: Criar uma interface simples e amigável, considerando que o público-alvo são pessoas com baixa escolaridade.| ALTA |
 |RF-008| Histórico de Atividades: Manter um registro detalhado das atividades realizadas pelas diaristas, incluindo datas, serviços prestados e valores recebidos.| MEDIANA |
+|RF-009| Cadastro de Clientes: Possibilitar que as diaristas cadastrem os clientes, adicionando nome, telefone e local da diária. | MEDIANA |
 |RF-010| Notificações de Agendamento: Enviar lembretes automáticos para as diaristas sobre os agendamentos de atividades.| BAIXA |
 
 ### Requisitos não Funcionais
