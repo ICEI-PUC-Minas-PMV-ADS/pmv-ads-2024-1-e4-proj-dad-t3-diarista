@@ -1,7 +1,5 @@
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+https://g1.globo.com/fantastico/noticia/2023/05/01/cerca-de-70percent-das-trabalhadoras-domesticas-sao-informais-afirma-juiza-do-trabalho.ghtml
 
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+https://www.dieese.org.br/infografico/2023/trabalhoDomestico2023.html
