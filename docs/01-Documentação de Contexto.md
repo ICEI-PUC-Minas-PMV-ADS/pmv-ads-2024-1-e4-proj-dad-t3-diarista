@@ -36,12 +36,14 @@ Como objetivos específicos, destacamos:
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Estima-se que 7,3 milhões de pessoas trabalham como diaristas no Brasil, representando 14% da força de trabalho urbana.
+A procura por diaristas tende a crescer nos próximos anos devido ao aumento do número de famílias com dupla renda e da população idosa.
+A profissão é essencial pois, contribui para a manutenção da higiene e do bem-estar das famílias, liberando tempo para que as pessoas dediquem-se à outras atividades.
+Entretanto, as diaristas trabalham de maneira informal, sem acesso a direitos trabalhistas como carteira assinada, férias e FGTS. 
+Essa situação as tornam mais vulneráveis a problemas como exploração e inadimplência.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+As trabalhadoras geralmente não possuem conhecimentos de contabilidade e enfrentam dificuldades para controlar seus gastos e recebimentos e comumente precisam conciliar diversos trabalhos e clientes o que exige organização e planejamento. Muitas frequentemente se deparam com situações de insegurança e falta de profissionalismo por parte dos clientes.
+O aplicativo ajudará as diaristas a registrar seus gastos e recebimentos, ter uma visão geral de sua situação financeira e tomar decisões mais conscientes, o aplicativo permitirá que as elas  organizem sua agenda de trabalho, definam prioridades e evitem conflitos de horário. 
 
 ## Público-Alvo
 
