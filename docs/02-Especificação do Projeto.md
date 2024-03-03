@@ -119,6 +119,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
 |RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-003| O site deve ser compatível com os principais navegadores (Google chrome, Firefox, Opera, Microsoft Edge) |  MÉDIA | 
+|RNF-004| O sistema deve estar disponível 98% do tempo, considerando o período de 24 horas diárias, 7 dias por semana. |  ALTA | 
+|RNF-005| Site deve usar padrões de usabilidade (quão fácil de usar será o aplicativo), utilizando boas práticas de interface do usuário-UI (user interface) e experciencia do usário UX (user experience). |  ALTA | 
+|RNF-006| A senha deve conter no mínimo 6 caracteres | ALTA | 
+|RNF-007| A aplicação deve ser compatível com sistemas Android e iOS; |  ALTA | 
+|RNF-008| O sistema deve ter um tempo de resposta rápido para permitir que o usuário atualize as informações de gastos do dia a dia em tempo real. |  ALTA | 
+
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
