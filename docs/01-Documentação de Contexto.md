@@ -44,7 +44,7 @@ Essa aplicação distribuída que tem como propósito auxiliar o processo de ges
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/55d78477-9bf6-48c3-87cf-e08aa87d4608)
 
 ### Matriz de Stakeholders 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/7173f3dc-e3b7-4742-ae65-b4e714b5d585)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/1645b639-1d6d-4faa-aa12-c5163b3bf582)
 
 
 
