@@ -77,9 +77,6 @@ O projeto propõe o desenvolvimento de uma aplicação fullstack voltada para di
 
 ### Processo 1 – Solução Inicial
 
-Apresentamos o modelo do processo completo proposto para solução do problema proposto.
-
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/97ebf5d9-e53e-4b3b-92fa-f4985162568d)
 
 
 ## Indicadores de Desempenho
@@ -159,7 +156,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 O diagrama de casos de uso vai elicitar os requisitos, que utiliza um modelo gráfico com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/4d9723d4-558c-4dd5-a1b1-645286a78c04)
+![CasoUso-Diarista drawio](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/404633a2-4f9a-4ef1-9029-07e284d96ccb)
 
 
 # Matriz de Rastreabilidade
