@@ -13,9 +13,9 @@ Anexo: https://www.dieese.org.br/infografico/2023/trabalhoDomestico2023.pdf
 
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Como reduzir a pobreza e aumentar o rendimento médio das diáristas frente os dados publicados pelo Dieese em 2023?
+https://www.dieese.org.br/infografico/2023/trabalhoDomestico2023.pdf
 
 ## Objetivos
 
