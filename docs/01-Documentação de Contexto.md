@@ -1,7 +1,6 @@
 # Introdução
 
-Este projeto surge da necessidade de oferecer uma solução abrangente e eficiente para as diaristas, em meio aos desafios reais que enfrentam na gestão de suas atividades e finanças. Através de buscas na internet podemos observar inúmeras ferramentas de gestão do tempo, e gestão financeira tanto no âmbito pessoal quanto profissional(Devemos citar os resultados das buscas??).
-{Dados indicam que a falta de ferramentas integradas para o controle de horários, despesas e planejamento financeiro impacta diretamente na eficiência operacional desses profissionais.} Os desafios da profissão de diarista são inúmeros, para esse projeto destacamos os seguintes:
+Este projeto surge da necessidade de oferecer uma solução abrangente e eficiente para as diaristas, em meio aos desafios reais que enfrentam na gestão de suas atividades e finanças. Os desafios da profissão de diarista são inúmeros, para esse projeto destacamos os seguintes:
 Falta de garantia em relação a continuidade do trabalho exercido;
 Falta de benefícios remunerados em períodos de problema de saúde e de confraternização familiar;
 Baixa escolaridade dificulta utilização de tecnologias complexas que auxiliam o controle financeiro e a gestão do tempo. (dados Dieese de 2022 - em anexo).
@@ -9,6 +8,9 @@ Baixa escolaridade dificulta utilização de tecnologias complexas que auxiliam 
 Com a missão de preencher essa lacuna, o projeto visa criar uma aplicação que simplifique o agendamento de serviços, proporcione um controle detalhado dos recebimentos e um cadastramento das despesas para controle financeiro de suas atividades. Através dessa iniciativa, buscamos não apenas otimizar as operações diárias das diaristas, mas também promover uma melhoria tangível em sua condição de vida.
 
 Este projeto representa um passo à frente na direção de auxílio às diaristas frente aos desafios do trabalho profissional e o cuidado do ambiente familiar pois 52,9% das 5,3 milhões de trabalhadoras domésticas no Brasil (91,4% dos 5,8 milhões de trabalhadores domésticos são mulheres),  são responsáveis pela manutenção do domicilio.
+
+Anexo: https://www.dieese.org.br/infografico/2023/trabalhoDomestico2023.pdf
+
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
