@@ -26,9 +26,12 @@ As referências abaixo foram utilizadas na geração do artefato “Diagrama de 
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
+As referências abaixo foram utilizadas na produção do Modelo Entidade Relacionamento.
 
 > - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
+
+![Diagrama ER de banco de dados (pé de galinha)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/f88144fc-96ac-4f22-871b-3bdddbaf0029)
+
 
 ## Esquema Relacional
 
