@@ -53,19 +53,12 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 > - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
 
 ## Qualidade de Software
-
-Conceituar qualidade de fato é uma tarefa complexa, mas ela pode ser vista como um método gerencial que através de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
-
-No contexto de desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem satisfeitas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, tal nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
-
 A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software.
-Com base nessas características e nas respectivas sub-características, identifique as sub-características que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software considerando-se alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão a equipe avaliar os objetos de interesse.
-
-A qualidade de software é um conjunto de características que as aplicações devem possuir para que o projeto cumpra todos os seus requisitos e atendam, de uma melhor maneira possível, a necessidades dos usuários. Essas normas foram adotadas inicialmente pela ISO/IEC 9126, de 1991, e que foram atualizadas para a ISO/IEC 25010, de 2011. Essa última define a qualidade para produtos de software em características e subcaracterísticas, que são: 
+Com base nessas características e nas respectivas sub-características, as sub-características que a equipe utilizará como base para nortear o desenvolvimento desse projeto de software, será apresentada abaixo, considerando-se alguns aspectos simples de qualidade. 
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-time5/assets/108501459/a8a364be-e06a-4d52-b679-efe8380cf017)
 
-Nesse contexto, no nosso projeto Campanha do Quilo, vamos focar nas seguintes características para nossa aplicação:
+Nesse contexto, no projeto iremos focar nas seguintes características para nossa aplicação:
 
 1- **Funcionalidade**  
  - *Adequação* : Avalia se o software propõe-se a fazer o que é apropriado. Essa métrica será avaliada através da entrega dos requisitos funcionais propostos.
