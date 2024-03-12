@@ -92,15 +92,24 @@ CREATE TABLE diaristas_clientes (
 
 As tecnologias utilizadas nesse projeto para a solução do problema proposto são:
 
-- NodeJs
+### Front-end:
 - React
-- HTML, CSS e JavaScript
-- linguagem C#
-- GitHub
-- VSCode
-- API Services
+- HTML
+- CSS
+- JavaScript
+
+### Back-end:
+- Node.js ou
+- C# / .NET
+
+### Banco de Dados:
 - MongoDB
-- React Native
+
+### Ferramentas de Desenvolvimento:
+- GitHub
+- VSCode (Visual Studio Code)
+- Visual Studio (Microsoft Visual Studio)
+
 
 (--Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.--)
 
