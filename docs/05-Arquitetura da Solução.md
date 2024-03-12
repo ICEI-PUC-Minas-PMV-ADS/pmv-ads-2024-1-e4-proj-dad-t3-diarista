@@ -99,7 +99,6 @@ As tecnologias utilizadas nesse projeto para a solução do problema proposto s�
 - JavaScript
 
 ### Back-end:
-- Node.js ou
 - C# / .NET
 
 ### Banco de Dados:
