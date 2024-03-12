@@ -19,7 +19,8 @@ As referências abaixo foram utilizadas na geração do artefato “Diagrama de 
 > - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
 > - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
-![Diagrama_Classes](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/4ad21ce1-d3ac-4e63-a9c4-8616738fec0c)
+![Diagrama_Classes](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/a227a3b5-8f26-4c33-9234-1251c8950c38)
+
 
 
 ## Modelo ER
