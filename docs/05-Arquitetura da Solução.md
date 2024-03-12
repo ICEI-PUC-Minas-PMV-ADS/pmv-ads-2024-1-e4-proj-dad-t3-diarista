@@ -27,7 +27,7 @@ As referências abaixo foram utilizadas na geração do artefato “Diagrama de 
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
 
-As referências abaixo foram utilizadas na produção do Modelo Entidade Relacionamento.
+As referências abaixo foram utilizadas na produção do Modelo Entidade e Relacionamento.
 
 > - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
 
