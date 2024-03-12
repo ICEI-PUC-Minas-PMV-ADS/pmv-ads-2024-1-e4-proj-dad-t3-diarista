@@ -3,6 +3,7 @@
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+A aplicação tem arquitetura centralizada onde o servidor são processos que implementam serviços específico, como o servidor da Aplicação e o servidor de banco de dados acessado pelos serviços da API.
 
 ![Aplicação Distribuida](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/f8e0f043-37d2-4e28-bf82-bc9e553b9f50)
 
