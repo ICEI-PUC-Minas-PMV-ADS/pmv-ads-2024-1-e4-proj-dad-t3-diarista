@@ -43,15 +43,15 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 As tecnologias utilizadas nesse projeto para a solução do problema proposto são:
 
---> NodeJs;
---> React;
---> HTML, CSS e JavaScript;
---> linguagem C#;
---> GitHub;
---> VSCode;
---> API Services.
+--> - NodeJs;
+--> - React;
+--> - HTML, CSS e JavaScript;
+--> - linguagem C#;
+--> - GitHub;
+--> - VSCode;
+--> - API Services.
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+(--Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.--)
 
 ## Hospedagem
 
