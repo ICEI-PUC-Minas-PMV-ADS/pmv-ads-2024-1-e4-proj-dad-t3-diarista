@@ -7,7 +7,8 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 A aplicação tem arquitetura centralizada onde o servidor são processos que implementam serviços específico, como o servidor da Aplicação e o servidor de banco de dados acessado pelos serviços da API.
 
-![Aplicação Distribuida](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/f8e0f043-37d2-4e28-bf82-bc9e553b9f50)
+
+![Arquitetura_Distribuida drawio](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/0fc1aea1-f2b0-422a-b720-9be1c28bd0c3)
 
 
 ## Diagrama de Classes
