@@ -46,9 +46,31 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Rel
 ## Modelo Físico
 Usando Banco NoSQL - MongoDB:
 
-- use DiaristaManager
-- db.createCollection('Diaristas')
-- 
+1. `use DiaristaManager`
+2. `db.createCollection('Diaristas')`
+3. Inserção de documentos na coleção `Diaristas`:
+
+```json
+[
+  {
+    "_id": 1,
+    "nome": "Maria da Silva",
+    "endereco": "Rua XYZ, 123",
+    "dataNascimento": ISODate("1990-01-15"),
+    "sistema_id": 123,
+    "diarias": []
+  },
+  {
+    "_id": 2,
+    "nome": "João Oliveira",
+    "endereco": "Avenida ABC, 456",
+    "dataNascimento": ISODate("1985-05-20"),
+    "sistema_id": 456,
+    "diarias": []
+  }
+]
+```
+
 
 ## Tecnologias Utilizadas
 
