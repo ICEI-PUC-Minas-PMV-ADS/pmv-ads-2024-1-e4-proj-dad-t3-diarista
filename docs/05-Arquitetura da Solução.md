@@ -44,50 +44,11 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Rel
 > - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
 
 ## Modelo Físico
-```sql
-CREATE TABLE diaristas (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome CHAR(20),
-    endereco CHAR(20),
-    dataNascimento DATE,
-    sistema_id INT,
-    FOREIGN KEY (sistema_id) REFERENCES sistema(id)
-);
+Usando Banco NoSQL - MongoDB:
 
-CREATE TABLE despesas (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    natureza CHAR(20),
-    valor DECIMAL(10, 2),
-    data DATE,
-    diarista_id INT,
-    FOREIGN KEY (diarista_id) REFERENCES diaristas(id)
-);
-
-CREATE TABLE clientes (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome CHAR(20),
-    endereco CHAR(20),
-    sistema_id INT,
-    FOREIGN KEY (sistema_id) REFERENCES sistema(id)
-);
-
-CREATE TABLE diarias (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    data DATE,
-    cliente_id INT,
-    valor DECIMAL(10, 2),
-    avaliacao CHAR(1),
-    FOREIGN KEY (cliente_id) REFERENCES clientes(id)
-);
-
-CREATE TABLE diaristas_clientes (
-    diarista_id INT,
-    cliente_id INT,
-    FOREIGN KEY (diarista_id) REFERENCES diaristas(id),
-    FOREIGN KEY (cliente_id) REFERENCES clientes(id),
-    PRIMARY KEY (diarista_id, cliente_id)
-);
-```
+- use DiaristaManager
+- db.createCollection('Diaristas')
+- 
 
 ## Tecnologias Utilizadas
 
