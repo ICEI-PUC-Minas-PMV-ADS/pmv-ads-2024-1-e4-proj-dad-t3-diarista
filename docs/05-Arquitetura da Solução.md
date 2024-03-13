@@ -82,6 +82,9 @@ As tecnologias utilizadas nesse projeto para a solução do problema proposto s�
 - CSS
 - JavaScript
 
+### Mobile:
+- React Native
+  
 ### Back-end:
 - C# / .NET
 
