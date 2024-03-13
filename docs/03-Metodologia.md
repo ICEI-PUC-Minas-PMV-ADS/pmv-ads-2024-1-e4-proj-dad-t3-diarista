@@ -14,11 +14,16 @@ Nota: Vide documento modelo do estudo de caso "Portal de Notícias" e defina tam
 | IDE|Visual Studio |  [VS Code](https://visualstudio.microsoft.com/pt-br/downloads/) |
 | Comunicação|Teams,  Whatsapp |  [Teams](https://www.microsoft.com/pt-br/microsoft-teams/log-in) e [Whatsapp](https://web.whatsapp.com/)   |
 
-| LINGUAGEM / FRAMEWORK | LINK DE ACESSO |
-| --- | --- |
-| React |  https://react.dev/   |
-| React Native |  https://reactnative.dev/   |
-| MongoDB |  https://www.mongodb.com/try/download/community   |
+| LINGUAGEM / FRAMEWORK |
+| --- |
+| HTML |
+| CSS |
+| JavaScript |
+| C# | 
+| .NET |  
+| React |
+| React Native |  
+| MongoDB |
 
 ## Controle de Versão
 
