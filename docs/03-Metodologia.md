@@ -5,15 +5,6 @@
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito deverá ser apresentada em uma tabela que especifica que detalha Ambiente, Plataforma e Link de Acesso. 
 Nota: Vide documento modelo do estudo de caso "Portal de Notícias" e defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
-| AMBIENTE | PLATAFORMA | LINK DE ACESSO |
-| --- | --- | --- |
-| Repositório | GitHub |  https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista   |
-| Projeto de Interfaces |  Asana  | https://app.asana.com/0/1205355147771278/1205355171518338 |
-| Gerenciamento do Projeto| Asana - Quadro |  https://app.asana.com/0/1205355147771278/1205355171518339  |
-| IDE|Visual Studio Code |  [VS Code](https://code.visualstudio.com/) |
-| IDE|Visual Studio |  [VS Code](https://visualstudio.microsoft.com/pt-br/downloads/) |
-| Comunicação|Teams,  Whatsapp |  [Teams](https://www.microsoft.com/pt-br/microsoft-teams/log-in) e [Whatsapp](https://web.whatsapp.com/)   |
-
 | LINGUAGEM / FRAMEWORK |
 | --- |
 | HTML |
@@ -24,6 +15,15 @@ Nota: Vide documento modelo do estudo de caso "Portal de Notícias" e defina tam
 | React |
 | React Native |  
 | MongoDB |
+
+| AMBIENTE | PLATAFORMA | LINK DE ACESSO |
+| --- | --- | --- |
+| Repositório | GitHub |  https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista   |
+| Projeto de Interfaces |  Asana  | https://app.asana.com/0/1205355147771278/1205355171518338 |
+| Gerenciamento do Projeto| Asana - Quadro |  https://app.asana.com/0/1205355147771278/1205355171518339  |
+| IDE|Visual Studio Code |  [VS Code](https://code.visualstudio.com/) |
+| IDE|Visual Studio |  [VS Code](https://visualstudio.microsoft.com/pt-br/downloads/) |
+| Comunicação|Teams,  Whatsapp |  [Teams](https://www.microsoft.com/pt-br/microsoft-teams/log-in) e [Whatsapp](https://web.whatsapp.com/)   |
 
 ## Controle de Versão
 
