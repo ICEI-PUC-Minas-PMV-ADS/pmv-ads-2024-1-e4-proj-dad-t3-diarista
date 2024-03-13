@@ -44,12 +44,14 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Rel
 > - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
 
 ## Modelo Físico
+## Modelo Físico
 Usando Banco NoSQL - MongoDB:
 
 1. `use DiaristaManager`
 2. `db.createCollection('Diaristas')`
 3. Inserção de documentos na coleção `Diaristas`:
 
+db.Diaristas.insertMany([
 ```json
 [
   {
@@ -70,6 +72,65 @@ Usando Banco NoSQL - MongoDB:
   }
 ]
 ```
+
+4. `db.createCollection('Despesas')`
+5. Inserção de documentos na coleção `Despesas`:
+   db.Despesas.insertMany([
+```json
+  {
+    "_id": 1,
+    "natureza": "Material de Limpeza",
+    "valor": 50.00,
+    "data": ISODate("2024-03-10"),
+    "diarista_id": 1
+  },
+  {
+    "_id": 2,
+    "natureza": "Alimentação",
+    "valor": 30.00,
+    "data": ISODate("2024-03-11"),
+    "diarista_id": 2
+  }
+```
+])
+
+
+6. `db.createCollection('Clientes')`
+7. Inserção de documentos na coleção `Clientes`:
+ db.Clientes.insertMany([
+```json 
+  {
+    "_id": 1,
+    "nome": "João Silva",
+    "endereco": "Rua das Flores, 123"
+  },
+  {
+    "_id": 2,
+    "nome": "Ana Oliveira",
+    "endereco": "Avenida Principal, 456"
+  },
+  {
+    "_id": 3,
+    "nome": "Carlos Santos",
+    "endereco": "Rua do Comércio, 789"
+  },
+  {
+    "_id": 4,
+    "nome": "Mariana Costa",
+    "endereco": "Rua da Praia, 101"
+  },
+  {
+    "_id": 5,
+    "nome": "Roberto Almeida",
+    "endereco": "Avenida Central, 222"
+  },
+  {
+    "_id": 6,
+    "nome": "Laura Pereira",
+    "endereco": "Travessa das Árvores, 333"
+  }
+```
+])
 
 
 ## Tecnologias Utilizadas
