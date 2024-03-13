@@ -160,6 +160,7 @@ O diagrama de casos de uso vai elicitar os requisitos, que utiliza um modelo gr�
 
 
 # Matriz de Rastreabilidade
+A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
 
 | Requisito/Artefato                  | Cadastro de Clientes | Agendamento de Atividades | Registro de Gastos | Planejamento Financeiro | Dashboard Financeiro de Acesso Web e Mobile | Interface Intuitiva | Histórico de Atividades | Cadastro de Clientes | Avaliação da Diária | Filtro de Clientes | Lembretes de Atividades |
 |------------------------------------|----------------------|---------------------------|---------------------|--------------------------|-----------------------------------------------|----------------------|------------------------|----------------------|---------------------|--------------------|-------------------------|
@@ -176,11 +177,6 @@ O diagrama de casos de uso vai elicitar os requisitos, que utiliza um modelo gr�
 | Lembretes de Atividades            |                      | X                       |                     |                          | X                                             |                      |                        |                      |                     |                    |                         |
 
 <!--
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
-
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
-
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
 
 # Gerenciamento de Projeto
 
@@ -207,4 +203,3 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 ## Gestão de Orçamento (Unitário, Agregado e por Semestre)
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/8163e4da-635f-43f7-abef-5def695c0f7a)
-
