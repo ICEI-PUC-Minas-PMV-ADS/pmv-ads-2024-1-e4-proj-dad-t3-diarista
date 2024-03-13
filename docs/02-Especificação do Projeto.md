@@ -207,5 +207,3 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 ## Gestão de Orçamento (Unitário, Agregado e por Semestre)
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/8163e4da-635f-43f7-abef-5def695c0f7a)
-
-
