@@ -176,7 +176,6 @@ A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualizaç
 | Filtro de Clientes                 |                      |                         |                     |                          |                                               |                      |                        | X                    |                     |                    |                         |
 | Lembretes de Atividades            |                      | X                       |                     |                          | X                                             |                      |                        |                      |                     |                    |                         |
 
-<!--
 
 # Gerenciamento de Projeto
 
