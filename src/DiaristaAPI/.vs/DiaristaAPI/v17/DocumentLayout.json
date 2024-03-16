@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B831F79E-ACE0-4335-B6C2-724A5585468D}|DiaristaAPI\\DiaristaAPI.csproj|c:\\users\\gabol\\onedrive\\\u00E1rea de trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\diaristaapi\\diaristaapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B831F79E-ACE0-4335-B6C2-724A5585468D}|DiaristaAPI\\DiaristaAPI.csproj|solutionrelative:diaristaapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B831F79E-ACE0-4335-B6C2-724A5585468D}|DiaristaAPI\\DiaristaAPI.csproj|c:\\users\\gabol\\onedrive\\\u00E1rea de trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\diaristaapi\\diaristaapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B831F79E-ACE0-4335-B6C2-724A5585468D}|DiaristaAPI\\DiaristaAPI.csproj|solutionrelative:diaristaapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B831F79E-ACE0-4335-B6C2-724A5585468D}|DiaristaAPI\\DiaristaAPI.csproj|c:\\users\\gabol\\onedrive\\\u00E1rea de trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\diaristaapi\\diaristaapi\\models\\diaristadatasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B831F79E-ACE0-4335-B6C2-724A5585468D}|DiaristaAPI\\DiaristaAPI.csproj|solutionrelative:diaristaapi\\models\\diaristadatasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B831F79E-ACE0-4335-B6C2-724A5585468D}|DiaristaAPI\\DiaristaAPI.csproj|c:\\users\\gabol\\onedrive\\\u00E1rea de trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\diaristaapi\\diaristaapi\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B831F79E-ACE0-4335-B6C2-724A5585468D}|DiaristaAPI\\DiaristaAPI.csproj|solutionrelative:diaristaapi\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B831F79E-ACE0-4335-B6C2-724A5585468D}|DiaristaAPI\\DiaristaAPI.csproj|c:\\users\\gabol\\onedrive\\\u00E1rea de trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\diaristaapi\\diaristaapi\\models\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B831F79E-ACE0-4335-B6C2-724A5585468D}|DiaristaAPI\\DiaristaAPI.csproj|solutionrelative:diaristaapi\\models\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B831F79E-ACE0-4335-B6C2-724A5585468D}|DiaristaAPI\\DiaristaAPI.csproj|c:\\users\\gabol\\onedrive\\\u00E1rea de trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\diaristaapi\\diaristaapi\\models\\diarista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B831F79E-ACE0-4335-B6C2-724A5585468D}|DiaristaAPI\\DiaristaAPI.csproj|solutionrelative:diaristaapi\\models\\diarista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\Program.cs",
+              "RelativeDocumentMoniker": "DiaristaAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\Program.cs",
+              "RelativeToolTip": "DiaristaAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T23:06:24.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DiaristaDataSettings.cs",
+              "DocumentMoniker": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\Models\\DiaristaDataSettings.cs",
+              "RelativeDocumentMoniker": "DiaristaAPI\\Models\\DiaristaDataSettings.cs",
+              "ToolTip": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\Models\\DiaristaDataSettings.cs",
+              "RelativeToolTip": "DiaristaAPI\\Models\\DiaristaDataSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T22:58:06.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "DiaristaAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\appsettings.json",
+              "RelativeToolTip": "DiaristaAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-16T22:49:02.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Despesa.cs",
+              "DocumentMoniker": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\Models\\Despesa.cs",
+              "RelativeDocumentMoniker": "DiaristaAPI\\Models\\Despesa.cs",
+              "ToolTip": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\Models\\Despesa.cs",
+              "RelativeToolTip": "DiaristaAPI\\Models\\Despesa.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAUwAkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T22:26:42.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Diarista.cs",
+              "DocumentMoniker": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\Models\\Diarista.cs",
+              "RelativeDocumentMoniker": "DiaristaAPI\\Models\\Diarista.cs",
+              "ToolTip": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\Models\\Diarista.cs",
+              "RelativeToolTip": "DiaristaAPI\\Models\\Diarista.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAiwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T22:25:51.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "DiaristaAPI\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\Models\\Cliente.cs",
+              "RelativeToolTip": "DiaristaAPI\\Models\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T22:21:33.58Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
