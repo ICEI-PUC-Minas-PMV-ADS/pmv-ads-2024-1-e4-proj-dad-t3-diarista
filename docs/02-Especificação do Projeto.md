@@ -109,8 +109,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-010| Avaliação da Diária: Permitir que as diaristas se cadastrem na plataforma a avaliação da diária, registrando uma nota 😁😀😊😐😑, para melhorar os atendimentos.| BAIXA |
 |RF-011| Filtro de Clientes: Permitir que as diaristas tenham o acesso a relação do clientes. | BAIXA |
 |RF-012| Lembretes de Atividades: Enviar notificações ou lembretes para as diaristas sobre atividades agendadas. | BAIXA |
-|RF-013| Criar arquitetura do projeto. | ALTA |
-|RF-014| Conexão C# com MongoDB. | ALTA |
 
 ### Requisitos não Funcionais
 
