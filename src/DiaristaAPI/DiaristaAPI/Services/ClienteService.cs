@@ -4,11 +4,11 @@ using Microsoft.Extensions.Options;
 
 namespace DiaristaAPI.Services
 {
-    public class DiaristasService
+    public class ClienteService
     {
 
         private readonly IMongoCollection<Cliente> _clientesCollection;
-        public DiaristasService(IOptions<DiaristaDataSettings> diaristaDataSettings)
+        public ClienteService(IOptions<DiaristaDataSettings> diaristaDataSettings)
         {
             var mongoClient = new MongoClient(
                 diaristaDataSettings.Value.ConnectionString);

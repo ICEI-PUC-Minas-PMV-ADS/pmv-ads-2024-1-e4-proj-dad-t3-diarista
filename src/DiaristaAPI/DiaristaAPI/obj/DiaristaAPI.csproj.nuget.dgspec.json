@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\DiaristaAPI.csproj": {}
+    "C:\\Users\\saory\\OneDrive\\Área de Trabalho\\Estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\DiaristaAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\DiaristaAPI.csproj": {
+    "C:\\Users\\saory\\OneDrive\\Área de Trabalho\\Estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\DiaristaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\DiaristaAPI.csproj",
+        "projectUniqueName": "C:\\Users\\saory\\OneDrive\\Área de Trabalho\\Estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\DiaristaAPI.csproj",
         "projectName": "DiaristaAPI",
-        "projectPath": "C:\\Users\\user\\source\\repos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\DiaristaAPI.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\obj\\",
+        "projectPath": "C:\\Users\\saory\\OneDrive\\Área de Trabalho\\Estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\DiaristaAPI.csproj",
+        "packagesPath": "C:\\Users\\saory\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\saory\\OneDrive\\Área de Trabalho\\Estudos\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\DiaristaAPI\\DiaristaAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\saory\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -86,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -11,18 +11,18 @@ namespace DiaristaAPI.Controllers
     public class ClienteController : ControllerBase
 
     {
-        private readonly DiaristasService _diaristasService;
-        public ClienteController(DiaristasService diaristasService)
+        private readonly ClienteService _clienteService;
+        public ClienteController(ClienteService clienteService)
         {
-            _diaristasService = diaristasService;
+            _clienteService = clienteService;
         }
         [HttpGet]
         public async Task<List<Cliente>> Get() =>
-            await _diaristasService.GetAsync();
+            await _clienteService.GetAsync();
         [HttpGet("{id:length(24)}")]
         public async Task<ActionResult<Cliente>> Get(string id)
         {
-            var cliente = await _diaristasService.GetAsync(id);
+            var cliente = await _clienteService.GetAsync(id);
             if (cliente == null)
             {
                 return NotFound();
@@ -32,27 +32,27 @@ namespace DiaristaAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(Cliente newCliente)
         {
-            await _diaristasService.CreateAsync(newCliente);
+            await _clienteService.CreateAsync(newCliente);
             return CreatedAtAction(nameof(Get), new { id = newCliente.Id }, newCliente);
 
         }
         [HttpPut("{id:length(24)}")]
         public async Task<IActionResult> Update(string id, Cliente updatadeCliente)
         {
-            var cliente = await _diaristasService.GetAsync(id);
+            var cliente = await _clienteService.GetAsync(id);
             if (cliente is null)
                 return NotFound();
             updatadeCliente.Id = cliente.Id;
-            await _diaristasService.UpadateAsync(id, updatadeCliente);
+            await _clienteService.UpadateAsync(id, updatadeCliente);
             return NoContent();
         }
         [HttpDelete("{id:length(24)}")]
         public async Task<IActionResult> Delete(string id)
         {
-            var cliente = await _diaristasService.GetAsync(id);
+            var cliente = await _clienteService.GetAsync(id);
             if (cliente is null)
                 return NotFound();
-            await _diaristasService.RemoveAsync(id);
+            await _clienteService.RemoveAsync(id);
             return NoContent();
         }
     }
