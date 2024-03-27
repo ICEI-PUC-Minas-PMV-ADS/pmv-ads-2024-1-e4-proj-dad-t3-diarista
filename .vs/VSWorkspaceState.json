@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\DiaristaAPI",
+    "\\src\\DiaristaAPI\\DiaristaAPI",
+    "\\src\\DiaristaAPI\\DiaristaAPI\\Models",
+    "\\src\\DiaristaData"
   ],
-  "SelectedNode": "\\DiaristaAPI.sln",
+  "SelectedNode": "\\src\\DiaristaAPI\\DiaristaAPI\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }

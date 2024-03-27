@@ -8,21 +8,21 @@ namespace DiaristaAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ClienteController : ControllerBase
+    public class ClientesController : ControllerBase
 
     {
-        private readonly ClienteService _clienteService;
-        public ClienteController(ClienteService clienteService)
+        private readonly ClientesService _clientesService;
+        public ClientesController(ClientesService clientesService)
         {
-            _clienteService = clienteService;
+            _clientesService = clientesService;
         }
         [HttpGet]
-        public async Task<List<Cliente>> Get() =>
-            await _clienteService.GetAsync();
+        public async Task<List<Clientes>> Get() =>
+            await _clientesService.GetAsync();
         [HttpGet("{id:length(24)}")]
-        public async Task<ActionResult<Cliente>> Get(string id)
+        public async Task<ActionResult<Clientes>> Get(string id)
         {
-            var cliente = await _clienteService.GetAsync(id);
+            var cliente = await _clientesService.GetAsync(id);
             if (cliente == null)
             {
                 return NotFound();
@@ -30,29 +30,29 @@ namespace DiaristaAPI.Controllers
             return cliente;
         }
         [HttpPost]
-        public async Task<IActionResult> Post(Cliente newCliente)
+        public async Task<IActionResult> Post(Clientes newCliente)
         {
-            await _clienteService.CreateAsync(newCliente);
+            await _clientesService.CreateAsync(newCliente);
             return CreatedAtAction(nameof(Get), new { id = newCliente.Id }, newCliente);
 
         }
         [HttpPut("{id:length(24)}")]
-        public async Task<IActionResult> Update(string id, Cliente updatadeCliente)
+        public async Task<IActionResult> Update(string id, Clientes updatadeCliente)
         {
-            var cliente = await _clienteService.GetAsync(id);
+            var cliente = await _clientesService.GetAsync(id);
             if (cliente is null)
                 return NotFound();
             updatadeCliente.Id = cliente.Id;
-            await _clienteService.UpadateAsync(id, updatadeCliente);
+            await _clientesService.UpadateAsync(id, updatadeCliente);
             return NoContent();
         }
         [HttpDelete("{id:length(24)}")]
         public async Task<IActionResult> Delete(string id)
         {
-            var cliente = await _clienteService.GetAsync(id);
+            var cliente = await _clientesService.GetAsync(id);
             if (cliente is null)
                 return NotFound();
-            await _clienteService.RemoveAsync(id);
+            await _clientesService.RemoveAsync(id);
             return NoContent();
         }
     }

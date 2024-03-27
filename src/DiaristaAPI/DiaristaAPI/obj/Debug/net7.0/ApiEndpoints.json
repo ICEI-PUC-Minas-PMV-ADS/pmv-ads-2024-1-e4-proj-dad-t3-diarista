@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "DiaristaAPI.Controllers.ClienteController",
+    "ContainingType": "DiaristaAPI.Controllers.ClientesController",
     "Method": "Get",
-    "RelativePath": "api/Cliente",
+    "RelativePath": "api/Clientes",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[DiaristaAPI.Models.Cliente, DiaristaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[DiaristaAPI.Models.Clientes, DiaristaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,25 +20,25 @@
     ]
   },
   {
-    "ContainingType": "DiaristaAPI.Controllers.ClienteController",
+    "ContainingType": "DiaristaAPI.Controllers.ClientesController",
     "Method": "Post",
-    "RelativePath": "api/Cliente",
+    "RelativePath": "api/Clientes",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "newCliente",
-        "Type": "DiaristaAPI.Models.Cliente",
+        "Type": "DiaristaAPI.Models.Clientes",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "DiaristaAPI.Controllers.ClienteController",
+    "ContainingType": "DiaristaAPI.Controllers.ClientesController",
     "Method": "Get",
-    "RelativePath": "api/Cliente/{id}",
+    "RelativePath": "api/Clientes/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -51,7 +51,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "DiaristaAPI.Models.Cliente",
+        "Type": "DiaristaAPI.Models.Clientes",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -62,9 +62,9 @@
     ]
   },
   {
-    "ContainingType": "DiaristaAPI.Controllers.ClienteController",
+    "ContainingType": "DiaristaAPI.Controllers.ClientesController",
     "Method": "Update",
-    "RelativePath": "api/Cliente/{id}",
+    "RelativePath": "api/Clientes/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -76,16 +76,16 @@
       },
       {
         "Name": "updatadeCliente",
-        "Type": "DiaristaAPI.Models.Cliente",
+        "Type": "DiaristaAPI.Models.Clientes",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "DiaristaAPI.Controllers.ClienteController",
+    "ContainingType": "DiaristaAPI.Controllers.ClientesController",
     "Method": "Delete",
-    "RelativePath": "api/Cliente/{id}",
+    "RelativePath": "api/Clientes/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -99,16 +99,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "DiaristaAPI.Controllers.WeatherForecastController",
+    "ContainingType": "DiaristaAPI.Controllers.DespesaController",
     "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "RelativePath": "api/Despesa",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[DiaristaAPI.WeatherForecast, DiaristaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[DiaristaAPI.Models.Despesa, DiaristaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -117,5 +117,84 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "DiaristaAPI.Controllers.DespesaController",
+    "Method": "Post",
+    "RelativePath": "api/Despesa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newDespesa",
+        "Type": "DiaristaAPI.Models.Despesa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiaristaAPI.Controllers.DespesaController",
+    "Method": "Get",
+    "RelativePath": "api/Despesa/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DiaristaAPI.Models.Despesa",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DiaristaAPI.Controllers.DespesaController",
+    "Method": "Update",
+    "RelativePath": "api/Despesa/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatadeDespesa",
+        "Type": "DiaristaAPI.Models.Despesa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiaristaAPI.Controllers.DespesaController",
+    "Method": "Delete",
+    "RelativePath": "api/Despesa/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DiaristaAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7acf4b581da9cc36978c00c74e9e5a17c528fd5b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0312799704ac7d05cdf3149f15a2920b652aa24e")]
 [assembly: System.Reflection.AssemblyProductAttribute("DiaristaAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DiaristaAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

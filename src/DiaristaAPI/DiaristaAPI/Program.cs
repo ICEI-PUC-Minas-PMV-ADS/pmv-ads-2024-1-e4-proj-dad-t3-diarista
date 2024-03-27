@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Configurado Banco de Dados com C#
 builder.Services.Configure<DiaristaDataSettings>(
     builder.Configuration.GetSection("DiaristaData"));
-builder.Services.AddSingleton<ClienteService>();
+builder.Services.AddSingleton<ClientesService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

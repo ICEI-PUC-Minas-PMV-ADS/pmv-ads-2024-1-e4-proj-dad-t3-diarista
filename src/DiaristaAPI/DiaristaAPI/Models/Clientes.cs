@@ -3,7 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace DiaristaAPI.Models
 {
-    public class Cliente
+    public class Clientes
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
