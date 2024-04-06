@@ -14,8 +14,9 @@ Anexo: https://www.dieese.org.br/infografico/2023/trabalhoDomestico2023.pdf
 
 ## Problema
 
-Como reduzir a pobreza e aumentar o rendimento médio das diáristas frente os dados publicados pelo Dieese em 2023?
-https://www.dieese.org.br/infografico/2023/trabalhoDomestico2023.pdf
+Muitas diaristas enfrentam dificuldades para organizar sua rotina de trabalho e vida financeira devido à informalidade de sua ocupação. Essas profissionais, na maioria das vezes, autônomas, se organizam por agendas de papel ou aplicativos de calendários genéricos. Com isso, pode surgir a dificuldade no controle de clientes e pagamentos pendentes, por exemplo. 
+
+Nosso projeto entra como uma solução para esse problema, ao desenvolver uma aplicação eficaz, feita para essas profissionais.  
 
 ## Objetivos
 
