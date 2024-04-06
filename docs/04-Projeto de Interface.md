@@ -29,12 +29,12 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/d718e203-ec82-4565-b3c5-065a191928be)
 
 ### Wireframes Mobile
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/9b0ec8ab-ad22-4256-99b0-7b90c7da995f)
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/63889c8f-9395-4089-86a9-d91626c6fc58)
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/5361e64a-a774-4cef-99a1-67c039a64402)
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/20df65b4-118d-44a7-8e57-085eb0f31e7e)
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/6584d724-b261-416a-a796-cbcd518de225)
-
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/63433e37-b56e-4676-ac25-b3cd659715e8)
+| Login | Cadastro |
+|---------|---------|
+| ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/9b0ec8ab-ad22-4256-99b0-7b90c7da995f) | ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/63889c8f-9395-4089-86a9-d91626c6fc58) |
+| Redirecionamento | Agenda |
+| ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/5361e64a-a774-4cef-99a1-67c039a64402) | ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/20df65b4-118d-44a7-8e57-085eb0f31e7e) |
+| Inserindo Cliente | Controle Financeiro |
+| ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/6584d724-b261-416a-a796-cbcd518de225) | ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/63433e37-b56e-4676-ac25-b3cd659715e8) |
 
