@@ -23,8 +23,6 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 As referências abaixo foram utilizadas na produção do Modelo Entidade e Relacionamento.
 
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
-
 ![Diagrama ER de banco de dados (pé de galinha)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/f88144fc-96ac-4f22-871b-3bdddbaf0029)
 
 
@@ -32,11 +30,7 @@ As referências abaixo foram utilizadas na produção do Modelo Entidade e Relac
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
  
-As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
 
-> - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
-
-## Modelo Físico
 ## Modelo Físico
 Usando Banco NoSQL - MongoDB:
 
