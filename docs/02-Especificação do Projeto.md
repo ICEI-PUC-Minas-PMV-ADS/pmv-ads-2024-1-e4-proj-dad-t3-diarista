@@ -83,11 +83,8 @@ O projeto propõe o desenvolvimento de uma aplicação fullstack voltada para di
 
 Para análise e monitoramento do desempenho do negócio, com o intuito de auxiliar na tomada de decisões e planejamentos estratégicos, os seguintes indicadores foram definidos:
 
-Usar o seguinte modelo: 
+![Captura de Tela (100)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/117127986/b2efdf44-16d1-4b68-80d3-91c33a13c7f8)
 
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
 
 ## Requisitos
 
