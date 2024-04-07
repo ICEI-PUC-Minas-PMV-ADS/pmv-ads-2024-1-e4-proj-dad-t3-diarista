@@ -1,18 +1,26 @@
 # Plano de Testes de Software
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+As tabelas abaixo identificam os requisitos funcionais e não-funcionais do projeto que serão testados.
 
-Enumerar quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e das ferramentas utilizadas.
+|Caso de Teste|RF-001|
+|-|-|
+|Descrição do requisito | O sistema deve permitir que a diarista faça o login.|
+|Descrição do teste:| Clicar em ENTRAR e preencher os dados.
+|Caso de êxito: | Preencher corretammente email e senha.|
+|Caso de falha: | Preencher incorretamente email ou senha.|
 
-## Ferramentas de Testes (Opcional)
+|Caso de Teste|RF-002|
+|-|-|
+|Descrição do requisito |**RF-007:**  O sistema deve permitir o cadastro, edição e exclusão de clientes da diarista.|
+|Descrição do teste:| Clicar em cadastrar clientes e preencher os dados. Com o cliente já cadastrado, clicar em editar e salvar ou clicar em deletar, e salvar alterações.|
+|Caso de êxito: | Exibição da tela de clientes atualizada. |
 
-Comente sobre as ferramentas de testes utilizadas.
 
-> ** Links Úteis ** :
-> -  [ IBM - Criação e Geração de Planos de Teste ] ( https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html )
-> -  [ Práticas e Técnicas de Testes Ágeis ] ( http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf )
-> -   [ Teste de Software: Conceitos e tipos de testes ] ( https://blog.onedaytesting.com.br/teste-de-software/ )
-> -  [ Criação e Geração de Planos de Teste de Software ] ( https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html )
-> -  [ Ferramentas de teste para Java Script ] ( https://geekflare.com/javascript-unit-testing/ )
-> -  [ Ferramentas UX ] ( https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7 )
+|Caso de Teste|RNF|
+|-|-|
+|Descrição do Teste |**RF-007:**  Teste de acesso ao banco.|
+|Descrição do teste:| Iniciar o banco de dados pelo prompt de comando e compilar o codigo para abertura do swagger e execução da solução.
+|Caso de êxito: | Exibição das collections no prompt de comando, ao iniciar o banco. Ao compilar o codigo, abrir o swagger e executa-lo, retornar codigo de êxito 200 com o array de valor.|
+|Caso de falha: | Prompt de comando nao mostra as collections. Swagger retorna erro de codigo 500, ou retorna array vazio.|
+
 
  
