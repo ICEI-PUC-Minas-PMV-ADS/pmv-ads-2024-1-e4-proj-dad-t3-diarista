@@ -9,6 +9,10 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamen
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/112135999/dc604107-f261-474a-b4fb-953bd526eea3)
 
+![fluxograma web](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/112135999/6d9eb727-08a6-4f99-95b5-b792e830c50d)
+
+
+
 
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
