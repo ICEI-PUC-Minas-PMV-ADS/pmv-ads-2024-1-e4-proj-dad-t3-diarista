@@ -14,6 +14,17 @@ As tabelas abaixo identificam os requisitos funcionais e não-funcionais do proj
 |Descrição do teste:| Clicar em cadastrar clientes e preencher os dados. Com o cliente já cadastrado, clicar em editar e salvar ou clicar em deletar, e salvar alterações.|
 |Caso de êxito: | Exibição da tela de clientes atualizada. |
 
+|Caso de Teste|RF-003|
+|-|-|
+|Descrição do requisito | Possibilitar que as diaristas agendem suas atividades diárias, inserindo a data, horário, tipo de serviço e o valor da diária.|
+|Descrição do teste:| Clicar em "inserir atividade" preencher os campos e salvar. |
+|Caso de êxito: | Exibição da tela de diárias atualizada. |
+
+|Caso de Teste|RF-004 - RF-005|
+|-|-|
+|Descrição do requisito | Registro de gastos e planejamento financeiro: Permitir que as diaristas insiram suas despesas e oferecer uma seção de planejamento financeiro. |
+|Descrição do teste:| Clicar em "inserir despesas", preencher os campos e salvar.|
+|Caso de êxito: | Exibição da tela de despesa atualizada, com métricas de entrada e saída dos valores.|
 
 |Caso de Teste|RNF|
 |-|-|
