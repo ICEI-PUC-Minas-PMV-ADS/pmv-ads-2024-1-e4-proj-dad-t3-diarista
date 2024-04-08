@@ -29,5 +29,6 @@ namespace WebAPIDiarista.Services
             await _diaristasCollection.ReplaceOneAsync(x => x.Id == id, updatedDiarista);
         public async Task RemoveAsync(string id) =>
             await _diaristasCollection.DeleteOneAsync(x => x.Id == id);
+    
     }
 }
