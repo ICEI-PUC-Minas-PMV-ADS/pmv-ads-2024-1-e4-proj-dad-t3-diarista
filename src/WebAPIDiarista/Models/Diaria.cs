@@ -13,8 +13,6 @@ namespace WebAPIDiarista.Models
         public string Cliente { get; set; }
         [BsonElement("data")]
         public string Data { get; set; }
-        [BsonElement("email")]
-        public string Email { get; set; }
         [BsonElement("valor")]
         public decimal Valor { get; set; }
         [BsonElement("avaliacao")]
