@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebAPIDiarista")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1bdcbab811002654feaa989be9f0b58630ca389")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+121fd6823a2f1df5707a6d8f78a9fbd740c27379")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebAPIDiarista")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebAPIDiarista")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kp0Sr6iBaAF+XkxjvNDhtpABDVo5qfemXTYkMgmA/XtVy+8XrnhGaWvNUZTleFZwWi+PVzyF+V26pR6+0brexw==",
+  "dgSpecHash": "YL/60nOEit79oVUq29SwUUyuOejQhNcrKtBvtd1DvoKRA9XuRiacC9VD95TyDD/LrhoCphuuAHW3tJmj27N7Fw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPeríodo\\API\\WebAPIDiarista\\WebAPIDiarista.csproj",
+  "projectFilePath": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPeríodo\\Aplicacao-Distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\WebAPIDiarista.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\astor\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\astor\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

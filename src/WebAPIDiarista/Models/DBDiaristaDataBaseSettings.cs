@@ -8,6 +8,7 @@
         public string ClientesCollectionName { get; set; } = null!;
         public string DespesasCollectionName { get; set; } = null!;
         public string DiariasCollectionName { get; set; } = null!;
+        public string UsuariosCollectionName { get; set; } = null!;
 
     }
 }

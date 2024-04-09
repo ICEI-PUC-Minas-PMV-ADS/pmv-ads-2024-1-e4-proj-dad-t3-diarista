@@ -1,12 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPer\u00EDodo\\API\\WebAPIDiarista\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6EE455A9-3174-4A55-BF19-D52451AD8D97}|WebAPIDiarista.csproj|c:\\users\\astor\\onedrive\\documentos\\ads\\4thper\u00EDodo\\api\\webapidiarista\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6EE455A9-3174-4A55-BF19-D52451AD8D97}|WebAPIDiarista.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPer\u00EDodo\\Aplicacao-Distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,19 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPer\u00EDodo\\API\\WebAPIDiarista\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPer\u00EDodo\\API\\WebAPIDiarista\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-02T21:31:12.263Z",
-              "EditorCaption": ""
             }
           ]
         }

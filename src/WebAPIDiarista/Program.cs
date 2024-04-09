@@ -16,6 +16,7 @@ namespace WebAPIDiarista
             builder.Services.AddSingleton<DiariasService>();
             builder.Services.AddSingleton<DespesasService>();
             builder.Services.AddSingleton<ClientesService>();
+            builder.Services.AddSingleton<UsuariosService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

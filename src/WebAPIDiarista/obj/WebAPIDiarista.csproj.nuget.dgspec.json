@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPeríodo\\API\\WebAPIDiarista\\WebAPIDiarista.csproj": {}
+    "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPeríodo\\Aplicacao-Distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\WebAPIDiarista.csproj": {}
   },
   "projects": {
-    "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPeríodo\\API\\WebAPIDiarista\\WebAPIDiarista.csproj": {
+    "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPeríodo\\Aplicacao-Distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\WebAPIDiarista.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPeríodo\\API\\WebAPIDiarista\\WebAPIDiarista.csproj",
+        "projectUniqueName": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPeríodo\\Aplicacao-Distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\WebAPIDiarista.csproj",
         "projectName": "WebAPIDiarista",
-        "projectPath": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPeríodo\\API\\WebAPIDiarista\\WebAPIDiarista.csproj",
+        "projectPath": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPeríodo\\Aplicacao-Distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\WebAPIDiarista.csproj",
         "packagesPath": "C:\\Users\\astor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPeríodo\\API\\WebAPIDiarista\\obj\\",
+        "outputPath": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPeríodo\\Aplicacao-Distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
