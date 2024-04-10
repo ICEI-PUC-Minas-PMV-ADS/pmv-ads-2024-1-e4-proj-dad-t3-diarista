@@ -4,10 +4,10 @@ using System.Text.Json.Serialization;
 
 namespace WebAPIDiarista.Models
 {
-    public class Usuario
+    public class UsuarioDto
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
+        //[BsonId]
+        //[BsonRepresentation(BsonType.ObjectId)]
         [BsonElement("_id")]
         public string Id { get; set; }
         [BsonElement("diarista")]
@@ -15,7 +15,6 @@ namespace WebAPIDiarista.Models
         [BsonElement("login")]
         public string Login { get; set; }
         [BsonElement("senha")]
-        [JsonIgnore]
         public string Senha { get; set; }
     }
 }
