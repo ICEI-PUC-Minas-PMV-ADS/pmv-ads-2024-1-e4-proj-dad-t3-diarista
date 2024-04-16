@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPer\u00EDodo\\Aplicacao-Distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6EE455A9-3174-4A55-BF19-D52451AD8D97}|WebAPIDiarista.csproj|c:\\users\\astor\\onedrive\\documentos\\ads\\4thper\u00EDodo\\aplicacao-distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\webapidiarista\\controllers\\diaristascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EE455A9-3174-4A55-BF19-D52451AD8D97}|WebAPIDiarista.csproj|solutionrelative:controllers\\diaristascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EE455A9-3174-4A55-BF19-D52451AD8D97}|WebAPIDiarista.csproj|c:\\users\\astor\\onedrive\\documentos\\ads\\4thper\u00EDodo\\aplicacao-distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\webapidiarista\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EE455A9-3174-4A55-BF19-D52451AD8D97}|WebAPIDiarista.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,32 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DiaristasController.cs",
-              "DocumentMoniker": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPer\u00EDodo\\Aplicacao-Distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\Controllers\\DiaristasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DiaristasController.cs",
-              "ToolTip": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPer\u00EDodo\\Aplicacao-Distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\Controllers\\DiaristasController.cs",
-              "RelativeToolTip": "Controllers\\DiaristasController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T15:35:04.048Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPer\u00EDodo\\Aplicacao-Distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPer\u00EDodo\\Aplicacao-Distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "Controllers\\UsuariosController.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAzwGwAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T13:34:45.129Z",
-              "EditorCaption": ""
             }
           ]
         }
