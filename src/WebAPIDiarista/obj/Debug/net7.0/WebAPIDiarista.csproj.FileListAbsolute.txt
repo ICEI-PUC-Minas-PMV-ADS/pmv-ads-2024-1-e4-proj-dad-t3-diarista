@@ -92,3 +92,11 @@ C:\Users\astor\OneDrive\Documentos\ADS\4thPeríodo\Aplicacao-Distribuida\pmv-ads
 C:\Users\astor\OneDrive\Documentos\ADS\4thPeríodo\Aplicacao-Distribuida\pmv-ads-2024-1-e4-proj-dad-t3-diarista\src\WebAPIDiarista\obj\Debug\net7.0\WebAPIDiarista.pdb
 C:\Users\astor\OneDrive\Documentos\ADS\4thPeríodo\Aplicacao-Distribuida\pmv-ads-2024-1-e4-proj-dad-t3-diarista\src\WebAPIDiarista\obj\Debug\net7.0\WebAPIDiarista.genruntimeconfig.cache
 C:\Users\astor\OneDrive\Documentos\ADS\4thPeríodo\Aplicacao-Distribuida\pmv-ads-2024-1-e4-proj-dad-t3-diarista\src\WebAPIDiarista\obj\Debug\net7.0\ref\WebAPIDiarista.dll
+C:\Users\astor\OneDrive\Documentos\ADS\4thPeríodo\Aplicacao-Distribuida\pmv-ads-2024-1-e4-proj-dad-t3-diarista\src\WebAPIDiarista\bin\Debug\net7.0\BCrypt.Net-Next.dll
+C:\Users\astor\OneDrive\Documentos\ADS\4thPeríodo\Aplicacao-Distribuida\pmv-ads-2024-1-e4-proj-dad-t3-diarista\src\WebAPIDiarista\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\astor\OneDrive\Documentos\ADS\4thPeríodo\Aplicacao-Distribuida\pmv-ads-2024-1-e4-proj-dad-t3-diarista\src\WebAPIDiarista\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\astor\OneDrive\Documentos\ADS\4thPeríodo\Aplicacao-Distribuida\pmv-ads-2024-1-e4-proj-dad-t3-diarista\src\WebAPIDiarista\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\astor\OneDrive\Documentos\ADS\4thPeríodo\Aplicacao-Distribuida\pmv-ads-2024-1-e4-proj-dad-t3-diarista\src\WebAPIDiarista\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\astor\OneDrive\Documentos\ADS\4thPeríodo\Aplicacao-Distribuida\pmv-ads-2024-1-e4-proj-dad-t3-diarista\src\WebAPIDiarista\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\astor\OneDrive\Documentos\ADS\4thPeríodo\Aplicacao-Distribuida\pmv-ads-2024-1-e4-proj-dad-t3-diarista\src\WebAPIDiarista\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\astor\OneDrive\Documentos\ADS\4thPeríodo\Aplicacao-Distribuida\pmv-ads-2024-1-e4-proj-dad-t3-diarista\src\WebAPIDiarista\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

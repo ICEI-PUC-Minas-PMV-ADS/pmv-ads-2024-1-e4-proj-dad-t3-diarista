@@ -2,6 +2,11 @@
 using WebAPIDiarista.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
+using Microsoft.AspNetCore.Authorization.Infrastructure;
+using System.Security.Claims;
+using Microsoft.IdentityModel.Tokens;
 
 namespace WebAPIDiarista.Controllers
 {
@@ -65,6 +70,44 @@ namespace WebAPIDiarista.Controllers
                 return NotFound();
             await _usuariosService.RemoveAsync(id);
             return NoContent();
+        }
+
+        [AllowAnonymous]
+        [HttpPost("authenticate")]
+        public async Task<IActionResult> Authenticate(AuthenticateDto model)
+        {
+            var usuariodb = await _usuariosService.GetAsync(model.Login);
+            
+            if (usuariodb is null)
+                return NotFound();
+
+            if(usuariodb ==null || !BCrypt.Net.BCrypt.Verify(model.Password, usuariodb.Senha))
+                return Unauthorized();
+
+            var jwt = "xxxx";
+
+            return Ok(new { jwtToken = jwt });
+        }
+        private string GenerateJwtToken(Usuario model)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes("Ry74cBQva5dThwbwchR9jhbtRFnJxWSZ");
+            var claims = new ClaimsIdentity(new Claim[]
+            {
+                new Claim(ClaimTypes.NameIdentifier, model.Login),
+                new Claim(ClaimTypes.Name, model.Diarista)
+            });
+
+            var tokenDescriptor = new SecurityTokenDescriptor()
+            {
+                Subject = claims,
+                Expires = DateTime.UtcNow.AddHours(8),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key),
+                SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
+
         }
     }
 }
