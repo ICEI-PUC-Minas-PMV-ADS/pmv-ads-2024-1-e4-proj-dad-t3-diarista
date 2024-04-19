@@ -25,7 +25,8 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 As referências abaixo foram utilizadas na produção do Modelo Entidade e Relacionamento.
 
-![Diagrama ER de banco de dados (pé de galinha)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/f88144fc-96ac-4f22-871b-3bdddbaf0029)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/ad74b258-d032-4e22-949f-bf5e8ee2f09d)
+
 
 
 ## Esquema Relacional
