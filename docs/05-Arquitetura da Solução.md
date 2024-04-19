@@ -13,7 +13,8 @@ A aplicação tem arquitetura centralizada onde o servidor são processos que im
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/8a9569cc-f5f2-4f9c-ad5d-c557b45ae086)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/104168502/8b9fe3c6-4626-4cca-afbc-d7795ac4a138)
+
 
 
 
