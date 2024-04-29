@@ -1,14 +1,14 @@
 import React from 'react';
 import * as S from './styles';
 
-import logo from '../../assets/logo.png';
+import diarista from '../../assets/diarista.png';
 import bell from '../../assets/bell.png';
 
 function Header() {
   return (
     <S.Container>
       <S.LeftSide>
-        <img src={logo} alt ="Logo"/>
+        <img src={diarista} alt ="Logo"/>
       </S.LeftSide>
       <S.RightSide>
 < a href = "#">Home</a>

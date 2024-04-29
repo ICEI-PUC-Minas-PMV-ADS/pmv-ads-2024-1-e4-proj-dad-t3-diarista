@@ -10,6 +10,6 @@ function Home  ()  {
     <Footer/>
     </S.Container>
 )
-};
+}
 
 export default Home;
