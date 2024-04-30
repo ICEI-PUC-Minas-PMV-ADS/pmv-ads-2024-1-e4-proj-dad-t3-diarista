@@ -3,9 +3,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div `
 width: 100%;
-height: 70px;
-background: #4a90e2;
-border-bottom: 5px solid #999;
+height: 60px;
+background: #45a049;
+border-bottom: 1px solid black;
+
 
 display: flex;
 
@@ -19,8 +20,8 @@ align-items: center;
 padding-left: 3px;
 
 img {
-    width: 130px;
-    height: 100px;
+    width: 60px;
+    height: 40px;
 }
 
 `
@@ -34,7 +35,7 @@ justify-content: flex-end;
 
 
 a{
-    color:  black;
+    color:  #FFF;
     font-weight: bold;
     text-decoration: none;
     margin: 0 10px;
@@ -64,7 +65,7 @@ height: 40px;
 .dividir::after{
     content: "|";
     margin: 0 10px;
-    color: black;
+    color: #FFF;
 
 }
 
