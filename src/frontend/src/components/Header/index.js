@@ -19,6 +19,11 @@ function Header() {
             <a href="#">AGENDA</a>
             <a href="#">FINANÇAS</a>
             <a href="#">ENTRAR</a>
+            <a href= "#" id = "notification">
+            <img src={bell} alt ="Notificacoes"/>
+
+<span>5</span>
+</a>
       
 
 

@@ -38,6 +38,24 @@ import styled from 'styled-components';
 
 
     }
+    #notification {
+      img{
+          width: 50%;
+  height: 40px;
+      }
+     span{
+      background: red;
+      color: #FFF;
+      padding: 1px 2px;
+      border-radius: 50%;
+      position: relative;
+      top: -20px;
+      right: 10px;
+     }
+     &: hover{
+      opacity: 0.5;
+     }
+  }
 
    
     
