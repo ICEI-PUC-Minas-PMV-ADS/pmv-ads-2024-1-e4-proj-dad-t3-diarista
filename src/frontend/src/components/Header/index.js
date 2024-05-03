@@ -1,6 +1,8 @@
 import React from "react";
 import * as S from './styles';
-import { Link } from 'react-router-dom';
+
+
+
 
 
 import LOGO from '../../assets/LOGO 1.png';
@@ -19,7 +21,7 @@ function Header() {
             <a href="#">SERVIÇOS</a>
             <a href="#">AGENDA</a>
             <a href="#">FINANÇAS</a>
-            <a href="#">ENTRAR</a>
+            <a href>ENTRAR</a>
             <a href= "#" id = "notification">
             <img src={bell} alt ="Notificacoes"/>
 
