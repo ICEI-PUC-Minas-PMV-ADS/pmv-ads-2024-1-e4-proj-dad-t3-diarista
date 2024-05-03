@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 import LOGO from '../../assets/LOGO 1.png';
+import bell from '../../assets/bell.png';
 
 
 function Header() {
