@@ -12,8 +12,6 @@ export const LeftSide = styled.div`
 
 `
 
-
-
 export const RigthSide = styled.div`
   width: 50%;
   heigth: 70px;
