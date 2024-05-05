@@ -9,7 +9,13 @@ export const LeftSide = styled.div`
   width: 70%;
   heigth: 70px;
   display: flex;
-
+  p{
+    text-aling:center;
+    padding-left: 15px;
+    padding-rigth:10px;
+    font-size:20px;
+  }
+  
 
 `
 
