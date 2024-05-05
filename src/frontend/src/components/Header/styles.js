@@ -22,17 +22,22 @@ import styled from 'styled-components';
       
     }
  `
+
+
+
  export const RigthSide = styled.div`
     width: 50%;
     heigth: 70px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 
     a {
          color: #fff;
-         font-wigth: bold;
+         font-weight: bold;
          text-decoration: none;
          margin: 10px;
+         
          
         
 

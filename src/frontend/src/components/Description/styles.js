@@ -6,9 +6,10 @@ display: flex;
 `
 
 export const LeftSide = styled.div`
-  width: 50%;
+  width: 70%;
   heigth: 70px;
   display: flex;
+
 
 `
 
