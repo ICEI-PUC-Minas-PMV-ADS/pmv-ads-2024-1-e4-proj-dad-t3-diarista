@@ -13,7 +13,7 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/e30a4de5-e4d8-4b4d-b3f7-7c26908db1e4)
 
 #### Sucesso [05/05/2024]:
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/67c3393f-b1a6-4cce-807b-bbb1ef0088f3)
 
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+
