@@ -32,11 +32,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 ### Wireframes Mobile
 
 <div style="display: flex; justify-content: center;">
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/10f6ca62-6e5d-4e55-9c55-ee66d319d1d5" alt="Wireframe 1" width="200"/>
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/d50722bc-61a6-4a46-8e48-5b93b33bd1fe" alt="Wireframe 2" width="200"/>
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/1277723d-161e-43e7-8a5b-9f95e1a32101" alt="Wireframe 3" width="200"/>
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/6ab9e055-47fb-416b-8031-c4b46d809792" alt="Wireframe 4" width="200"/>
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/2d3ad705-77a5-40b0-bf3e-66027b84319d" alt="Wireframe 5" width="200"/>
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/d80d991f-6658-4e1a-a9c0-016b8575e004" alt="Wireframe 6" width="200"/>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/112135999/cb6be645-1086-4b59-b355-6ca864f8f1e8)
+
 </div>
 
