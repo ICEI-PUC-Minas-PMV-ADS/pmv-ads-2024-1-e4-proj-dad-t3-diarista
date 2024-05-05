@@ -196,6 +196,10 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 
 ![Quadro tarefas primeira semana](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/112135999/09a25c8c-d043-456d-b9ab-1da87e87962b)
 
+Atualização Gerenciamento de Equipe para entrega 3
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/112135999/6a5789d3-cb27-40f3-84d3-ed1b95323dea)
+
 
 ## Gestão de Orçamento (Unitário, Agregado e por Semestre)
 
