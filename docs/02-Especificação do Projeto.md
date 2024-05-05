@@ -198,7 +198,7 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 
 Atualização Gerenciamento de Equipe para entrega 3
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/112135999/6a5789d3-cb27-40f3-84d3-ed1b95323dea)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/112135999/6128566d-bdfc-4d9f-a808-756b44408622)
 
 
 ## Gestão de Orçamento (Unitário, Agregado e por Semestre)
