@@ -30,10 +30,6 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/112135999/b2d33d0e-e87b-4d29-941d-201a86e32397)
 
 ### Wireframes Mobile
-
-<div style="display: flex; justify-content: center;">
 ![Sem título](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/112135999/ca67a0df-6138-4416-a2cb-dff468ea7e51)
 
-
-</div>
 
