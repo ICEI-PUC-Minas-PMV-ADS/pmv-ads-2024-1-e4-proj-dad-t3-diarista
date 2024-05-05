@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import dayjs from "dayjs";
 import "dayjs/locale/pt-br";
-import logo from "../../assets/LOGO 1.png";
 import GlobalContext from "../../context/GlobalContext";
 import CreateEventButton from "../../components/CreateEvent/CreateEventButton";
 import SmallCalendar from "../../components/SmallCalendar/SmallCalendar";
@@ -9,6 +8,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import styled from "styled-components";
 import Labels from "../../components/Labels/Labels";
 import Month from "../../components/Month/Month";
+import logo from "../../assets/LOGO 1.png";
 
 const labelsClasses = ["indigo", "gray", "green", "blue", "red", "purple"];
 
@@ -26,51 +26,7 @@ const Link = styled.a`
   padding-right: 40px;
 `;
 
-const CalendarHeader = () => {
-  const { monthIndex, setMonthIndex } = useContext(GlobalContext);
-
-  function handlePrevMonth() {
-    setMonthIndex(monthIndex - 1);
-  }
-
-  function handleNextMonth() {
-    setMonthIndex(monthIndex + 1);
-  }
-
-  function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
-
-  return (
-    <header className="px-4 py-2 flex items-center" style={{ backgroundColor: 'teal', color: 'white' }}>
-      <img src={logo} alt="calendar" className="mr-2 w-12 h-12 mt-1 mb-1" />
-      <h1 className="mr-10 text-xl font-bold">
-        Agendamento de Atividades
-      </h1>
-      <button onClick={handlePrevMonth}>
-        <span className="material-icons-outlined cursor-pointer mx-2">
-          chevron_left
-        </span>
-      </button>
-      <button onClick={handleNextMonth}>
-        <span className="material-icons-outlined cursor-pointer mx-2">
-          chevron_right
-        </span>
-      </button>
-      <h2 className="ml-4 text-xl font-bold">
-        {capitalizeFirstLetter(dayjs(new Date(dayjs().year(), monthIndex)).format("MMMM YYYY"))}
-      </h2>
-      <Container>
-        <Link href="#">INÍCIO</Link>
-        <Link href="#">SERVIÇOS</Link>
-        <Link href="#">AGENDA</Link>
-        <Link href="#">FINANÇAS</Link>
-      </Container>
-    </header>
-  );
-}
-
-const UnifiedComponent = () => {
+export default function UnifiedComponent() {
   const {
     monthIndex,
     setMonthIndex,
@@ -105,6 +61,14 @@ const UnifiedComponent = () => {
     setSmallCalendarMonth(monthIndex);
   }, [monthIndex]);
 
+  function handlePrevMonth() {
+    setMonthIndex(monthIndex - 1);
+  }
+
+  function handleNextMonth() {
+    setMonthIndex(monthIndex + 1);
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
     const calendarEvent = {
@@ -124,6 +88,10 @@ const UnifiedComponent = () => {
     setShowEventModal(false);
   }
 
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   function getCurrentDayClass(day) {
     return day && day.format("DD-MM-YY") === dayjs().format("DD-MM-YY")
       ? "bg-blue-600 text-white rounded-full w-7"
@@ -132,7 +100,31 @@ const UnifiedComponent = () => {
 
   return (
     <>
-      <CalendarHeader />
+      <header className="px-4 py-2 flex items-center" style={{ backgroundColor: 'teal', color: 'white' }}>
+        <img src={logo} alt="calendar" className="mr-2 w-12 h-12 mt-1 mb-1" />
+        <h1 className="mr-10 text-xl font-bold">
+          Agendamento de Atividades
+        </h1>
+        <button onClick={handlePrevMonth}>
+          <span className="material-icons-outlined cursor-pointer mx-2">
+            chevron_left
+          </span>
+        </button>
+        <button onClick={handleNextMonth}>
+          <span className="material-icons-outlined cursor-pointer mx-2">
+            chevron_right
+          </span>
+        </button>
+        <h2 className="ml-4 text-xl font-bold">
+          {capitalizeFirstLetter(dayjs(new Date(dayjs().year(), monthIndex)).format("MMMM YYYY"))}
+        </h2>
+        <Container>
+          <Link href="#">INÍCIO</Link>
+          <Link href="#">SERVIÇOS</Link>
+          <Link href="#">AGENDA</Link>
+          <Link href="#">FINANÇAS</Link>
+        </Container>
+      </header>
       <Sidebar>
         <aside className="border p-5 w-64">
           <CreateEventButton />
@@ -254,5 +246,3 @@ const UnifiedComponent = () => {
     </>
   );
 }
-
-export default UnifiedComponent;
