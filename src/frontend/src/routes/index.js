@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Cadastro from '../pages/Cadastro';
+import CadastroCliente from '../pages/CadastroCliente';
 import Gastos from '../pages/Gastos';
 import Agendamento from '../pages/Agendamento';
 
@@ -23,6 +24,7 @@ const RoutesApp = () => {
                     <Route path="*" element={<Login />} />
                     <Route exact path="/gastos" element={<Gastos/>} />
                     <Route exact path="/agendamento" element={<Agendamento/>} />
+                    <Route exact path ="/cadastrocliente" element={<CadastroCliente />} />
                 </Routes>
             </Fragment>
         </BrowserRouter>
