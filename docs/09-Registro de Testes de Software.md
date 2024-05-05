@@ -8,8 +8,11 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 
 #### Sucesso [07/04/2024]:
 
+### 01 - Teste de Linkagem das Páginas" 
+#### Falha [05/05/2024]:
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/e30a4de5-e4d8-4b4d-b3f7-7c26908db1e4)
 
-
+#### Sucesso [05/05/2024]:
 
 
 > **Links Úteis**:
