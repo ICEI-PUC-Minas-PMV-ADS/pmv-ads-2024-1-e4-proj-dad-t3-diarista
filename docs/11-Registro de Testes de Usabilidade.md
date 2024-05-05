@@ -107,11 +107,5 @@
 | Diarista 3	|     0     |                                                        | 
 | Diarista 4	|     0     |                                                        | 
 
-**Algum problema na aplicação foi observado?**
-| **Usuário** | **Comentários e observações** |
-| --- 	      | --- 	    | ---               |
-| Diarista 1	|           |                   |
-| Diarista 3	|           |                   |
-| Diarista 4	|           |                   |
 
 
