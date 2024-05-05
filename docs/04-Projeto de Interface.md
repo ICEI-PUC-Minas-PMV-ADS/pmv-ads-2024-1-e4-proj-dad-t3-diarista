@@ -23,7 +23,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 ## Wireframes
 
 ### Wireframes Web
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/b27da7b8-818f-44aa-a0fa-e8afa001328c)
+![Opera Instantâneo_2024-05-05_183402_www figma com](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/112135999/aaf061a0-1c9d-4555-953b-03a5268a2b92)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/f58a8463-1f0a-4b48-a29d-64e89aa2962c)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/73670787-f734-4c08-943c-6d78f3775f01)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/2e3a5e37-d46d-43a9-87ad-343aa2cd5378)
