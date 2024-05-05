@@ -2,11 +2,8 @@
 
 Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-time5/assets/117127986/9c4195e5-33d2-4135-98a8-ca96b819aa2c)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/112135999/3bd16112-18b5-4589-b6b1-c46027d4733a)
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-time5/assets/117127986/08ff809b-ac6f-4ffa-b6f7-30ff2fe2fccd)
-
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-time5/assets/117127986/a02b80f0-1995-43f1-b36f-be7378cab251)
 
 Para esta etapa do projeto, os testes serão realizados nas principais funcionalidades do sistema: Cadastro do doador, login, cadastro de doações, buscar doações  cadastrada.
 
