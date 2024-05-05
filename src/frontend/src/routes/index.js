@@ -4,6 +4,7 @@ import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Cadastro from '../pages/Cadastro';
 import Gastos from '../pages/Gastos';
+import Agendamento from '../pages/Agendamento';
 
 const Private = ({ Item }) => {
     const signed = true; // TODO mudar para falso para deslogar -> para aparecer a home
@@ -21,6 +22,7 @@ const RoutesApp = () => {
                     <Route exact path="/cadastro" element={<Cadastro />} />
                     <Route path="*" element={<Login />} />
                     <Route exact path="/gastos" element={<Gastos/>} />
+                    <Route exact path="/agendamento" element={<Agendamento/>} />
                 </Routes>
             </Fragment>
         </BrowserRouter>
