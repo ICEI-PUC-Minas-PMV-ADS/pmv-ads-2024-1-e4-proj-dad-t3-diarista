@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Cadastro from '../pages/Cadastro';
+import Gastos from '../pages/Gastos';
 
 const Private = ({ Item }) => {
     const signed = true; // TODO mudar para falso para deslogar -> para aparecer a home
@@ -19,6 +20,7 @@ const RoutesApp = () => {
                     <Route path="/login" element={<Login />} />
                     <Route exact path="/cadastro" element={<Cadastro />} />
                     <Route path="*" element={<Login />} />
+                    <Route exact path="/gastos" element={<Gastos/>} />
                 </Routes>
             </Fragment>
         </BrowserRouter>
