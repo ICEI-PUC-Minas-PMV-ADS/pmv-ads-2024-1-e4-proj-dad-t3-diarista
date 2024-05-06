@@ -7,8 +7,7 @@ Os testes de usabilidade permitem avaliar a qualidade da interface com o usuári
 
 Para esta etapa do projeto, os testes serão realizados nas principais funcionalidades do sistema: Cadastrar, login, cadastro de clientes, cadastro de ganhos e gastos, avaliar clientes.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/112135999/72328c33-993e-486a-abf0-a3249ffca4f3)
-
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/112135999/08e33194-2d70-41a8-9c96-9a6c563474ff)
 
 # Interpretação e Consolidação dos dados
 
