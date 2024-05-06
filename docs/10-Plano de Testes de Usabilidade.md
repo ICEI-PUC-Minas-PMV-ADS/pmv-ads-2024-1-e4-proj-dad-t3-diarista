@@ -28,4 +28,4 @@ Fazer melhorias na plataforma proporcionando uma melhor experiência ao usuário
 
 Para realizar os testes serão utilizados:
 
-- Celulares Android e iOS
+- Celulares Android, Ios, Navegadores web
