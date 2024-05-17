@@ -1,11 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { View, StyleSheet, Platform, StatusBar as RNStatusBar } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import Routes from './src/routes';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.gabi}> Testeeeeeeeeeeeeeeeeee Gabi</Text>
-      <StatusBar style="auto" />
+      <View style={styles.statusBar} />
+      <RNStatusBar barStyle="light-content" />
+      <NavigationContainer>
+        <Routes />
+      </NavigationContainer>
     </View>
   );
 }
@@ -13,13 +18,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
-  gabi: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: 'red',
+  statusBar: {
+    height: Platform.OS === 'ios' ? 50 : 54,
+    backgroundColor: '#32CD32',
   },
 });
