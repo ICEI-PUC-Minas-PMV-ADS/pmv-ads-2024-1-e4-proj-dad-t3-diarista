@@ -18,3 +18,6 @@ https://youtu.be/xkkJEXKxi18
 
 #### Sucesso [05/05/2024]:
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/67c3393f-b1a6-4cce-807b-bbb1ef0088f3)
+
+### 03 - Interface do Login e Cadastro no modo mobile:
+![Imagem do WhatsApp de 2024-05-16 à(s) 21 42 27_e5facda6](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/e16585a9-7a06-4460-92ef-1c34dbd68aaa)
