@@ -21,3 +21,5 @@ https://youtu.be/xkkJEXKxi18
 
 ### 03 - Interface do Login e Cadastro no modo mobile:
 ![Imagem do WhatsApp de 2024-05-16 à(s) 21 42 27_e5facda6](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/e16585a9-7a06-4460-92ef-1c34dbd68aaa)
+![Imagem do WhatsApp de 2024-05-16 à(s) 21 42 29_97a352c1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/95951195/be27736a-1e60-414b-966e-90a316f44e07)
+
