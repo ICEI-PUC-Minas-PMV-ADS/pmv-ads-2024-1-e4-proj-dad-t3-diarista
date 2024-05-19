@@ -125,7 +125,7 @@ const TransactionForm = ({ handleAdd, transactionsList, setTransactionsList }) =
         />
         <C.Label htmlFor="rExpenses">Saída</C.Label>
       </C.RadioGroup>
-      <C.Button onClick={handleSave} style={{ fontFamily: "Poppins", fontWeight: "bold", color: "white" }}>ADICIONAR</C.Button>
+      <C.Button onClick={handleSave}>ADICIONAR</C.Button>
     </>
   );
 };

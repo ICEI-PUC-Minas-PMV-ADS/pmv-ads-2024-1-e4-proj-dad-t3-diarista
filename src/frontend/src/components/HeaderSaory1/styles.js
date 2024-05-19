@@ -28,8 +28,9 @@ export const CenterSide = styled.div`
   width: 100%;
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   color: #fff;
+  font-weight: bold;
 `;
 
 export const RightSide = styled.div`
