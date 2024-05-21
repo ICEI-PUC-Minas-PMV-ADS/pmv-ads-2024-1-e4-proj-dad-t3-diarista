@@ -5,9 +5,9 @@ import Home from '../pages/Home';
 
 const Stack = createStackNavigator();
 
-export default function Stack() {
+export default function StackRoutes() {
     return (
-        <Stack.Navigator initialRouteName="Home">
+        <Stack.Navigator initialRouteName="Login">
             <Stack.Screen
                 name='Login'
                 component={Login}
@@ -18,11 +18,7 @@ export default function Stack() {
                 component={Cadastro}
                 options={{ headerShown: false }}
             />
-               <Stack.Screen
-                name='Home'
-                component={Home}
-                options={{ headerShown: false }}
-            />
+         
         </Stack.Navigator>
     );
 }

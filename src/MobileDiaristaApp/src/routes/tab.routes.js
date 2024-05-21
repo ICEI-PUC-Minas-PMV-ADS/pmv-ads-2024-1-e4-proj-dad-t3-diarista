@@ -4,6 +4,7 @@ import  MaterialCommunityIcons  from 'react-native-vector-icons/MaterialCommunit
 import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Notificacoes from '../pages/Notificacoes';
+import Cadastro from '../pages/Cadastro';
 
 
 const Tab = createBottomTabNavigator();
@@ -42,6 +43,7 @@ export default function TabRoutes() {
           ),
         }}
       />
+       
     
     </Tab.Navigator>
   );

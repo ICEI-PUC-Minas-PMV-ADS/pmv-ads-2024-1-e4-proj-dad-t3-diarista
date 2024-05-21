@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
 
 
 export  default function Home(){
     return(
 <View style= {styles.container}>
+   
     <Text style= {styles.title}>Pagina inicial</Text>
    
 </View>
@@ -18,8 +19,15 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    img:{
+        width: 250,
+        alignItems: 'center',
+        borderRadius: 250,
+
+    },
     title: {
      fontSize: 22,
-     fontWeight: 'bold',
+     fontWeight: 'bold'
+     
     }
 });
