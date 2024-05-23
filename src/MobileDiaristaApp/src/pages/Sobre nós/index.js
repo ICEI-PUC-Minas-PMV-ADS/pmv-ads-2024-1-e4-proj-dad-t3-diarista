@@ -5,7 +5,7 @@ export  default function AboutUs(){
     return(
 <View style= {styles.container}>
   <StatusBar style="auto" />
-  <Image source={require('../../assets/BANNER.png')} style={styles.backImage} blurRadius={0}>
+  <Image source={require('../../img/painel.png')} style={styles.backImage} blurRadius={0}>
   </Image>
        <Text style={styles.container.title}>SOBRE NÓS</Text>
       <View style={styles.container.box}>

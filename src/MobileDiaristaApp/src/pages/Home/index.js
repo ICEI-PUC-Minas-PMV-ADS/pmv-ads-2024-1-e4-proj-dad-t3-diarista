@@ -9,7 +9,7 @@ export  default function Home(){
       <StatusBar style="auto" />
       <Image source={require('../../img/painel.png')} style={styles.backImage} blurRadius={0}>
       </Image>
-      <View style={styles.container.box}>
+      <View style={styles.foto}>
        <Image source={require('../../img/foto.png')} style={styles.foto} blurRadius={0}>
       </Image>
        </View>
@@ -25,35 +25,45 @@ export  default function Home(){
 }
 
 const styles = StyleSheet.create({
+  container: {
+    
+    flex: 1,
+    justifyContent: 'space-around',
+    alignItems: 'center',
+  },
   backImage: {
+    flex: 1,
     position: 'absolute',
-    top: 40,
+    top: 0,
     left: 0,
     width: '100%',
     height: '10%',
+    borderColor: '#000',
       
     },
-
     foto: {
-      width: '250px',
-     height: '320px', 
-
+    
+    width: 250,
+    height: 330, 
+     
+    
     },
-  container: {
+  
+
+    container: {
       box:{
-    padding: 100,
-
-
+      padding: 50,
+    
       },
-
-   
+     
    
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     
     buttons: {
-      width: 281,
+      
+      width: 250,
       height: 42,
       borderRadius: 5,
       backgroundColor: '#89b364',
@@ -61,7 +71,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       marginTop: 30,
       color: '#FFFF',
-      
+      flexDirection: 'column',
   },
 
   
