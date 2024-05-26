@@ -1,6 +1,8 @@
 # Especificações do Projeto
 
-A definição exata do problema e os pontos mais relevantes a serem tratados neste projeto foram consolidados com a participação dos usuários em um trabalho de imersão feita pelos membros da equipe a partir da observação dos usuários em seu local natural e por meio de entrevistas. Os detalhes levantados nesse processo foram afirmados na forma de personas e histórias de usuários
+A definição exata do problema e os pontos mais relevantes a serem tratados neste projeto foram consolidados com a participação ativa das diaristas. A equipe realizou um trabalho de imersão, observando as diaristas em seus locais de trabalho e conduzindo entrevistas detalhadas. Esse processo permitiu a identificação das principais dificuldades enfrentadas no dia a dia, como a falta de continuidade no trabalho, ausência de benefícios remunerados em períodos de saúde e confraternização, e a baixa escolaridade que dificulta a utilização de tecnologias complexas. Com base nas informações coletadas, foram criadas personas e histórias de usuários que refletem fielmente as necessidades e desafios dessas profissionais, guiando o desenvolvimento de uma solução que seja realmente útil e impactante para as diarista.
+
+
 ## Personas
 
 ![Untitled](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/117127986/fa4755f4-428a-4959-96b3-16bf4f559ddf)
