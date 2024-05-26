@@ -141,12 +141,8 @@ As tecnologias utilizadas nesse projeto para a solução do problema proposto s�
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
 
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+- A hospedagem foi realizada pela LocalWeb:
+https://www.locaweb.com.br/?gad_source=1&gclid=Cj0KCQjwmMayBhDuARIsAM9HM8fnke8cVWZR4ZGKh8eT4irUXZvleRq3J2o1qM90iNgFFtpnoALt2K8aAgtlEALw_wcB
 
 ## Qualidade de Software
 A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software.
