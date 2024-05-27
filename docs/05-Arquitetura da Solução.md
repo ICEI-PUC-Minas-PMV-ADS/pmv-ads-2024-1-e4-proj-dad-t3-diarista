@@ -27,7 +27,8 @@ As referências abaixo foram utilizadas na produção do Modelo Entidade e Relac
 ## Esquema Relacional
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
-> -  [ Criando um modelo relacional - Documentação da IBM ] ( https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model )
+![Captura de Tela (3391)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/117127986/91806a19-5d48-444a-bb75-49508bb52999)
+
 
 ## Modelo Físico
 Usando Banco NoSQL - MongoDB:
