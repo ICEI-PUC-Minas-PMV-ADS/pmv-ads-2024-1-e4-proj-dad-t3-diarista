@@ -30,3 +30,15 @@ https://youtu.be/xkkJEXKxi18
 #### Falha [25/05/2024]:
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/4fce9872-6e61-4cbd-9250-0f67fcb4b8bf)
 
+#### Sucesso [28/05/2024]:
+![Imagem do WhatsApp de 2024-05-26 à(s) 20 54 32_223f90f1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/0c9ff5f5-72d4-4bf3-8776-785d6cc3dc65)
+
+### 05 - Correção Falha de Arquivo Muito Grande Github
+#### Falha [25/05/2024]:
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/66e1bc54-7495-4b55-9a91-c7fc20a5134e)
+
+#### Sucesso [28/05/2024]:
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/7ee5c10d-1a88-4823-9f91-769fc2860b19)
+
+
+
