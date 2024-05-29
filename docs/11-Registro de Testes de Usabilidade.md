@@ -72,7 +72,7 @@
 | --- 	      | --- 	    | ---                                                    |
 | Diarista 1	|     0     |                                                        |
 | Diarista 2  |     0     |                                                        | 
-| Diarista 3	|     2     | Sugeriu retirar do obrigatório a parte de telefone do cliente.(Após o feedback, essa funcionalidade foi corrigida)                                        | 
+| Diarista 3	|     2     | Sugeriu retirar do obrigatório a parte de telefone do cliente. (Após o feedback, essa funcionalidade foi corrigida)                                        | 
 | Diarista 4	|     2     | Sugeriu retirar do obrigatório a parte de telefone do cliente. (Após o feedback, essa funcionalidade foi corrigida)                                        | 
 
 **Em geral como você avalia a aplicação?**
