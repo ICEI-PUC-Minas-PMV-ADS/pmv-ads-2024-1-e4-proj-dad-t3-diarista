@@ -33,6 +33,7 @@ const App = () => {
   const [location, setLocation] = useState("");
   const [notes, setNotes] = useState("");
   const [notifications, setNotifications] = useState(false);
+  const [evaluation, setEvaluation] = useState(""); // New state for evaluation
   const [selectEvent, setSelectEvent] = useState(null);
 
   const handleSelectSlot = (slotInfo) => {
@@ -44,6 +45,7 @@ const App = () => {
     setLocation("");
     setNotes("");
     setNotifications(false);
+    setEvaluation(""); // Reset evaluation state
   };
 
   const handleSelectedEvent = (event) => {
@@ -54,6 +56,7 @@ const App = () => {
     setLocation(event.location || "");
     setNotes(event.notes || "");
     setNotifications(event.notifications || false);
+    setEvaluation(event.evaluation || ""); // Set evaluation state
   };
 
   const saveEvent = () => {
@@ -65,7 +68,8 @@ const App = () => {
         clientName,
         location,
         notes,
-        notifications
+        notifications,
+        evaluation // Include evaluation in event details
       };
 
       if (selectEvent) {
@@ -84,6 +88,7 @@ const App = () => {
       setLocation("");
       setNotes("");
       setNotifications(false);
+      setEvaluation(""); // Reset evaluation state
       setSelectEvent(null);
     }
   };
@@ -98,6 +103,7 @@ const App = () => {
       setLocation("");
       setNotes("");
       setNotifications(false);
+      setEvaluation(""); // Reset evaluation state
       setSelectEvent(null);
     }
   };
@@ -133,24 +139,32 @@ const App = () => {
         >
           <div className="modal-dialog">
             <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title">
-                  {selectEvent ? "Editar Evento" : "Adicionar Evento"}
-                </h5>
-                <button
-                  type="button"
-                  className="btn-close"
-                  onClick={() => {
-                    setShowModal(false);
-                    setEventTitle("");
-                    setClientName("");
-                    setLocation("");
-                    setNotes("");
-                    setNotifications(false);
-                    setSelectEvent(null);
-                  }}
-                ></button>
-              </div>
+            <div className="modal-header" style={{ backgroundColor: "#7EB174" }}>
+            <h5 className="modal-title" style={{ color: "white" }}>
+  {selectEvent ? "Editar Evento" : "Adicionar Diária"}
+</h5>
+<button
+  type="button"
+  className="btn-close"
+  onClick={() => {
+    setShowModal(false);
+    setEventTitle("");
+    setClientName("");
+    setLocation("");
+    setNotes("");
+    setNotifications(false);
+    setEvaluation(""); // Reset evaluation state
+    setSelectEvent(null);
+  }}
+  style={{
+    color: "white",
+    border: "none",
+    backgroundColor: "transparent",
+    WebkitAppearance: "none", // Desativa estilos nativos do botão
+    appearance: "none", // Desativa estilos nativos do botão
+  }}
+></button>
+</div>
               <div className="modal-body">
                 <label htmlFor="eventTitle" className="form-label">
                   Título do Evento:
@@ -195,20 +209,54 @@ const App = () => {
                   onChange={(e) => setNotes(e.target.value)}
                 ></textarea>
 
-                <div className="form-check mt-3">
-                  <input
-                    type="checkbox"
-                    className="form-check-input"
-                    id="notifications"
-                    checked={notifications}
-                    onChange={(e) => setNotifications(e.target.checked)}
-                  />
-                  <label className="form-check-label" htmlFor="notifications">
-                    Notificações
-                  </label>
+<div className="form-check mt-3">
+  <input
+    type="checkbox"
+    className="form-check-input"
+    id="notifications"
+    checked={notifications}
+    onChange={(e) => setNotifications(e.target.checked)}
+    style={{ backgroundColor: notifications ? "#7EB174" : "transparent" }}
+  />
+  <label className="form-check-label" htmlFor="notifications">
+    Notificações
+  </label>
+</div>
+                <label className="form-label mt-3">
+                  Avaliação da Diária:
+                </label>
+                <div className="d-flex justify-content-between mt-2">
+                  <span 
+                    role="button"
+                    onClick={() => setEvaluation("Muito Bom")}
+                    style={{ fontSize: "1.5rem", cursor: "pointer" }}
+                  >😀</span>
+                  <span 
+                    role="button"
+                    onClick={() => setEvaluation("Bom")}
+                    style={{ fontSize: "1.5rem", cursor: "pointer" }}
+                  >😊</span>
+                  <span 
+                    role="button"
+                    onClick={() => setEvaluation("Médio")}
+                    style={{ fontSize: "1.5rem", cursor: "pointer" }}
+                  >😐</span>
+                  <span 
+                    role="button"
+                    onClick={() => setEvaluation("Ruim")}
+                    style={{ fontSize: "1.5rem", cursor: "pointer" }}
+                  >😟</span>
+                  <span 
+                    role="button"
+                    onClick={() => setEvaluation("Muito Ruim")}
+                    style={{ fontSize: "1.5rem", cursor: "pointer" }}
+                  >😢</span>
+                </div>
+                <div className="mt-2">
+                  Avaliação Selecionada: {evaluation}
                 </div>
               </div>
-              <div className="modal-footer">
+              <div className="modal-footer d-flex justify-content-center">
                 {selectEvent && (
                   <button
                     type="button"
@@ -219,12 +267,21 @@ const App = () => {
                   </button>
                 )}
                 <button
-                  type="button"
-                  className="btn btn-primary"
-                  onClick={saveEvent}
-                >
-                  Salvar
-                </button>
+  type="button"
+  className="btn btn-primary"
+  onClick={saveEvent}
+  style={{
+    color: "white",
+    backgroundColor: "#7EB174",
+    border: "none", // Removendo a borda para corresponder ao estilo dos botões Bootstrap
+    cursor: "pointer", // Adicionando cursor pointer para indicar que é clicável
+    padding: "8px 16px", // Ajustando o preenchimento para melhor aparência
+    borderRadius: "5px", // Adicionando bordas arredondadas
+  }}
+>
+  Salvar
+</button>
+
               </div>
             </div>
           </div>

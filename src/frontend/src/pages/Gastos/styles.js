@@ -50,7 +50,7 @@ export const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
   color: white;
-  background-color: teal;
+  background-color: #7EB174;
 `;
 
 export const Table = styled.table`
@@ -87,3 +87,15 @@ export const Resume = styled.div`
   justify-content: space-around;
 `;
 
+export const ResumeItem = styled.div`
+  flex: 1;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+`;

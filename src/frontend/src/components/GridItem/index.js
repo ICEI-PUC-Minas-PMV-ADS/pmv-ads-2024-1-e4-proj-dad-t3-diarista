@@ -1,25 +1,20 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash, faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import * as C from "./styles";
-import {
-  FaRegArrowAltCircleUp,
-  FaRegArrowAltCircleDown,
-  FaTrash,
-} from "react-icons/fa";
 
 const GridItem = ({ item, onDelete }) => {
   return (
     <C.Tr>
       <C.Td>{item.desc}</C.Td>
-      <C.Td>{item.amount}</C.Td>
+      <C.Td>{`R$ ${item.amount}`}</C.Td>
       <C.Td alignCenter>
-        {item.expense ? (
-          <FaRegArrowAltCircleDown color="red" />
-        ) : (
-          <FaRegArrowAltCircleUp color="green" />
-        )}
+        <FontAwesomeIcon icon={item.expense ? faArrowDown : faArrowUp} color={item.expense ? "red" : "green"} />
       </C.Td>
       <C.Td alignCenter>
-        <FaTrash onClick={() => onDelete(item.id)} />
+        <button onClick={() => onDelete(item.id)}>
+          <FontAwesomeIcon icon={faTrash} color="red" />
+        </button>
       </C.Td>
     </C.Tr>
   );

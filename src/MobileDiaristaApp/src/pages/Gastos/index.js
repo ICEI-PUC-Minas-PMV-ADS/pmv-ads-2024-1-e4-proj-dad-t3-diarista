@@ -101,10 +101,18 @@ const TransactionForm = ({ handleAdd, isExpense, setIsExpense }) => {
       return;
     }
 
+    // Replace comma with dot and ensure it's a valid number
+    const amountValue = parseFloat(amount.replace(',', '.'));
+
+    if (isNaN(amountValue)) {
+      Alert.alert('Erro', 'O valor informado não é válido!');
+      return;
+    }
+
     const transaction = {
       id: new Date().getTime(),
       desc: desc,
-      amount: amount,
+      amount: amountValue.toFixed(2),
       expense: isExpense,
     };
 

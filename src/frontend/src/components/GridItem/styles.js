@@ -1,14 +1,23 @@
 import styled from "styled-components";
 
-export const Tr = styled.tr``;
+export const Tr = styled.tr`
+  &:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+`;
 
 export const Td = styled.td`
-  padding-top: 15px;
   text-align: ${(props) => (props.alignCenter ? "center" : "start")};
-  word-break: break-all;
+  padding: 10px;
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
 
   svg {
-    width: 18px;
-    height: 18px;
+    width: 1em;
+    height: 1em;
   }
 `;

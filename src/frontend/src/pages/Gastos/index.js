@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import GlobalStyle from "../../styles/global";
 import Header from "../../components/HeaderSaory1";
-import Resume from "../../components/Resume";
-import Grid from "../../components/Grid";
 import * as C from "./styles";
+import Grid from "../../components/Grid";
+
 
 const App = () => {
   const data = localStorage.getItem("transactions");
@@ -51,8 +51,21 @@ const App = () => {
 
   return (
     <>
-      <Header/>
-      <Resume income={income} expense={expense} total={total} />
+      <Header />
+      <C.Resume>
+        <C.ResumeItem>
+          <span>Entradas</span>
+          <strong>{income}</strong>
+        </C.ResumeItem>
+        <C.ResumeItem>
+          <span>Saídas</span>
+          <strong>{expense}</strong>
+        </C.ResumeItem>
+        <C.ResumeItem>
+          <span>Total</span>
+          <strong>{total}</strong>
+        </C.ResumeItem>
+      </C.Resume>
       <C.Container>
         <TransactionForm
           handleAdd={handleAddTransaction}
