@@ -90,16 +90,16 @@
 
 | **Usuário** | **Avaliação (0 - 10)** | **Comentários e observações** |
 |-------------|------------------------|-------------------------------|
-| Diarista 1: Lurdes  | 10                     | -                             |
-| Diarista 2: Maria  | 10                     | -                             | 
-| Diarista 3: Antônia  | 10                     | -                             | 
-| Diarista 4: Neuza  | 10                     | -                             | 
+| Diarista 1: Lurdes  | 10                     | MUITO BOA                             |
+| Diarista 2: Maria  | 10                     | ÓTIMA                             | 
+| Diarista 3: Antônia  | 10                     | BEM BOM                             | 
+| Diarista 4: Neuza  | 10                     | BOA                             | 
 
 **Recomendaria nossa aplicação?**
 
 | **Usuário** | **Avaliação** | **Comentários e observações** |
 |-------------|---------------|-------------------------------|
-| Diarista 1: Lurdes  | 10            | -                             |
-| Diarista 2: Maria  | 10            | -                             | 
-| Diarista 3: Antônia  | 10            | -                             | 
-| Diarista 4: Neuza  | 10            | -                             |
+| Diarista 1: Lurdes  | 10            | SIM                             |
+| Diarista 2: Maria  | 10            | SIM                             | 
+| Diarista 3: Antônia  | 10            | SIM                             | 
+| Diarista 4: Neuza  | 10            | SIM                             |
