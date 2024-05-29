@@ -23,7 +23,7 @@
 | --- 	      | --- 	    | --- 	         | ---                      | - |
 | Diarista 1	| 01:00     | 0              | -                        | - |
 | Diarista 2  | 02:00     | 0              | -                        | - |
-| Diarista 3	| 05:00     | 1             | SIM                       | Campo de "Senha" e "Confirmar Senha" não batem. |
+| Diarista 3	| 05:00     | 1             | SIM                       | Campo de "Senha" e "Confirmar Senha" não batem (Erro de digitação da cliente) |
 | Diarista 4	| 03:00     | 0              | -                        | - |
 
 **Tarefa 2: Realizou login na plataforma**
