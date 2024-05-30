@@ -8,6 +8,9 @@ import Gastos from '../pages/Gastos';            // Update the import path as ne
 import Cadastro from '../pages/Cadastro';        // Update the import path as needed
 import Notificacoes from '../pages/Notificacoes';// Update the import path as needed
 import SobreNos from '../pages/Sobre nós';        // Update the import path as needed
+import CadastroCliente from '../pages/CadastroCliente/CadastroCliente';
+import ListaClientes from '../pages/ListaClientes/ListaClientes';
+import BuscarClientes from '../pages/BuscarClientes/BuscarClientes';
 
 const Drawer = createDrawerNavigator();
 
@@ -48,6 +51,46 @@ export default function DrawerRoutes() {
                 name="Usuario"
                 component={StackRoutes}
                 options={{
+                    drawerLabel: 'Usuario',
+                    drawerIcon: ({ color }) => (
+                        <MaterialCommunityIcons name="account" color={color} size={26} />
+                    ),
+               }}
+            />
+      <Drawer.Screen
+                name="CadastroCliente"
+                component={CadastroCliente}
+                options={{
+                    drawerLabel: 'Cadastrar Cliente',
+                    drawerIcon: ({ color }) => (
+                        <MaterialCommunityIcons name="account-plus" color={color} size={26} />
+                    ),
+                }}
+            />
+      <Drawer.Screen
+                name="ListaClientes"
+                component={ListaClientes}
+                options={{
+                    drawerLabel: 'Lista de Clientes',
+                    drawerIcon: ({ color }) => (
+                        <MaterialCommunityIcons name="format-list-bulleted" color={color} size={26} />
+                    ),
+                }}
+            />
+      <Drawer.Screen
+                name="BuscarClientes"
+                component={BuscarClientes}
+                options={{
+                    drawerLabel: 'Buscar Clientes',
+                    drawerIcon: ({ color }) => (
+                        <MaterialCommunityIcons name="magnify" color={color} size={26} />
+                    ),
+                }}
+                />
+            <Drawer.Screen
+                name="User"
+                component={StackRoutes}
+                options={{
                     drawerLabel: 'Login',
                     drawerIcon: ({ color }) => (
                         <MaterialCommunityIcons name="account" color={color} size={26} />
@@ -84,6 +127,7 @@ export default function DrawerRoutes() {
                     ),
                 }}
             />
+        
         </Drawer.Navigator>
     );
 }
