@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, Alert, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Ionicons } from '@expo/vector-icons';
 
 const App = () => {
   const [transactionsList, setTransactionsList] = useState([]);
@@ -68,7 +69,7 @@ const App = () => {
         data={transactionsList}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
-          <TransactionItem item={item} onDelete={handleDeleteTransaction} />
+          <TransactionItem item={item} onDelete={() => handleDeleteTransaction(item.id)} />
         )}
       />
     </View>
@@ -109,6 +110,11 @@ const TransactionForm = ({ handleAdd, isExpense, setIsExpense }) => {
       return;
     }
 
+    if (isExpense === null) {
+      Alert.alert('Erro', 'Selecione se é uma Entrada ou Saída!');
+      return;
+    }
+
     const transaction = {
       id: new Date().getTime(),
       desc: desc,
@@ -121,6 +127,8 @@ const TransactionForm = ({ handleAdd, isExpense, setIsExpense }) => {
     setDesc('');
     setAmount('');
   };
+
+  const isFormValid = desc && amount && isExpense !== null;
 
   return (
     <View style={styles.form}>
@@ -151,7 +159,7 @@ const TransactionForm = ({ handleAdd, isExpense, setIsExpense }) => {
           <Text style={[styles.radioText, isExpense === true && styles.selectedText]}>Saída</Text>
         </TouchableOpacity>
       </View>
-      <TouchableOpacity onPress={handleSave} style={styles.addButton}>
+      <TouchableOpacity onPress={handleSave} style={[styles.addButton, !isFormValid && styles.addButtonDisabled]} disabled={!isFormValid}>
         <Text style={styles.addButtonText}>ADICIONAR</Text>
       </TouchableOpacity>
     </View>
@@ -160,11 +168,20 @@ const TransactionForm = ({ handleAdd, isExpense, setIsExpense }) => {
 
 const TransactionItem = ({ item, onDelete }) => (
   <View style={styles.transactionItem}>
-    <Text>{item.desc}</Text>
-    <Text>{item.amount}</Text>
-    <TouchableOpacity onPress={() => onDelete(item.id)}>
-      <Text style={styles.deleteText}>Excluir</Text>
-    </TouchableOpacity>
+    <View style={{ flex: 1 }}>
+      <Text>{item.desc}</Text>
+      <Text>{item.amount}</Text>
+    </View>
+    <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+      {item.expense ? (
+        <Ionicons name="arrow-down" size={24} color="red" />
+      ) : (
+        <Ionicons name="arrow-up" size={24} color="green" />
+      )}
+      <TouchableOpacity onPress={onDelete}>
+        <Text style={styles.deleteText}>Excluir</Text>
+      </TouchableOpacity>
+    </View>
   </View>
 );
 
@@ -253,6 +270,9 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
     alignItems: 'center',
+  },
+  addButtonDisabled: {
+    backgroundColor: '#9E9E9E', // Gray background for disabled button
   },
   addButtonText: {
     color: 'white',

@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from './styles'; 
 import LOGO from '../../assets/LOGO 1.png';
-import BELL_ICON from '../../assets/bell.png';
+import SINO from '../../assets/sino.png';
 
 function Header() {
   return (
@@ -18,8 +18,8 @@ function Header() {
             <a href="#">AGENDA</a>
             <a href="#">FINANÇAS</a>
             <S.Notification href="#">
-              <img src={BELL_ICON} alt="Notificações"/>
-              <span>5</span>
+              <img src={SINO} alt="Notificações"/>
+              <span>1</span>
             </S.Notification>
         </S.RightSide>
      </S.Container> 

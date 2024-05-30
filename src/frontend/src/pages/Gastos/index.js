@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import GlobalStyle from "../../styles/global";
 import Header from "../../components/HeaderSaory1";
-import * as C from "./styles";
+import * as C from "./styles";  // Correct way to import named exports
 import Grid from "../../components/Grid";
-
 
 const App = () => {
   const data = localStorage.getItem("transactions");
@@ -82,7 +81,7 @@ const App = () => {
 const TransactionForm = ({ handleAdd, transactionsList, setTransactionsList }) => {
   const [desc, setDesc] = useState("");
   const [amount, setAmount] = useState("");
-  const [isExpense, setIsExpense] = useState(false);
+  const [isExpense, setIsExpense] = useState(null);
 
   const handleSave = () => {
     if (!desc || !amount) {
@@ -104,8 +103,10 @@ const TransactionForm = ({ handleAdd, transactionsList, setTransactionsList }) =
 
     setDesc("");
     setAmount("");
-    setIsExpense(false);
+    setIsExpense(null);
   };
+
+  const isFormValid = desc && amount && isExpense !== null;
 
   return (
     <>
@@ -125,7 +126,6 @@ const TransactionForm = ({ handleAdd, transactionsList, setTransactionsList }) =
         <C.Input
           type="radio"
           id="rIncome"
-          defaultChecked
           name="group1"
           onChange={() => setIsExpense(false)}
         />
@@ -138,7 +138,9 @@ const TransactionForm = ({ handleAdd, transactionsList, setTransactionsList }) =
         />
         <C.Label htmlFor="rExpenses">Saída</C.Label>
       </C.RadioGroup>
-      <C.Button onClick={handleSave}>ADICIONAR</C.Button>
+      <C.Button onClick={handleSave} disabled={!isFormValid}>
+        ADICIONAR
+      </C.Button>
     </>
   );
 };

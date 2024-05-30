@@ -163,6 +163,8 @@ const App = () => {
             <Switch
               value={notifications}
               onValueChange={setNotifications}
+              trackColor={{ false: '#767577', true: '#4CAF50' }}
+              thumbColor={notifications ? '#4CAF50' : '#f4f3f4'}
             />
           </View>
           <TouchableOpacity style={styles.saveButton} onPress={saveEvent}>
@@ -209,7 +211,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   saveButton: {
-    backgroundColor: '#2196F3',
+    backgroundColor: '#4CAF50',
     padding: 15,
     borderRadius: 5,
     alignItems: 'center',
@@ -220,7 +222,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   deleteButton: {
-    backgroundColor: '#f44336',
+    backgroundColor: '#aaaaaa',
     padding: 15,
     borderRadius: 5,
     alignItems: 'center',
@@ -231,7 +233,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   cancelButton: {
-    backgroundColor: '#aaaaaa',
+    backgroundColor: '#f44336',
     padding: 15,
     borderRadius: 5,
     alignItems: 'center',
