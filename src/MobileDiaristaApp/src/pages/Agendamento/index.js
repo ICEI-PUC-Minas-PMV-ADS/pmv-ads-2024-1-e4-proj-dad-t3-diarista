@@ -11,6 +11,7 @@ const App = () => {
   const [location, setLocation] = useState('');
   const [notes, setNotes] = useState('');
   const [notifications, setNotifications] = useState(false);
+  const [evaluation, setEvaluation] = useState(""); // New state for evaluation
   const [selectEvent, setSelectEvent] = useState(null);
   const [markedDates, setMarkedDates] = useState({});
 
@@ -44,6 +45,7 @@ const App = () => {
     setLocation(event.location || '');
     setNotes(event.notes || '');
     setNotifications(event.notifications || false);
+    setEvaluation(event.evaluation || ""); // Set evaluation state
   };
 
   const saveEvent = () => {
@@ -55,6 +57,7 @@ const App = () => {
         notes,
         notifications,
         date: selectedDate,
+        evaluation // Include evaluation in event details
       };
 
       if (selectEvent) {
@@ -88,6 +91,7 @@ const App = () => {
     setNotes('');
     setNotifications(false);
     setSelectEvent(null);
+    setEvaluation(''); // Reset evaluation
   };
 
   const cancelEvent = () => {
@@ -167,6 +171,23 @@ const App = () => {
               thumbColor={notifications ? '#4CAF50' : '#f4f3f4'}
             />
           </View>
+          <Text style={styles.label}>Avaliação da Diária:</Text>
+          <View style={styles.evaluationContainer}>
+            {["Muito Bom", "Bom", "Médio", "Ruim", "Muito Ruim"].map((evalText, index) => (
+              <Text
+                key={index}
+                style={[styles.evaluationOption, evaluation === evalText && styles.evaluationSelected]}
+                onPress={() => setEvaluation(evalText)}
+              >
+                {evalText === "Muito Bom" && "😀"}
+                {evalText === "Bom" && "😊"}
+                {evalText === "Médio" && "😐"}
+                {evalText === "Ruim" && "😟"}
+                {evalText === "Muito Ruim" && "😢"}
+              </Text>
+            ))}
+          </View>
+          <Text style={styles.selectedEvaluation}>Avaliação Selecionada: {evaluation}</Text>
           <TouchableOpacity style={styles.saveButton} onPress={saveEvent}>
             <Text style={styles.saveButtonText}>Salvar</Text>
           </TouchableOpacity>
@@ -270,6 +291,31 @@ const styles = StyleSheet.create({
   noEventsText: {
     textAlign: 'center',
     marginTop: 20,
+    fontSize: 16,
+  },
+  label: {
+    fontSize: 16,
+    marginVertical: 10,
+  },
+  evaluationContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginVertical: 10,
+  },
+  evaluationOption: {
+    fontSize: 24,
+    padding: 10,
+    borderRadius: 5,
+    backgroundColor: '#f0f0f0',
+    textAlign: 'center',
+  },
+  evaluationSelected: {
+    backgroundColor: '#4CAF50',
+    color: '#fff',
+  },
+  selectedEvaluation: {
+    textAlign: 'center',
+    marginVertical: 10,
     fontSize: 16,
   },
 });
