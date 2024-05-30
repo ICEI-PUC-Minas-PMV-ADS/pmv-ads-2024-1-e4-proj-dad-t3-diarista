@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TextInput, Button, Alert, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TextInput, Alert, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const App = () => {
@@ -144,14 +144,16 @@ const TransactionForm = ({ handleAdd, isExpense, setIsExpense }) => {
         />
       </View>
       <View style={styles.radioGroup}>
-        <TouchableOpacity onPress={() => setIsExpense(false)} style={[styles.radioButton, isExpense === false && styles.selectedButton]}>
-          <Text style={styles.radioText}>Entrada</Text>
+        <TouchableOpacity onPress={() => setIsExpense(false)} style={[styles.radioButton, isExpense === false && styles.selectedButtonIncome]}>
+          <Text style={[styles.radioText, isExpense === false && styles.selectedText]}>Entrada</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => setIsExpense(true)} style={[styles.radioButton, isExpense === true && styles.selectedButton]}>
-          <Text style={styles.radioText}>Saída</Text>
+        <TouchableOpacity onPress={() => setIsExpense(true)} style={[styles.radioButton, isExpense === true && styles.selectedButtonExpense]}>
+          <Text style={[styles.radioText, isExpense === true && styles.selectedText]}>Saída</Text>
         </TouchableOpacity>
       </View>
-      <Button title="ADICIONAR" onPress={handleSave} />
+      <TouchableOpacity onPress={handleSave} style={styles.addButton}>
+        <Text style={styles.addButtonText}>ADICIONAR</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -231,14 +233,30 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#ccc',
     borderRadius: 5,
-    backgroundColor: 'lightgreen',
+    backgroundColor: '#f0f0f0', // Light gray background for unselected buttons
   },
-  selectedButton: {
-    backgroundColor: 'green',
+  selectedButtonIncome: {
+    backgroundColor: '#A5D6A7', // Light green for selected "Entrada"
+  },
+  selectedButtonExpense: {
+    backgroundColor: '#EF9A9A', // Light red for selected "Saída"
   },
   radioText: {
-    color: 'white',
+    color: '#333', // Dark gray text color for better visibility
     textAlign: 'center',
+  },
+  selectedText: {
+    color: '#fff', // White text color for selected buttons
+  },
+  addButton: {
+    backgroundColor: '#4CAF50',
+    padding: 10,
+    borderRadius: 5,
+    alignItems: 'center',
+  },
+  addButtonText: {
+    color: 'white',
+    fontWeight: 'bold',
   },
   transactionItem: {
     flexDirection: 'row',

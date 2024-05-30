@@ -139,32 +139,25 @@ const App = () => {
         >
           <div className="modal-dialog">
             <div className="modal-content">
-            <div className="modal-header" style={{ backgroundColor: "#7EB174" }}>
-            <h5 className="modal-title" style={{ color: "white" }}>
-  {selectEvent ? "Editar Evento" : "Adicionar Diária"}
-</h5>
-<button
-  type="button"
-  className="btn-close"
-  onClick={() => {
-    setShowModal(false);
-    setEventTitle("");
-    setClientName("");
-    setLocation("");
-    setNotes("");
-    setNotifications(false);
-    setEvaluation(""); // Reset evaluation state
-    setSelectEvent(null);
-  }}
-  style={{
-    color: "white",
-    border: "none",
-    backgroundColor: "transparent",
-    WebkitAppearance: "none", // Desativa estilos nativos do botão
-    appearance: "none", // Desativa estilos nativos do botão
-  }}
-></button>
-</div>
+              <div className="modal-header" style={{ backgroundColor: "#7EB174" }}>
+                <h5 className="modal-title" style={{ color: "white" }}>
+                  {selectEvent ? "Editar Evento" : "Adicionar Diária"}
+                </h5>
+                <button
+                  type="button"
+                  className="btn-close btn-close-white"
+                  onClick={() => {
+                    setShowModal(false);
+                    setEventTitle("");
+                    setClientName("");
+                    setLocation("");
+                    setNotes("");
+                    setNotifications(false);
+                    setEvaluation(""); // Reset evaluation state
+                    setSelectEvent(null);
+                  }}
+                />
+              </div>
               <div className="modal-body">
                 <label htmlFor="eventTitle" className="form-label">
                   Título do Evento:
@@ -209,19 +202,19 @@ const App = () => {
                   onChange={(e) => setNotes(e.target.value)}
                 ></textarea>
 
-<div className="form-check mt-3">
-  <input
-    type="checkbox"
-    className="form-check-input"
-    id="notifications"
-    checked={notifications}
-    onChange={(e) => setNotifications(e.target.checked)}
-    style={{ backgroundColor: notifications ? "#7EB174" : "transparent" }}
-  />
-  <label className="form-check-label" htmlFor="notifications">
-    Notificações
-  </label>
-</div>
+                <div className="form-check mt-3">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="notifications"
+                    checked={notifications}
+                    onChange={(e) => setNotifications(e.target.checked)}
+                    style={{ backgroundColor: notifications ? "#7EB174" : "transparent" }}
+                  />
+                  <label className="form-check-label" htmlFor="notifications">
+                    Notificações
+                  </label>
+                </div>
                 <label className="form-label mt-3">
                   Avaliação da Diária:
                 </label>
@@ -267,20 +260,16 @@ const App = () => {
                   </button>
                 )}
                 <button
-  type="button"
-  className="btn btn-primary"
-  onClick={saveEvent}
-  style={{
-    color: "white",
-    backgroundColor: "#7EB174",
-    border: "none", // Removendo a borda para corresponder ao estilo dos botões Bootstrap
-    cursor: "pointer", // Adicionando cursor pointer para indicar que é clicável
-    padding: "8px 16px", // Ajustando o preenchimento para melhor aparência
-    borderRadius: "5px", // Adicionando bordas arredondadas
-  }}
->
-  Salvar
-</button>
+                  type="button"
+                  className="btn btn-primary"
+                  onClick={saveEvent}
+                  style={{
+                    color: "white",
+                    backgroundColor: "#7EB174",
+                  }}
+                >
+                  Salvar
+                </button>
 
               </div>
             </div>

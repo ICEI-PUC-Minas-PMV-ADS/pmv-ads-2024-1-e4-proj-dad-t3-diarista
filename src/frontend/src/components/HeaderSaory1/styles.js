@@ -45,3 +45,19 @@ export const RightSide = styled.div`
     padding-right: 40px;
   }   
 `;
+
+export const Notification = styled.a`
+  img {
+    width: 20px; /* Tamanho da imagem de sino */
+    margin-right: 5px; /* Espaçamento entre a imagem e o número de notificações */
+  }
+
+  span {
+    background: red;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 50%;
+    position: relative;
+    top: -5px; /* Ajuste a posição vertical conforme necessário */
+  }
+`;
