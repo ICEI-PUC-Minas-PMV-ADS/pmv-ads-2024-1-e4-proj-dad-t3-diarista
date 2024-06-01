@@ -13,9 +13,9 @@ function Header() {
 
         <S.RigthSide>
             <Link to="/Home">INÍCIO</Link>
-            <a href="#">SERVIÇOS</a>
+            <Link to="/Services">SERVIÇOS</Link>
             <Link to="/Agendamento">AGENDA</Link>
-            <a href="#">FINANÇAS</a>
+            <Link to="/Gastos">FINANÇAS</Link>
             <Link to="/login">ENTRAR/INSCREVER-SE</Link>
             <a href= "#" id = "notification">
               <img src={bell} alt ="Notificacoes"/>
