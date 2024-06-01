@@ -12,9 +12,9 @@ function Header() {
         </S.LeftSide> 
 
         <S.RigthSide>
-            <a href="#">INÍCIO</a>
+            <Link to="/Home">INÍCIO</Link>
             <a href="#">SERVIÇOS</a>
-            <a href="#">AGENDA</a>
+            <Link to="/Agendamento">AGENDA</Link>
             <a href="#">FINANÇAS</a>
             <Link to="/login">ENTRAR/INSCREVER-SE</Link>
             <a href= "#" id = "notification">

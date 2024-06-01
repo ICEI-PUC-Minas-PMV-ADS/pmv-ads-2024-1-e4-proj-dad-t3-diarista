@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import * as S from './styles'; 
 import LOGO from '../../assets/LOGO 1.png';
 import SINO from '../../assets/sino.png';
@@ -13,10 +14,10 @@ function Header() {
           <S.Title>Controle Financeiro</S.Title> 
         </S.CenterSide>
         <S.RightSide>
-            <a href="#">INÍCIO</a>
+            <Link to="/Home">INÍCIO</Link>
             <a href="#">SERVIÇOS</a>
-            <a href="#">AGENDA</a>
-            <a href="#">FINANÇAS</a>
+            <Link to="/Agendamento">AGENDA</Link>
+            <Link to="/Gastos">FINANÇAS</Link>
             <S.Notification href="#">
               <img src={SINO} alt="Notificações"/>
               <span>1</span>
