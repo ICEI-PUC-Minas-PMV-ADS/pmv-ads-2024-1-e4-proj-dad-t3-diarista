@@ -15,7 +15,7 @@ function Header() {
         </S.CenterSide>
         <S.RightSide>
             <Link to="/Home">INÍCIO</Link>
-            <a href="#">SERVIÇOS</a>
+            <Link to="/Services">SERVIÇOS</Link>
             <Link to="/Agendamento">AGENDA</Link>
             <Link to="/Gastos">FINANÇAS</Link>
             <S.Notification href="#">
