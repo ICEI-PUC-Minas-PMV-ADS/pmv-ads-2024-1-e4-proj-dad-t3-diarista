@@ -12,10 +12,10 @@ function Header() {
         </S.LeftSide> 
 
         <S.RigthSide>
-            <a href="#">INÍCIO</a>
-            <a href="#">SERVIÇOS</a>
-            <a href="#">AGENDA</a>
-            <a href="#">FINANÇAS</a>
+            <Link to="/Home">INÍCIO</Link>
+            <Link to="/Services">SERVIÇOS</Link>
+            <Link to="/Agendamento">AGENDA</Link>
+            <Link to="/Gastos">FINANÇAS</Link>
             <Link to="/login">ENTRAR/INSCREVER-SE</Link>
             <a href= "#" id = "notification">
               <img src={bell} alt ="Notificacoes"/>

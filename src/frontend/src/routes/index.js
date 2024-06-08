@@ -6,6 +6,7 @@ import Cadastro from '../pages/Cadastro';
 import CadastroCliente from '../pages/CadastroCliente';
 import Gastos from '../pages/Gastos';
 import Agendamento from '../pages/Agendamento';
+import Services from '../pages/Services';
 
 const Private = ({ Item }) => {
     const signed = true; // TODO mudar para falso para deslogar -> para aparecer a home
@@ -25,6 +26,7 @@ const RoutesApp = () => {
                     <Route exact path="/gastos" element={<Gastos/>} />
                     <Route exact path="/agendamento" element={<Agendamento/>} />
                     <Route exact path ="/cadastrocliente" element={<CadastroCliente />} />
+                    <Route exact path ="/services" element={<Services />} />
                 </Routes>
             </Fragment>
         </BrowserRouter>
