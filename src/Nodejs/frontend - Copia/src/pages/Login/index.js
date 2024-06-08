@@ -31,6 +31,10 @@ const Login = () => {
             if (response.ok) {
                 // Login bem-sucedido
                 console.log("Login bem-sucedido!", data.token);
+                setTimeout(() => {
+                    window.location.href = '/Gastos';
+                }, 1000);
+
             } else {
                 // Login falhou
                 console.error("Falha no login:", data.msg);
