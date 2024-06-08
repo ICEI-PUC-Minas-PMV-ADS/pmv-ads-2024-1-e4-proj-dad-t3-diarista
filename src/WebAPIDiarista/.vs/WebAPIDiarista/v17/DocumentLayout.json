@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\astor\\OneDrive\\Documentos\\ADS\\4thPer\u00EDodo\\Aplicacao-Distribuida\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\study\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE455A9-3174-4A55-BF19-D52451AD8D97}|WebAPIDiarista.csproj|c:\\users\\gabol\\onedrive\\\u00E1rea de trabalho\\study\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\webapidiarista\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE455A9-3174-4A55-BF19-D52451AD8D97}|WebAPIDiarista.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\study\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\gabol\\OneDrive\\\u00C1rea de Trabalho\\study\\pmv-ads-2024-1-e4-proj-dad-t3-diarista\\src\\WebAPIDiarista\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:27:36.113Z",
+              "EditorCaption": ""
             }
           ]
         }
