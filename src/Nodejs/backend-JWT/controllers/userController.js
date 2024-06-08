@@ -25,51 +25,47 @@ exports.getUserById = async (req, res) => {
   res.status(200).json({ user });
 };
 
-// Controlador para registrar usuário
 exports.registerUser = async (req, res) => {
-  const { name, email, password, confirmpassword, location } = req.body;
+  const { name, email, password, confirmPassword, location } = req.body;
 
-  if (!name) {
-    return res.status(422).json({ msg: "Nome é obrigatório" });
+  // Validar se todos os campos obrigatórios estão presentes
+  if (!name || !email || !password || !confirmPassword || !location) {
+    return res.status(422).json({ msg: "Por favor, preencha todos os campos obrigatórios" });
   }
 
-  if (!password) {
-    return res.status(422).json({ msg: "Senha é obrigatório" });
+  // Verificar se as senhas correspondem
+  if (password !== confirmPassword) {
+    return res.status(422).json({ msg: "As senhas não correspondem" });
   }
-
-  if (password !== confirmpassword) {
-    return res.status(422).json({ msg: "Senhas não conferem" });
-  }
-
-  // Checando se o usuário já existe (se foi fornecido um email)
-  if (email) {
-    const userExists = await User.findOne({ email: email });
-
-    if (userExists) {
-      return res.status(422).json({ msg: "Por favor, utilize outro email" });
-    }
-  }
-
-  // Criando a senha
-  const salt = await bcrypt.genSalt(12);
-  const hashedPassword = await bcrypt.hash(password, salt);
-
-  // Criando o usuario
-  const user = new User({
-    name,
-    email, // Pode ser undefined se não fornecido
-    password: hashedPassword,
-    location,
-  });
 
   try {
+    // Verificar se o usuário já existe com o email fornecido
+    const userExists = await User.findOne({ email: email });
+    if (userExists) {
+      return res.status(422).json({ msg: "Este email já está sendo usado. Por favor, utilize outro email" });
+    }
+
+    // Criar o hash da senha
+    const hashedPassword = await bcrypt.hash(password, 12);
+
+    // Criar o usuário
+    const user = new User({
+      name,
+      email,
+      password: hashedPassword,
+      location,
+    });
+
+    // Salvar o usuário no banco de dados
     await user.save();
+    
     return res.status(201).json({ msg: "Usuário criado com sucesso" });
   } catch (error) {
-    console.log(error);
-    return res.status(500).json({ msg: error });
+    console.error("Erro ao registrar o usuário:", error);
+    return res.status(500).json({ msg: "Ocorreu um erro ao processar o seu pedido. Por favor, tente novamente mais tarde." });
   }
 };
+
 
 
 // Controlador para login de usuário
