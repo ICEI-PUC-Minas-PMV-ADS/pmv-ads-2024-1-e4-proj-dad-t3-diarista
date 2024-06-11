@@ -125,3 +125,146 @@ exports.deleteUser = async (req, res) => {
     return res.status(500).json({ msg: error });
   }
 };
+
+exports.addTransaction = async (req, res) => {
+  const { userId } = req.params;
+  const { amount, type } = req.body;
+
+  try {
+    // Verificar se todos os parâmetros necessários estão presentes
+    if (!userId || !amount || !type) {
+      return res.status(422).json({ msg: "Por favor, forneça o ID do usuário, o valor da transação e o tipo." });
+    }
+
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ msg: "Usuário não encontrado!" });
+    }
+
+    // Adicionar a transação ao array de transações do usuário
+    user.transactions.push({ amount, type });
+
+    await user.save();
+
+    return res.status(200).json({ msg: "Transação adicionada com sucesso!", amountAdded: amount });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ msg: "Erro ao adicionar transação.", error: error.message });
+  }
+};
+
+exports.calculateTotalEntradas = async (req, res) => {
+  const { userId } = req.params;
+
+  try {
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ msg: "Usuário não encontrado!" });
+    }
+
+    let totalEntradas = 0;
+
+    // Calculando o total das entradas
+    user.transactions.forEach(transaction => {
+      if (transaction.type === 'entrada') {
+        totalEntradas += transaction.amount;
+      }
+    });
+
+    return res.status(200).json({ totalEntradas });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ msg: "Erro ao calcular total de entradas." });
+  }
+};
+
+
+exports.calculateBalance = async (req, res) => {
+  const { userId } = req.params;
+
+  try {
+      const user = await User.findById(userId);
+
+      if (!user) {
+          return res.status(404).json({ msg: "Usuário não encontrado!" });
+      }
+
+      let totalEntradas = 0;
+      let totalSaidas = 0;
+
+      // Calculando o total de entradas e saídas
+      user.transactions.forEach(transaction => {
+          if (transaction.type === 'entrada') {
+              totalEntradas += transaction.amount;
+          } else if (transaction.type === 'saida') {
+              totalSaidas += transaction.amount;
+          }
+      });
+
+      const saldo = totalEntradas - totalSaidas;
+
+      return res.status(200).json({ totalEntradas, totalSaidas, saldo });
+  } catch (error) {
+      console.log(error);
+      return res.status(500).json({ msg: error });
+  }
+};
+
+exports.calculateTotal = async (req, res) => {
+  const { userId } = req.params;
+
+  try {
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ msg: "Usuário não encontrado!" });
+    }
+
+    let total = 0;
+
+    // Calculando o total
+    user.transactions.forEach(transaction => {
+      if (transaction.type === 'entrada') {
+        total += transaction.amount;
+      } else if (transaction.type === 'saida') {
+        total -= transaction.amount;
+      }
+    });
+
+    return res.status(200).json({ total });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ msg: "Erro ao calcular o total.", error: error.message });
+  }
+};
+
+exports.calculateTotalSaidas = async (req, res) => {
+  const { userId } = req.params;
+
+  try {
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ msg: "Usuário não encontrado!" });
+    }
+
+    let totalSaidas = 0;
+
+    // Calculando o total das saídas
+    user.transactions.forEach(transaction => {
+      if (transaction.type === 'saida') {
+        totalSaidas += transaction.amount;
+      }
+    });
+
+    return res.status(200).json({ totalSaidas });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ msg: "Erro ao calcular o total de saídas.", error: error.message });
+  }
+};
+
+
+

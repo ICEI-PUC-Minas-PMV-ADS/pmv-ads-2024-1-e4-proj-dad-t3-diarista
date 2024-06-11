@@ -18,4 +18,19 @@ router.post("/auth/login", userController.loginUser);
 // Rota para deletar usuário (sem token)
 router.delete("/:id", userController.deleteUser);
 
+// Rota para adicionar transação
+router.post("/:userId/transactions", userController.addTransaction);
+
+// Rota para calcular o saldo
+router.get("/:userId/balance", userController.calculateBalance);
+
+// Rota para calcular o total
+router.get("/:userId/total", userController.calculateTotal);
+
+// Rota para calcular o total das saídas
+router.get("/:userId/total-saidas", userController.calculateTotalSaidas);
+
+// Rota para calcular o total das entradas
+router.get("/:userId/total-entradas", userController.calculateTotalEntradas);
+
 module.exports = router;

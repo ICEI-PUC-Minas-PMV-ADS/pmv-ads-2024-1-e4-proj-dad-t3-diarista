@@ -1,16 +1,19 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 1120px;
-  margin: 20px auto;
-  width: 98%;
-  background-color: #fff;
-  box-shadow: 0px 0px 5px #ccc;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-around;
-  padding: 15px 0px;
-  gap: 10px;
+    max-width: 1120px;
+    margin: 20px auto;
+    width: 98%;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0px;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+}
 
   @media (max-width: 750px) {
     display: grid;
@@ -77,25 +80,8 @@ export const Th = styled.th`
   width: ${(props) => (props.width ? props.width + "%" : "auto")};
 `;
 
-export const Resume = styled.div`
-  max-width: 1120px;
-  width: 98%;
-  margin: 0 auto;
-  display: flex;
-  gap: 20px;
-  margin-top: 60px;
-  justify-content: space-around;
-`;
-
-export const ResumeItem = styled.div`
-  flex: 1;
-  background-color: #fff;
-  box-shadow: 0px 0px 5px #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 200px;
+export const Td = styled.td`
+  text-align: ${(props) => (props.alignCenter ? "center" : "start")};
+  border-bottom: inset;
+  padding-bottom: 5px;
 `;
