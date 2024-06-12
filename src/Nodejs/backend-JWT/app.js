@@ -24,6 +24,8 @@ app.get("/", async (req, res) => {
     res.status(500).json({ msg: error });
   }
 });
+const routes = require("./routes/router")
+app.use("/api", routes);
 
 // Credenciais
 const dbUser = process.env.DB_USER;

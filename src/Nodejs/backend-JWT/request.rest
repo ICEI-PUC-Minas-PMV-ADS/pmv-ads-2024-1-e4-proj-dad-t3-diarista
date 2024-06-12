@@ -1,0 +1,35 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Ana Maria Da Silva",
+        "date": "2020-12-10T15:00:00.000",
+        "localization": "Rua da flores, número 0" ,
+        "description": "Alguma descrição" ,
+        "done": false ,
+        "avaliation": 5
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+
+GET http://localhost:3000/api/services/6669c730f3c00ce649c563b7
+
+###
+DELETE http://localhost:3000/api/services/6669c730f3c00ce649c563b7
+
+###
+
+PUT  http://localhost:3000/api/services/6669e5f0574be3d6c5b794a2
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZAÇÃO",
+        "date": "2020-12-10T15:00:00.000",
+        "localization": "Rua da flores, número 54" ,
+        "description": "Alguma descrição" ,
+        "done": false ,
+        "avaliation": 5
+}
