@@ -1,20 +1,35 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require("cors"); // Importando o pacote CORS
+const cors = require("cors");
 
 const app = express();
-
 app.use(express.json());
-app.use(cors()); // Usando o CORS para permitir todas as origens
+app.use(cors());
 
-// Importando rotas de usuários
 const userRoutes = require("./routes/userRoutes");
-
-// Usando as rotas de usuários
 app.use("/user", userRoutes);
 
-// Rota aberta para retornar todos os usuários
+const routes = require("./routes/router");
+app.use("/api", routes);
+
+// Credenciais do banco de dados
+const dbUser = process.env.DB_USER;
+const dbPassword = process.env.DB_PASS;
+
+const port = process.env.PORT || 3000;
+
+mongoose
+  .connect(
+    `mongodb+srv://${dbUser}:${dbPassword}@cluster0.jhgabfv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
+  )
+  .then(() => {
+    app.listen(port, () => {
+      console.log(`Conectado ao banco de dados e rodando na porta ${port}`);
+    });
+  })
+  .catch((err) => console.log(err));
+
 app.get("/", async (req, res) => {
   try {
     const users = await User.find({}, "-password");
@@ -24,20 +39,3 @@ app.get("/", async (req, res) => {
     res.status(500).json({ msg: error });
   }
 });
-const routes = require("./routes/router")
-app.use("/api", routes);
-
-// Credenciais
-const dbUser = process.env.DB_USER;
-const dbPassword = process.env.DB_PASS;
-
-mongoose
-  .connect(
-    `mongodb+srv://${dbUser}:${dbPassword}@cluster0.jhgabfv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
-  )
-  .then(() => {
-    app.listen(3000, () => {
-      console.log("Conectado ao banco de dados e rodando na porta 3000");
-    });
-  })
-  .catch((err) => console.log(err));
