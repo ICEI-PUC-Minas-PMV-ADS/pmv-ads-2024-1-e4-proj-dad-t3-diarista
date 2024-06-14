@@ -26,7 +26,7 @@ const RegisterForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/user/auth/register', formData);
+      const response = await axios.post('https://backend-puc-diarista.onrender.com/user/auth/register', formData);
       console.log(response.data);
       // Limpar o formulário após o registro bem-sucedido
       setFormData({
