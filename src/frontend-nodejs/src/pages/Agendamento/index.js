@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
-import "moment/locale/pt-br"; // Import the Portuguese locale
+import "moment/locale/pt-br"; 
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import Header from "../../components/HeaderSaory2";
+import axios from "axios"; 
 
-moment.locale("pt-br"); // Set the moment locale to Portuguese
+moment.locale("pt-br"); 
 const localizer = momentLocalizer(moment);
 
 const messages = {
@@ -33,7 +34,7 @@ const App = () => {
   const [location, setLocation] = useState("");
   const [notes, setNotes] = useState("");
   const [notifications, setNotifications] = useState(false);
-  const [evaluation, setEvaluation] = useState(""); // New state for evaluation
+  const [evaluation, setEvaluation] = useState(""); 
   const [selectEvent, setSelectEvent] = useState(null);
 
   const handleSelectSlot = (slotInfo) => {
@@ -45,7 +46,7 @@ const App = () => {
     setLocation("");
     setNotes("");
     setNotifications(false);
-    setEvaluation(""); // Reset evaluation state
+    setEvaluation(""); 
   };
 
   const handleSelectedEvent = (event) => {
@@ -56,10 +57,10 @@ const App = () => {
     setLocation(event.location || "");
     setNotes(event.notes || "");
     setNotifications(event.notifications || false);
-    setEvaluation(event.evaluation || ""); // Set evaluation state
+    setEvaluation(event.evaluation || ""); 
   };
 
-  const saveEvent = () => {
+  const saveEvent = async () => {
     if (eventTitle && selectedDate) {
       const eventDetails = {
         title: eventTitle,
@@ -69,7 +70,7 @@ const App = () => {
         location,
         notes,
         notifications,
-        evaluation // Include evaluation in event details
+        evaluation
       };
 
       if (selectEvent) {
@@ -80,6 +81,13 @@ const App = () => {
         setEvents(updatedEvents);
       } else {
         setEvents([...events, { ...eventDetails, id: events.length + 1 }]);
+      }
+
+     
+      try {
+        await axios.post('https://backend-puc-diarista.onrender.com', eventDetails);
+      } catch (error) {
+        console.error('Erro ao enviar dados:', error);
       }
 
       setShowModal(false);
@@ -103,7 +111,7 @@ const App = () => {
       setLocation("");
       setNotes("");
       setNotifications(false);
-      setEvaluation(""); // Reset evaluation state
+      setEvaluation(""); 
       setSelectEvent(null);
     }
   };
@@ -120,8 +128,8 @@ const App = () => {
         selectable={true}
         onSelectSlot={handleSelectSlot}
         onSelectEvent={handleSelectedEvent}
-        messages={messages} // Apply the custom messages
-        views={['month', 'week', 'day', 'agenda']} // Ensure all views are available
+        messages={messages} 
+        views={['month', 'week', 'day', 'agenda']} 
       />
 
       {showModal && (
@@ -153,7 +161,7 @@ const App = () => {
                     setLocation("");
                     setNotes("");
                     setNotifications(false);
-                    setEvaluation(""); // Reset evaluation state
+                    setEvaluation(""); 
                     setSelectEvent(null);
                   }}
                 />
@@ -245,7 +253,7 @@ const App = () => {
                     style={{ fontSize: "1.5rem", cursor: "pointer" }}
                   >😢</span>
                 </div>
-                <div className="mt-2">
+               <div className="mt-2">
                   Avaliação Selecionada: {evaluation}
                 </div>
               </div>
@@ -270,7 +278,6 @@ const App = () => {
                 >
                   Salvar
                 </button>
-
               </div>
             </div>
           </div>
@@ -281,3 +288,9 @@ const App = () => {
 };
 
 export default App;
+
+
+
+
+
+
