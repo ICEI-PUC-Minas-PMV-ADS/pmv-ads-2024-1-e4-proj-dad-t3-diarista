@@ -88,64 +88,60 @@ const App = () => {
         />
         <Button onClick={handleSearchUser}>Pesquisar</Button>
       </div>
-      {userId && (
-        <>
-          <div>
-            <label htmlFor="userId">ID do Usuário Selecionado:</label>
-            <span>{userId}</span>
-          </div>
-          <div>
-            <label htmlFor="amount">Valor:</label>
-            <Input
-              type="number"
-              id="amount"
-              value={amount}
-              onChange={(e) => setAmount(e.target.value)}
-            />
-          </div>
-          <div>
-            <label>Tipo:</label>
-            <RadioGroup>
-              <input
-                type="radio"
-                id="entrada"
-                value="entrada"
-                checked={type === 'entrada'}
-                onChange={() => setType('entrada')}
-              />
-              <label htmlFor="entrada">Entrada</label>
-              <input
-                type="radio"
-                id="saida"
-                value="saida"
-                checked={type === 'saida'}
-                onChange={() => setType('saida')}
-              />
-              <label htmlFor="saida">Saída</label>
-            </RadioGroup>
-          </div>
-          <Button onClick={handleAddTransaction}>Adicionar Transação</Button>
-          <Table>
-            <thead>
-              <tr>
-                <Th>Nome</Th>
-                <Th>Email</Th>
-                <Th>Total de Entradas</Th>
-                <Th>Total de Saídas</Th>
-                <Th>Saldo</Th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <Td>{userName}</Td>
-                <Td>{totalEntradas}</Td>
-                <Td>{totalSaidas}</Td>
-                <Td>{saldo}</Td>
-              </tr>
-            </tbody>
-          </Table>
-        </>
-      )}
+      <div>
+        <label htmlFor="userId">ID do Usuário Selecionado:</label>
+        <span>{userId}</span>
+      </div>
+      <div>
+        <label htmlFor="amount">Valor:</label>
+        <Input
+          type="number"
+          id="amount"
+          value={amount}
+          onChange={(e) => setAmount(e.target.value)}
+        />
+      </div>
+      <div>
+        <label>Tipo:</label>
+        <RadioGroup>
+          <input
+            type="radio"
+            id="entrada"
+            value="entrada"
+            checked={type === 'entrada'}
+            onChange={() => setType('entrada')}
+          />
+          <label htmlFor="entrada">Entrada</label>
+          <input
+            type="radio"
+            id="saida"
+            value="saida"
+            checked={type === 'saida'}
+            onChange={() => setType('saida')}
+          />
+          <label htmlFor="saida">Saída</label>
+        </RadioGroup>
+      </div>
+      <Button onClick={handleAddTransaction}>Adicionar Transação</Button>
+      <Table>
+        <thead>
+          <tr>
+            <Th>Nome</Th>
+            <Th>Email</Th>
+            <Th>Total de Entradas</Th>
+            <Th>Total de Saídas</Th>
+            <Th>Saldo</Th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <Td>{userName}</Td>
+            <Td>{totalEntradas}</Td>
+            <Td>{totalSaidas}</Td>
+            <Td>{saldo}</Td>
+          </tr>
+        </tbody>
+      </Table>
     </Container>
   );
 };

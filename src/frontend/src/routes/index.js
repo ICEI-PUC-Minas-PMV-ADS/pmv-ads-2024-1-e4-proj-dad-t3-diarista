@@ -11,7 +11,7 @@ import Services from '../pages/Services';
 const Private = ({ Item }) => {
     const signed = true; // TODO mudar para falso para deslogar -> para aparecer a home
 
-    return signed > 0 ? <Item /> : <Login />
+    return signed > 0 ? <Item /> : <Home />
 }
 
 const RoutesApp = () => {

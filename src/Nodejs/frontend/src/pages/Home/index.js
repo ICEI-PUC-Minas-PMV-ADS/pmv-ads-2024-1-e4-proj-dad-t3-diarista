@@ -7,6 +7,7 @@ import Footer from '../../components/Footer';
 import Testimonials from '../../components/Testimonials';
 import Features from '../../components/Features';
 
+
 function Home() {
   return (
     <S.Container>
