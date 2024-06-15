@@ -1,18 +1,21 @@
 import React from 'react'; 
 import { Link } from 'react-router-dom'; 
-import * as S from './styles';  
+import PropTypes from 'prop-types'; 
+import { Card1 } from './styles'; // Importar o estilo Card1
 
-function TaskCard({ image, title }) { 
-  return ( 
-    <S.Container> 
-      <Link to={Link} style={{ textDecoration: 'none', color: 'inherit' }}>
-        <S.Card1> 
-          <img src={image} alt="icon"/> 
-          <h5>{title}</h5> 
-        </S.Card1> 
-      </Link>
-    </S.Container> 
-  ); 
-} 
+const TaskCard = ({ image, title, link }) => ( 
+  <Card1> 
+    <Link to={link}> 
+      <img src={image} alt={title} /> 
+    </Link> 
+    <h5>{title}</h5> 
+  </Card1> 
+); 
 
-export default TaskCard; 
+TaskCard.propTypes = { 
+  image: PropTypes.string.isRequired, 
+  title: PropTypes.string.isRequired, 
+  link: PropTypes.string.isRequired, 
+}; 
+
+export default TaskCard;
