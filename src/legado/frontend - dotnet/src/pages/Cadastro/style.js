@@ -1,61 +1,81 @@
 import styled from 'styled-components';
 
-export const CadastroContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #fff;
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  // Ensure the container takes at least the full height of the viewport
+  background-color: #FFF;
+  font-family: 'Open Sans', sans-serif;
 `;
 
-export const FormWrapper = styled.div`
-    background-color: #f0fff0;
-    border-radius: 12px;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    width: 80%;
-    max-width: 600px;
-    transition: all 0.3s ease;
+export const Content = styled.div`
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #072B23;
+  background-color: #FFF; // Ensure the content background is also set to white
 `;
 
-export const Title = styled.h2`
-    color: #333333;
-    font-size: 2.5rem;
+export const FormContainer = styled.div`
+  background-color: #f0fff0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: left;
+  border: 1px solid #072B23;
+
+  h1 {
     text-align: center;
-    margin-bottom: 30px;
-`;
+    color: #072B23;
+    font-size: 2rem;
+  }
 
-export const CadastroForm = styled.form`
-    text-align: center;
-`;
+  h2 {
+    margin-bottom: 10px;
+  }
 
-export const Input = styled.input`
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input {
     width: 100%;
-    padding: 15px;
-    margin-top: 20px;
-    border: 1px solid #cccccc;
-    border-radius: 8px;
-    font-size: 1.6rem;
-    transition: border-color 0.3s ease;
+    padding: 8px;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
 
-    &:focus {
-        border-color: #4a90e2;
-    }
-`;
-
-export const Button = styled.button`
-    width: 100%;
-    padding: 15px;
-    margin-top: 30px;
+  button {
     background-color: #4CAF50;
-    color: #ffffff;
+    color: #fff;
     border: none;
-    border-radius: 8px;
-    font-size: 1.6rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+  }
 
-    &:hover {
-        background-color: #45a049;
-    }
+  button:hover {
+    background-color: #7EB174;
+  }
+`;
+
+export const ListaClientes = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  background-color: #FFF; // Ensure the background of the list is white
+
+  li {
+    background-color: #f0fff0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #072B23;
+  }
 `;

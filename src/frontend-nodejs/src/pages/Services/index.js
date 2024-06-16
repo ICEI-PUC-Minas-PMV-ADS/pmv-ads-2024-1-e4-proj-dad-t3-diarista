@@ -12,8 +12,8 @@ function Services() {
   
     <S.Container>
       <Header />
-      <TaskCard image={planejador} title="Agendamento de atividades" link="/Agendamento" />
-      <TaskCard image={gastos} title="Registro de gastos" link="/Gastos" />
+      <TaskCard image={planejador} title="Agendamento de Atividades" link="/Agendamento" />
+      <TaskCard image={gastos} title="Registro de Gastos" link="/Gastos" />
       <TaskCard image={icon} title="Cadastro de Clientes" link="/CadastroCliente" />
     </S.Container>
   

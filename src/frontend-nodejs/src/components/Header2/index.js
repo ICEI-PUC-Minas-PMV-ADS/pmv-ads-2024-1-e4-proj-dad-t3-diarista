@@ -12,7 +12,7 @@ function Header() {
             <img src={LOGO} alt="Logo"/>
         </S.LeftSide> 
         <S.CenterSide>
-          <S.Title>SERVIÇOS</S.Title> 
+          <S.Title>Serviços</S.Title> 
         </S.CenterSide>
         <S.RightSide> {}
         <Link to="/Home">INÍCIO</Link>

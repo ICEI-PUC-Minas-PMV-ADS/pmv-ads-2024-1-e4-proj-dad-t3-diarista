@@ -11,7 +11,7 @@ function Header() {
             <img src={LOGO} alt="Logo"/>
         </S.LeftSide> 
         <S.CenterSide>
-          <S.Title>Controle Financeiro</S.Title> 
+          <S.Title>Cadastro de Clientes</S.Title> 
         </S.CenterSide>
         <S.RightSide>
             <Link to="/Home">INÍCIO</Link>

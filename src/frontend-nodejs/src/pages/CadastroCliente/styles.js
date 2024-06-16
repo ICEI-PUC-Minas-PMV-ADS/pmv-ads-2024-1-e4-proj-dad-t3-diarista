@@ -27,7 +27,6 @@ export const FormContainer = styled.div`
   text-align: left;
   border: 1px solid #072B23;
 
-
   h1 {
     text-align: center;
     color: #072B23;
@@ -36,7 +35,6 @@ export const FormContainer = styled.div`
 
   h2 {
     margin-bottom: 10px;
-  
   }
 
   label {
