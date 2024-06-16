@@ -1,20 +1,23 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const clienteController = require('../controllers/clienteController');
+const clienteController = require("../controllers/clienteController");
 
 // Rota para criar um novo cliente
-router.post('/clientes', clienteController.create);
+router.post("/clientes", clienteController.create);
 
 // Rota para obter todos os clientes
-router.get('/clientes', clienteController.getAll);
+router.get("/clientes", clienteController.getAll);
 
 // Rota para obter um cliente específico pelo ID
-router.get('/clientes/:id', clienteController.get);
+router.get("/clientes/:id", clienteController.get);
+
+// Rota para buscar todos os clientes cadastrados
+app.get("/clientes", clienteController.getAll);
 
 // Rota para atualizar um cliente pelo ID
-router.put('/clientes/:id', clienteController.update);
+router.put("/clientes/:id", clienteController.update);
 
 // Rota para excluir um cliente pelo ID
-router.delete('/clientes/:id', clienteController.delete);
+router.delete("/clientes/:id", clienteController.delete);
 
 module.exports = router;

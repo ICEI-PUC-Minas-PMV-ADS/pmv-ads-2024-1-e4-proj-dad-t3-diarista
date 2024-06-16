@@ -6,10 +6,12 @@ const clienteController = {
       const cliente = {
         nome: req.body.nome,
         telefone: req.body.telefone,
-        local: req.body.local
+        local: req.body.local,
       };
       const response = await Cliente.create(cliente);
-      res.status(201).json({ response, msg: "Cliente cadastrado com sucesso!" });
+      res
+        .status(201)
+        .json({ response, msg: "Cliente cadastrado com sucesso!" });
     } catch (error) {
       console.log(error);
       res.status(500).json({ msg: "Erro ao cadastrar cliente." });
@@ -38,6 +40,17 @@ const clienteController = {
       res.status(500).json({ msg: "Erro ao buscar cliente." });
     }
   },
+
+  getAll: async (req, res) => {
+    try {
+      const clientes = await Cliente.find();
+      res.json(clientes);
+    } catch (error) {
+      console.error("Erro ao buscar clientes:", error);
+      res.status(500).json({ msg: "Erro ao buscar clientes." });
+    }
+  },
+
   delete: async (req, res) => {
     try {
       const id = req.params.id;
@@ -59,19 +72,23 @@ const clienteController = {
       const cliente = {
         nome: req.body.nome,
         telefone: req.body.telefone,
-        local: req.body.local
+        local: req.body.local,
       };
-      const updatedCliente = await Cliente.findByIdAndUpdate(id, cliente, { new: true });
+      const updatedCliente = await Cliente.findByIdAndUpdate(id, cliente, {
+        new: true,
+      });
       if (!updatedCliente) {
         res.status(404).json({ msg: "Cliente não encontrado!" });
         return;
       }
-      res.status(200).json({ updatedCliente, msg: "Cliente atualizado com sucesso!" });
+      res
+        .status(200)
+        .json({ updatedCliente, msg: "Cliente atualizado com sucesso!" });
     } catch (error) {
       console.log(error);
       res.status(500).json({ msg: "Erro ao atualizar cliente." });
     }
-  }
+  },
 };
 
 module.exports = clienteController;
