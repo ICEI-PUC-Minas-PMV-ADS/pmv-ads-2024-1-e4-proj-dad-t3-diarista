@@ -12,7 +12,7 @@ router.get("/clientes", clienteController.getAll);
 router.get("/clientes/:id", clienteController.get);
 
 // Rota para buscar todos os clientes cadastrados
-app.get("/clientes", clienteController.getAll);
+router.get("/clientes", clienteController.getAll);
 
 // Rota para atualizar um cliente pelo ID
 router.put("/clientes/:id", clienteController.update);
