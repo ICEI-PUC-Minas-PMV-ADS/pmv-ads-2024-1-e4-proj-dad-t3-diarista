@@ -88,7 +88,7 @@ const App = () => {
 
   return ( 
     <>
-      <Header /> {/* Inserir o Header aqui */}
+      <Header/> 
       <Container> 
         <div> 
           <label htmlFor="userName">Digite o Nome do Usuário:</label> 

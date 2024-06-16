@@ -15,7 +15,7 @@ export const LeftSide = styled.div`
   align-items: center;
   
   img {
-    width: 20%;
+    width: 15%;
     padding-left: 5px;
   }
 `;
@@ -26,6 +26,11 @@ export const CenterSide = styled.div`
   flex-grow: 1; 
   justify-content: center;
   width: 100%;
+`;
+
+export const Title = styled.h2`
+  color: #fff;
+  font-weight: bold;
 `;
 
 export const RightSide = styled.div`

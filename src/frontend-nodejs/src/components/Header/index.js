@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import * as S from './styles';
+import * as S from './styles'; 
 import LOGO from '../../assets/LOGO 1.png';
-import bell from '../../assets/bell.png';
+import SINO from '../../assets/sino.png';
 
 function Header() {
   return (
@@ -10,18 +10,20 @@ function Header() {
         <S.LeftSide>
             <img src={LOGO} alt="Logo"/>
         </S.LeftSide> 
-
-        <S.RigthSide>
+        <S.CenterSide>
+        </S.CenterSide>
+        <S.RightSide>
             <Link to="/Home">INÍCIO</Link>
             <Link to="/Services">SERVIÇOS</Link>
             <Link to="/Agendamento">AGENDA</Link>
             <Link to="/Gastos">FINANÇAS</Link>
-            <Link to="/login">ENTRAR/INSCREVER-SE</Link>
-            <a href= "#" id = "notification">
-              <img src={bell} alt ="Notificacoes"/>
-              <span>5</span>
-            </a>
-        </S.RigthSide>
+            <Link to="/Login">ENTRAR</Link>
+            <Link to="/Cadastro">INSCREVER</Link>
+            <S.Notification href="#">
+              <img src={SINO} alt="Notificações"/>
+              <span>1</span>
+            </S.Notification>
+        </S.RightSide>
      </S.Container> 
   );
 }

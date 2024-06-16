@@ -11,13 +11,10 @@ function Header() {
             <img src={LOGO} alt="Logo"/>
         </S.LeftSide> 
         <S.CenterSide>
-          <S.Title>Controle Financeiro</S.Title> 
         </S.CenterSide>
         <S.RightSide>
             <Link to="/Home">INÍCIO</Link>
-            <Link to="/Services">SERVIÇOS</Link>
-            <Link to="/Agendamento">AGENDA</Link>
-            <Link to="/Gastos">FINANÇAS</Link>
+            <Link to="/Login">ENTRAR</Link>
             <S.Notification href="#">
               <img src={SINO} alt="Notificações"/>
               <span>1</span>

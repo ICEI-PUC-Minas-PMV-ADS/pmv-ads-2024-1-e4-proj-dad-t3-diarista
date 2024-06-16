@@ -1,89 +1,120 @@
-import React, { useState } from 'react';
-import { CadastroContainer, FormWrapper, Title, CadastroForm, Input, Button } from './style'; 
+import React, { useState, useEffect } from 'react';
+import Header from '../../../src/components/HeaderSaory5';
+import * as S from './styles';
 
-const Cadastro = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        address: '',
-        password: '',
-        confirmPassword: ''
-    });
+const backendUrl = 'https://backend-puc-diarista.onrender.com'; // Definir o URL do backend
 
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
-    };
+function ClienteForm({ onSubmit }) {
+  const [nome, setNome] = useState('');
+  const [telefone, setTelefone] = useState('');
+  const [local, setLocal] = useState('');
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        
-        try {
-            const response = await fetch("http://localhost:3000/user/auth/register", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(formData)
-            });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSubmit({ nome, telefone, local });
+    setNome('');
+    setTelefone('');
+    setLocal('');
+  };
 
-            const data = await response.json();
+  return (
+    <S.FormContainer>
+      <h1>CADASTRO DE CLIENTES</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Nome:
+          <input
+            type="text"
+            value={nome}
+            onChange={(e) => setNome(e.target.value)}
+            required
+          />
+        </label>
+        <label>
+          Telefone:
+          <input
+            type="tel"
+            value={telefone}
+            onChange={(e) => setTelefone(e.target.value)}
+            required
+          />
+        </label>
+        <label>
+          Local da Diária:
+          <input
+            type="text"
+            value={local}
+            onChange={(e) => setLocal(e.target.value)}
+            required
+          />
+        </label>
+        <button type="submit">CADASTRAR CLIENTE</button>
+      </form>
+    </S.FormContainer>
+  );
+}
 
-            if (response.ok) {
-                // Cadastro bem-sucedido
-                console.log("Cadastro bem-sucedido!");
-            } else {
-                // Cadastro falhou
-                console.error("Falha no cadastro:", data.msg);
-            }
-        } catch (error) {
-            console.error("Erro ao cadastrar:", error);
-        }
-    };
+function CadastroCliente() {
+  const [clientes, setClientes] = useState([]);
 
-    return (
-        <CadastroContainer>
-            <FormWrapper>
-                <Title>CADASTRO</Title>
-                <CadastroForm onSubmit={handleSubmit}>
-                    <Input 
-                        type="text" 
-                        name="name" 
-                        placeholder="Nome" 
-                        value={formData.name}
-                        onChange={handleChange} 
-                        required 
-                    />
-                    <Input 
-                        type="text" 
-                        name="address" 
-                        placeholder="Endereço" 
-                        value={formData.address}
-                        onChange={handleChange} 
-                        required 
-                    />
-                    <Input 
-                        type="password" 
-                        name="password" 
-                        placeholder="Senha" 
-                        value={formData.password}
-                        onChange={handleChange} 
-                        required 
-                    />
-                    <Input 
-                        type="password" 
-                        name="confirmPassword" 
-                        placeholder="Confirme sua Senha" 
-                        value={formData.confirmPassword}
-                        onChange={handleChange} 
-                        required 
-                    />
-                    <Button type="submit">CADASTRAR</Button>
-                </CadastroForm>
-            </FormWrapper>
-        </CadastroContainer>
-    );
-};
+  const fetchClientes = async () => {
+    try {
+      const response = await fetch(`${backendUrl}/api/clientes`); // Utilize o backendUrl
+      if (response.ok) {
+        const data = await response.json();
+        setClientes(data);
+      } else {
+        console.error('Erro ao buscar clientes:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Erro ao conectar com o servidor:', error);
+    }
+  };
 
-export default Cadastro;
+  useEffect(() => {
+    fetchClientes();
+  }, []);
+
+  const handleClienteSubmit = async (cliente) => {
+    try {
+      const response = await fetch(`${backendUrl}/api/clientes`, { // Utilize o backendUrl
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(cliente)
+      });
+
+      if (response.ok) {
+        const newCliente = await response.json();
+        fetchClientes(); // Recarrega a lista de clientes após a adição de um novo cliente
+      } else {
+        console.error('Erro ao cadastrar cliente:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Erro ao conectar com o servidor:', error);
+    }
+  };
+
+  return (
+    <>
+      <Header />
+      <S.Container>
+        <S.Content>
+          <ClienteForm onSubmit={handleClienteSubmit} />
+          <h2>CLIENTES CADASTRADOS</h2>
+          <S.ListaClientes>
+            {clientes.map((cliente, index) => (
+              <li key={index}>
+                <strong>Nome:</strong> {cliente.nome}, <strong>Telefone:</strong>{' '}
+                {cliente.telefone}, <strong>Local da Diária:</strong> {cliente.local}
+              </li>
+            ))}
+          </S.ListaClientes>
+        </S.Content>
+      </S.Container>
+    </>
+  );
+}
+
+export default CadastroCliente;

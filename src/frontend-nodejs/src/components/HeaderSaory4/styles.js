@@ -15,7 +15,7 @@ export const LeftSide = styled.div`
   align-items: center;
   
   img {
-    width: 20%;
+    width: 15%;
     padding-left: 5px;
   }
 `;

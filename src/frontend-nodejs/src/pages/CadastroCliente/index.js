@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../../../src/components/Header';
+import Header from '../../../src/components/HeaderSaory5';
 import * as S from './styles';
 
 const backendUrl = 'https://backend-puc-diarista.onrender.com'; // Definir o URL do backend

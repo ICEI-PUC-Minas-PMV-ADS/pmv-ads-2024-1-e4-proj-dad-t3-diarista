@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { LoginContainer, LoginForm, Title, Input, Button } from './style'; 
+import Header from '../../components/HeaderSaory3'; 
 
 const Login = () => {
     const [formData, setFormData] = useState({
@@ -45,26 +46,29 @@ const Login = () => {
     };
 
     return (
-        <LoginContainer>
-            <LoginForm onSubmit={handleSubmit}>
-                <Title>LOGIN</Title>
-                <Input 
-                    type="email" 
-                    name="email" 
-                    placeholder="Email" 
-                    value={formData.email}
-                    onChange={handleChange} 
-                />
-                <Input 
-                    type="password" 
-                    name="password" 
-                    placeholder="Senha" 
-                    value={formData.password}
-                    onChange={handleChange} 
-                />
-                <Button type="submit">Entrar</Button>
-            </LoginForm>
-        </LoginContainer>
+        <div>
+            <Header/> 
+            <LoginContainer>
+                <LoginForm onSubmit={handleSubmit}>
+                    <Title>LOGIN</Title>
+                    <Input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Email" 
+                        value={formData.email}
+                        onChange={handleChange} 
+                    />
+                    <Input 
+                        type="password" 
+                        name="password" 
+                        placeholder="Senha" 
+                        value={formData.password}
+                        onChange={handleChange} 
+                    />
+                    <Button type="submit">Entrar</Button>
+                </LoginForm>
+            </LoginContainer>
+        </div>
     );
 };
 
