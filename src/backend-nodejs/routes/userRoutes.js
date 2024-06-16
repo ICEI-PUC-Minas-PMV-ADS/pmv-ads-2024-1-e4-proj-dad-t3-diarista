@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const userController = require("../controllers/userController");
 const checkToken = require("../middlewares/checkToken");
+// Rota para obter todos os nomes de usuários
+router.get("/names", userController.getAllUserNames);
 
 // Pega todos os usuários
 router.get("/", userController.getAllUsers);

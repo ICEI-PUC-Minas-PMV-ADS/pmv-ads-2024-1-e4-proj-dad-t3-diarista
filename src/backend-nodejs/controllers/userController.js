@@ -3,14 +3,26 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 exports.getAllUsers = async (req, res) => {
-    try {
-      const users = await User.find({}, "-password"); // Excluindo a senha da resposta
-      res.status(200).json(users);
-    } catch (error) {
-      console.log(error);
-      res.status(500).json({ msg: error });
-    }
-  };
+  try {
+    const users = await User.find({}, "-password"); // Excluindo a senha da resposta
+    res.status(200).json(users);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ msg: error });
+  }
+};
+
+// Controlador para obter todos os nomes de usuários
+exports.getAllUserNames = async (req, res) => {
+  try {
+    const users = await User.find({}, "name"); // Busca apenas o campo "name" de todos os usuários
+    const userNames = users.map((user) => user.name); // Extrai apenas os nomes dos usuários
+    res.status(200).json(userNames);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ msg: "Erro ao buscar nomes de usuários." });
+  }
+};
 
 // Controlador para obter usuário por ID
 exports.getUserById = async (req, res) => {
@@ -30,7 +42,9 @@ exports.registerUser = async (req, res) => {
 
   // Validar se todos os campos obrigatórios estão presentes
   if (!name || !email || !password || !confirmPassword || !location) {
-    return res.status(422).json({ msg: "Por favor, preencha todos os campos obrigatórios" });
+    return res
+      .status(422)
+      .json({ msg: "Por favor, preencha todos os campos obrigatórios" });
   }
 
   // Verificar se as senhas correspondem
@@ -42,7 +56,11 @@ exports.registerUser = async (req, res) => {
     // Verificar se o usuário já existe com o email fornecido
     const userExists = await User.findOne({ email: email });
     if (userExists) {
-      return res.status(422).json({ msg: "Este email já está sendo usado. Por favor, utilize outro email" });
+      return res
+        .status(422)
+        .json({
+          msg: "Este email já está sendo usado. Por favor, utilize outro email",
+        });
     }
 
     // Criar o hash da senha
@@ -58,15 +76,17 @@ exports.registerUser = async (req, res) => {
 
     // Salvar o usuário no banco de dados
     await user.save();
-    
+
     return res.status(201).json({ msg: "Usuário criado com sucesso" });
   } catch (error) {
     console.error("Erro ao registrar o usuário:", error);
-    return res.status(500).json({ msg: "Ocorreu um erro ao processar o seu pedido. Por favor, tente novamente mais tarde." });
+    return res
+      .status(500)
+      .json({
+        msg: "Ocorreu um erro ao processar o seu pedido. Por favor, tente novamente mais tarde.",
+      });
   }
 };
-
-
 
 // Controlador para login de usuário
 exports.loginUser = async (req, res) => {
@@ -99,7 +119,9 @@ exports.loginUser = async (req, res) => {
 
     const token = jwt.sign({ id: user._id }, secret);
 
-    return res.status(200).json({ msg: "Autenticação autorizada com sucesso", token });
+    return res
+      .status(200)
+      .json({ msg: "Autenticação autorizada com sucesso", token });
   } catch (error) {
     console.log(error);
     return res.status(500).json({ msg: error });
@@ -133,7 +155,11 @@ exports.addTransaction = async (req, res) => {
   try {
     // Verificar se todos os parâmetros necessários estão presentes
     if (!userId || !amount || !type) {
-      return res.status(422).json({ msg: "Por favor, forneça o ID do usuário, o valor da transação e o tipo." });
+      return res
+        .status(422)
+        .json({
+          msg: "Por favor, forneça o ID do usuário, o valor da transação e o tipo.",
+        });
     }
 
     const user = await User.findById(userId);
@@ -147,10 +173,14 @@ exports.addTransaction = async (req, res) => {
 
     await user.save();
 
-    return res.status(200).json({ msg: "Transação adicionada com sucesso!", amountAdded: amount });
+    return res
+      .status(200)
+      .json({ msg: "Transação adicionada com sucesso!", amountAdded: amount });
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ msg: "Erro ao adicionar transação.", error: error.message });
+    return res
+      .status(500)
+      .json({ msg: "Erro ao adicionar transação.", error: error.message });
   }
 };
 
@@ -167,8 +197,8 @@ exports.calculateTotalEntradas = async (req, res) => {
     let totalEntradas = 0;
 
     // Calculando o total das entradas
-    user.transactions.forEach(transaction => {
-      if (transaction.type === 'entrada') {
+    user.transactions.forEach((transaction) => {
+      if (transaction.type === "entrada") {
         totalEntradas += transaction.amount;
       }
     });
@@ -180,35 +210,34 @@ exports.calculateTotalEntradas = async (req, res) => {
   }
 };
 
-
 exports.calculateBalance = async (req, res) => {
   const { userId } = req.params;
 
   try {
-      const user = await User.findById(userId);
+    const user = await User.findById(userId);
 
-      if (!user) {
-          return res.status(404).json({ msg: "Usuário não encontrado!" });
+    if (!user) {
+      return res.status(404).json({ msg: "Usuário não encontrado!" });
+    }
+
+    let totalEntradas = 0;
+    let totalSaidas = 0;
+
+    // Calculando o total de entradas e saídas
+    user.transactions.forEach((transaction) => {
+      if (transaction.type === "entrada") {
+        totalEntradas += transaction.amount;
+      } else if (transaction.type === "saida") {
+        totalSaidas += transaction.amount;
       }
+    });
 
-      let totalEntradas = 0;
-      let totalSaidas = 0;
+    const saldo = totalEntradas - totalSaidas;
 
-      // Calculando o total de entradas e saídas
-      user.transactions.forEach(transaction => {
-          if (transaction.type === 'entrada') {
-              totalEntradas += transaction.amount;
-          } else if (transaction.type === 'saida') {
-              totalSaidas += transaction.amount;
-          }
-      });
-
-      const saldo = totalEntradas - totalSaidas;
-
-      return res.status(200).json({ totalEntradas, totalSaidas, saldo });
+    return res.status(200).json({ totalEntradas, totalSaidas, saldo });
   } catch (error) {
-      console.log(error);
-      return res.status(500).json({ msg: error });
+    console.log(error);
+    return res.status(500).json({ msg: error });
   }
 };
 
@@ -225,10 +254,10 @@ exports.calculateTotal = async (req, res) => {
     let total = 0;
 
     // Calculando o total
-    user.transactions.forEach(transaction => {
-      if (transaction.type === 'entrada') {
+    user.transactions.forEach((transaction) => {
+      if (transaction.type === "entrada") {
         total += transaction.amount;
-      } else if (transaction.type === 'saida') {
+      } else if (transaction.type === "saida") {
         total -= transaction.amount;
       }
     });
@@ -236,7 +265,9 @@ exports.calculateTotal = async (req, res) => {
     return res.status(200).json({ total });
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ msg: "Erro ao calcular o total.", error: error.message });
+    return res
+      .status(500)
+      .json({ msg: "Erro ao calcular o total.", error: error.message });
   }
 };
 
@@ -253,8 +284,8 @@ exports.calculateTotalSaidas = async (req, res) => {
     let totalSaidas = 0;
 
     // Calculando o total das saídas
-    user.transactions.forEach(transaction => {
-      if (transaction.type === 'saida') {
+    user.transactions.forEach((transaction) => {
+      if (transaction.type === "saida") {
         totalSaidas += transaction.amount;
       }
     });
@@ -262,9 +293,11 @@ exports.calculateTotalSaidas = async (req, res) => {
     return res.status(200).json({ totalSaidas });
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ msg: "Erro ao calcular o total de saídas.", error: error.message });
+    return res
+      .status(500)
+      .json({
+        msg: "Erro ao calcular o total de saídas.",
+        error: error.message,
+      });
   }
 };
-
-
-

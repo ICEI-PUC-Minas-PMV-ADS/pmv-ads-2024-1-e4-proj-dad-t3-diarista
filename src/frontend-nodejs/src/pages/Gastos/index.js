@@ -1,161 +1,179 @@
-import React, { useState, useEffect } from 'react'; 
-import axios from 'axios'; 
-import { Container, Input, Button, Table, Th, Td, RadioGroup } from './styles'; 
-import Header from '../../components/HeaderSaory1'; 
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { Container, Input, Button, Table, Th, Td, RadioGroup } from './styles';
+import Header from '../../components/HeaderSaory1';
 
-const App = () => { 
-  const [userId, setUserId] = useState(''); 
-  const [userName, setUserName] = useState(''); 
-  const [amount, setAmount] = useState(''); 
-  const [type, setType] = useState(''); 
-  const [userList, setUserList] = useState([]); 
-  const [total, setTotal] = useState(0); 
-  const [totalEntradas, setTotalEntradas] = useState(0); 
-  const [totalSaidas, setTotalSaidas] = useState(0); 
+const apiUrl = 'https://backend-puc-diarista.onrender.com';
 
-  useEffect(() => { 
-    const apiUrl = 'https://backend-puc-diarista.onrender.com'; 
+const App = () => {
+  const [userId, setUserId] = useState('');
+  const [userName, setUserName] = useState('');
+  const [amount, setAmount] = useState('');
+  const [type, setType] = useState('');
+  const [userList, setUserList] = useState([]);
+  const [total, setTotal] = useState(0);
+  const [totalEntradas, setTotalEntradas] = useState(0);
+  const [totalSaidas, setTotalSaidas] = useState(0);
+  const [loadingUser, setLoadingUser] = useState(false);
+  const [loadingTransaction, setLoadingTransaction] = useState(false);
+  const [error, setError] = useState('');
 
-    const fetchUserList = async () => { 
-      try { 
-        const response = await axios.get(`${apiUrl}/user`); 
-        setUserList(response.data); 
-      } catch (error) { 
-        console.error('Erro ao buscar lista de usuários:', error); 
-      } 
-    }; 
+  useEffect(() => {
+    const fetchUserList = async () => {
+      try {
+        const response = await axios.get(`${apiUrl}/user`);
+        setUserList(response.data);
+      } catch (error) {
+        console.error('Erro ao buscar lista de usuários:', error);
+      }
+    };
 
-    fetchUserList(); 
-  }, []); 
+    fetchUserList();
+  }, []);
 
-  useEffect(() => { 
-    if (userId) { 
-      const apiUrl = 'https://backend-puc-diarista.onrender.com'; 
+  const fetchUserData = async () => {
+    if (!userId) {
+      return;
+    }
 
-      const fetchTotal = async () => { 
-        try { 
-          const response = await axios.get(`${apiUrl}/user/${userId}/total`); 
-          setTotal(response.data.total); 
-        } catch (error) { 
-          console.error('Erro ao buscar o total:', error); 
-        } 
-      }; 
+    try {
+      const [totalResponse, entradasResponse, saidasResponse] = await Promise.all([
+        axios.get(`${apiUrl}/user/${userId}/total`),
+        axios.get(`${apiUrl}/user/${userId}/total-entradas`),
+        axios.get(`${apiUrl}/user/${userId}/total-saidas`),
+      ]);
 
-      const fetchEntradas = async () => { 
-        try { 
-          const response = await axios.get(`${apiUrl}/user/${userId}/total-entradas`); 
-          setTotalEntradas(response.data.totalEntradas); 
-        } catch (error) { 
-          console.error('Erro ao buscar as entradas:', error); 
-        } 
-      }; 
+      setTotal(totalResponse.data.total);
+      setTotalEntradas(entradasResponse.data.totalEntradas);
+      setTotalSaidas(saidasResponse.data.totalSaidas);
+    } catch (error) {
+      console.error('Erro ao buscar dados do usuário:', error);
+    }
+  };
 
-      const fetchSaidas = async () => { 
-        try { 
-          const response = await axios.get(`${apiUrl}/user/${userId}/total-saidas`); 
-          setTotalSaidas(response.data.totalSaidas); 
-        } catch (error) { 
-          console.error('Erro ao buscar as saídas:', error); 
-        } 
-      }; 
+  useEffect(() => {
+    fetchUserData();
+  }, [userId]);
 
-      fetchTotal(); 
-      fetchEntradas(); 
-      fetchSaidas(); 
-    } 
-  }, [userId]); 
+  const handleSearchUser = async () => {
+    setLoadingUser(true);
+    setError('');
 
-  const handleAddTransaction = async () => { 
-    const apiUrl = 'https://backend-puc-diarista.onrender.com'; 
+    try {
+      const response = await axios.get(`${apiUrl}/user?name=${userName}`);
+      const user = response.data.find((user) => user.name === userName);
 
-    try { 
-      await axios.post(`${apiUrl}/user/${userId}/transactions`, { amount, type }); 
-      setAmount(''); 
-      setType(''); 
-    } catch (error) { 
-      console.error('Erro ao adicionar transação:', error); 
-    } 
-  }; 
+      if (user) {
+        setUserId(user._id);
+      } else {
+        setError('Usuário não encontrado.');
+      }
+    } catch (error) {
+      setError('Erro ao buscar usuário.');
+    } finally {
+      setLoadingUser(false);
+    }
+  };
 
-  const handleSearchUser = () => { 
-    const user = userList.find(user => user.name === userName); 
-    if (user) { 
-      setUserId(user._id); 
-    } else { 
-      alert('Usuário não encontrado!'); 
-    } 
-  }; 
+  const handleAddTransaction = async () => {
+    setLoadingTransaction(true);
+    setError('');
 
-  return ( 
+    try {
+      await axios.post(`${apiUrl}/user/${userId}/transactions`, { amount, type });
+      setAmount('');
+      setType('');
+
+      // Após adicionar a transação, atualiza os dados do usuário
+      await fetchUserData();
+    } catch (error) {
+      setError('Erro ao adicionar transação.');
+    } finally {
+      setLoadingTransaction(false);
+    }
+  };
+
+  return (
     <>
-      <Header/> 
-      <Container> 
-        <div> 
-          <label htmlFor="userName">Digite o Nome do Usuário:</label> 
-          <Input 
-            type="text" 
-            id="userName" 
-            value={userName} 
-            onChange={(e) => setUserName(e.target.value)} 
-          /> 
-          <Button onClick={handleSearchUser}>Pesquisar</Button> 
-        </div> 
-        <div> 
-          <label htmlFor="userId">ID do Usuário Selecionado:</label> 
-          <span>{userId}</span> 
-        </div> 
-        <div> 
-          <label htmlFor="amount">Valor:</label> 
-          <Input 
-            type="number" 
-            id="amount" 
-            value={amount} 
-            onChange={(e) => setAmount(e.target.value)} 
-          /> 
-        </div> 
-        <div> 
-          <label>Tipo:</label> 
-          <RadioGroup> 
-            <input 
-              type="radio" 
-              id="entrada" 
-              value="entrada" 
-              checked={type === 'entrada'} 
-              onChange={() => setType('entrada')} 
-            /> 
-            <label htmlFor="entrada">Entrada</label> 
-            <input 
-              type="radio" 
-              id="saida" 
-              value="saida" 
-              checked={type === 'saida'} 
-              onChange={() => setType('saida')} 
-            /> 
-            <label htmlFor="saida">Saída</label> 
-          </RadioGroup> 
-        </div> 
-        <Button onClick={handleAddTransaction}>Adicionar Transação</Button> 
-        <Table> 
-          <thead> 
-            <tr> 
-              <Th>Nome</Th> 
-              <Th>Total de Entradas</Th> 
-              <Th>Total de Saídas</Th> 
-              <Th>Total</Th> 
-            </tr> 
-          </thead> 
-          <tbody> 
-            <tr> 
-              <Td>{userName}</Td> 
-              <Td>{totalEntradas}</Td> 
-              <Td>{totalSaidas}</Td> 
-              <Td>{total}</Td> 
-            </tr> 
-          </tbody> 
-        </Table> 
-      </Container> 
+      <Header />
+      <Container>
+        <div className="search-container">
+          <label htmlFor="userName">Selecione o Usuário:</label>
+          <select
+            id="userName"
+            value={userId}
+            onChange={(e) => setUserId(e.target.value)}
+          >
+            <option value="">Selecione um usuário</option>
+            {userList.map((user) => (
+              <option key={user._id} value={user._id}>{user.name}</option>
+            ))}
+          </select>
+          <Button onClick={handleSearchUser} disabled={loadingUser}>
+            {loadingUser ? 'Carregando...' : 'Selecionar'}
+          </Button>
+        </div>
+        {error && <p>{error}</p>}
+        {userId && (
+          <div>
+            <label>ID do Usuário Selecionado:</label>
+            <span>{userId}</span>
+          </div>
+        )}
+        <div>
+          <label htmlFor="amount">Valor:</label>
+          <Input
+            type="number"
+            id="amount"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value)}
+          />
+        </div>
+        <div>
+          <label>Tipo:</label>
+          <RadioGroup>
+            <input
+              type="radio"
+              id="entrada"
+              value="entrada"
+              checked={type === 'entrada'}
+              onChange={() => setType('entrada')}
+            />
+            <label htmlFor="entrada">Entrada</label>
+            <input
+              type="radio"
+              id="saida"
+              value="saida"
+              checked={type === 'saida'}
+              onChange={() => setType('saida')}
+            />
+            <label htmlFor="saida">Saída</label>
+          </RadioGroup>
+        </div>
+        <Button onClick={handleAddTransaction} disabled={!userId || loadingTransaction}>
+          {loadingTransaction ? 'Adicionando...' : 'Adicionar Transação'}
+        </Button>
+        <Table>
+          <thead>
+            <tr>
+              <Th>Nome</Th>
+              <Th>Total de Entradas</Th>
+              <Th>Total de Saídas</Th>
+              <Th>Total</Th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <Td>{userName}</Td>
+              <Td>{totalEntradas}</Td>
+              <Td>{totalSaidas}</Td>
+              <Td style={{ fontWeight: 'bold', backgroundColor: '#f2f2f2' }}>{total}</Td>
+            </tr>
+          </tbody>
+        </Table>
+      </Container>
     </>
-  ); 
-}; 
+  );
+};
 
 export default App;
