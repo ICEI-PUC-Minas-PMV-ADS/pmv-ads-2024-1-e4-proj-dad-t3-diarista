@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Header from '../../../src/components/Header';
 import * as S from './styles';
-
-const backendUrl = 'https://backend-puc-diarista.onrender.com'; // Definir o URL do backend
 
 function ClienteForm({ onSubmit }) {
   const [nome, setNome] = useState('');
@@ -57,48 +55,13 @@ function ClienteForm({ onSubmit }) {
 function CadastroCliente() {
   const [clientes, setClientes] = useState([]);
 
-  const fetchClientes = async () => {
-    try {
-      const response = await fetch(`${backendUrl}/api/clientes`); // Utilize o backendUrl
-      if (response.ok) {
-        const data = await response.json();
-        setClientes(data);
-      } else {
-        console.error('Erro ao buscar clientes:', response.statusText);
-      }
-    } catch (error) {
-      console.error('Erro ao conectar com o servidor:', error);
-    }
-  };
-
-  useEffect(() => {
-    fetchClientes();
-  }, []);
-
-  const handleClienteSubmit = async (cliente) => {
-    try {
-      const response = await fetch(`${backendUrl}/api/clientes`, { // Utilize o backendUrl
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(cliente)
-      });
-
-      if (response.ok) {
-        const newCliente = await response.json();
-        fetchClientes(); // Recarrega a lista de clientes após a adição de um novo cliente
-      } else {
-        console.error('Erro ao cadastrar cliente:', response.statusText);
-      }
-    } catch (error) {
-      console.error('Erro ao conectar com o servidor:', error);
-    }
+  const handleClienteSubmit = (cliente) => {
+    setClientes([...clientes, cliente]);
   };
 
   return (
     <>
-      <Header />
+      <Header/>
       <S.Container>
         <S.Content>
           <ClienteForm onSubmit={handleClienteSubmit} />
