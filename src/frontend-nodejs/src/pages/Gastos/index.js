@@ -7,7 +7,7 @@ const apiUrl = 'https://backend-puc-diarista.onrender.com';
 
 const App = () => {
   const [userId, setUserId] = useState('');
-  const [userName, setUserName] = useState('');
+  const [userName, setUserName] = useState(''); // Adicionando estado para o nome do usuário
   const [amount, setAmount] = useState('');
   const [type, setType] = useState('');
   const [userList, setUserList] = useState([]);
@@ -65,6 +65,7 @@ const App = () => {
 
       if (user) {
         setUserId(user._id);
+        setUserName(user.name); // Atualizando userName com o nome do usuário encontrado
       } else {
         setError('Usuário não encontrado.');
       }
@@ -102,7 +103,16 @@ const App = () => {
           <select
             id="userName"
             value={userId}
-            onChange={(e) => setUserId(e.target.value)}
+            onChange={(e) => {
+              const selectedUserId = e.target.value;
+              setUserId(selectedUserId);
+
+              // Encontrar o nome do usuário correspondente ao _id selecionado
+              const selectedUser = userList.find(user => user._id === selectedUserId);
+              if (selectedUser) {
+                setUserName(selectedUser.name); // Atualizando userName com o nome correspondente
+              }
+            }}
           >
             <option value="">Selecione um usuário</option>
             {userList.map((user) => (
@@ -164,7 +174,7 @@ const App = () => {
           </thead>
           <tbody>
             <tr>
-              <Td>{userName}</Td>
+              <Td>{userName}</Td> {/* Exibindo o nome do usuário selecionado */}
               <Td>{totalEntradas}</Td>
               <Td>{totalSaidas}</Td>
               <Td style={{ fontWeight: 'bold', backgroundColor: '#f2f2f2' }}>{total}</Td>
