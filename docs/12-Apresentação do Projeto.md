@@ -12,13 +12,9 @@ O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do conte
 
 ### Cores
 
-### Cores
+<span style="color: #7EB174;">&#9679;</span> Verde: #7EB174  
+<span style="color: #ffffff;">&#9679;</span> Branco: #ffffff
 
-<span style="color: #7EB174;">&#9679;</span> #7EB174  
-<span style="color: #ffffff; background-color: #000000; padding: 2px;">&#9679;</span> #ffffff
- 
-<span style="color: #7EB174;">&#9679;</span> #7EB174  
-<span style="color: #ffffff; background-color: #000000; padding: 2px;">&#9679;</span> #ffffff
 
 ### Imagens, Banner e Logo
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t3-diarista/assets/97962041/61df4ffa-c0d3-420a-a3bb-462209e6c061)
