@@ -1,54 +1,69 @@
 import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Button } from 'react-native';
-import * as Notifications from "expo-notifications";
-
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import * as Notifications from 'expo-notifications';
 
 Notifications.setNotificationHandler({
-    handleNotification: async () => ({
-        shouldShowAlert: true,
-        shouldPlaySound: true,
-        shouldSetBadge: true,
-
-    }),
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: true,
+    shouldSetBadge: true,
+  }),
 });
 
-export  default function Notificacoes() {
-const handleCallNotifications = async () =>{
-const {status} = await Notifications.getPermissionsAsync();
+export default function Notificacoes() {
+  const navigation = useNavigation();
 
-if (status !== 'granted'){
-    Alert.Alert("Você não deixou as notificações ativas");
-    return;
-}
-const token = await Notifications.getExpoPushTokenAsync();
+  const handleCallNotifications = async () => {
+    const { status } = await Notifications.getPermissionsAsync();
 
-console.log(token);
+    if (status !== 'granted') {
+      Alert.alert('Você não deixou as notificações ativas');
+      return;
+    }
+    const token = await Notifications.getExpoPushTokenAsync();
 
-};
-    return(
-<View style= {styles.container}>
-    <Text style= {styles.title}>Notificacoes</Text>
-    <Button title= "Tarefa agendada" style={styles.button}
-    onPress={handleCallNotifications}/>
-   
-</View>
-    );
+    console.log(token);
+  };
+
+  const navigateToAgendamento = () => {
+    navigation.navigate('Agendamento'); // Navega para a tela de Agendamento
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Notificações</Text>
+      <TouchableOpacity
+        style={[styles.button, { backgroundColor: '#4CAF50' }]} // Estilização para o botão verde
+        onPress={navigateToAgendamento} // Navega para Agendamento ao pressionar o botão
+      >
+        <Text style={styles.buttonText}>Tarefa agendada</Text>
+      </TouchableOpacity>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    title: {
-     fontSize: 22,
-     fontWeight: 'bold',
-    },
-    button: {
-     padding: 20,
-     fontSize: 20,
-     fontWeight: "bold",
-    },
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  button: {
+    paddingVertical: 15,
+    paddingHorizontal: 30,
+    borderRadius: 0,
+    backgroundColor: '#89b364',
+  },
+  buttonText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#fff',
+  },
 });
