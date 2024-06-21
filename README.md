@@ -1,4 +1,4 @@
-# Diarista
+# DiaristaAPP
 
 
 `Análise e Desenv. de Sistemas`
