@@ -1,0 +1,1 @@
+src/DiaristaAPI/.vs/DiaristaAPI/FileContentIndex/*.vsidx

@@ -61,3 +61,25 @@ export const Button = styled.button`
     background-color: #45a049;
   }
 `;
+
+export const MessagePopup = styled.div`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+`;

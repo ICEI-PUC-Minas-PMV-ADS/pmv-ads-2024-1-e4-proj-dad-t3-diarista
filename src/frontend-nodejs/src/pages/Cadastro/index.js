@@ -8,7 +8,8 @@ import {
   Title,
   CadastroForm,
   Input,
-  Button
+  Button,
+  MessagePopup
 } from './style';
 
 const RegisterForm = () => {
@@ -19,6 +20,8 @@ const RegisterForm = () => {
     confirmPassword: '',
     location: ''
   });
+  const [message, setMessage] = useState(''); // Estado para a mensagem de feedback
+  const [showMessage, setShowMessage] = useState(false); // Estado para controlar a exibição do pop-up
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,6 +33,8 @@ const RegisterForm = () => {
     try {
       const response = await axios.post('https://backend-puc-diarista.onrender.com/user/auth/register', formData);
       console.log(response.data);
+      setMessage('Cadastro realizado com sucesso!');
+      setShowMessage(true);
       // Limpar o formulário após o registro bem-sucedido
       setFormData({
         name: '',
@@ -40,7 +45,14 @@ const RegisterForm = () => {
       });
     } catch (error) {
       console.error('Erro ao enviar dados:', error);
+      setMessage('Erro ao realizar cadastro. Por favor, tente novamente.');
+      setShowMessage(true);
     }
+
+    // Oculta a mensagem após 3 segundos
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 3000);
   };
 
   return (
@@ -93,6 +105,7 @@ const RegisterForm = () => {
             <Button type="submit">Registrar</Button>
           </CadastroForm>
         </FormWrapper>
+        {showMessage && <MessagePopup>{message}</MessagePopup>} {/* Exibe o pop-up se showMessage for true */}
       </CadastroContainer>
     </div>
   );
