@@ -23,7 +23,11 @@ O projeto tem como objetivo o desenvolvimento de um software prático e intuitiv
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+### Aplicação Web
+[Clique aqui para acessar a aplicação web](https://diarista-app-git-master-saory-s-projects.vercel.app/?_vercel_share=ufIXnWeRm2hcXXHYKNO9WEwyL6I8o4Zh)
+
+### Aplicação Mobile
+ 
 
 # Documentação
 
