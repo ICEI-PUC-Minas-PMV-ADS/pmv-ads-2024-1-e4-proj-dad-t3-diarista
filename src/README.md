@@ -1,11 +1,13 @@
 # Instruções de utilização
 
-## Instalação do Site
+## Deploy
 
-O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores...
+### Web
+https://diarista-app-git-master-saory-s-projects.vercel.app?_vercel_share=ufIXnWeRm2hcXXHYKNO9WEwyL6I8o4Zh
 
-## Histórico de versões
+### Mobile
 
-### [0.1.0] - DD/MM/AAAA
-#### Adicionado
-- Adicionado ...
+
+### Back-End
+https://github.com/santanagabi/backend-diarista-puc
+
