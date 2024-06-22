@@ -27,7 +27,7 @@ O projeto tem como objetivo o desenvolvimento de um software prático e intuitiv
 [Clique aqui para acessar a aplicação web](https://diarista-app-git-master-saory-s-projects.vercel.app/?_vercel_share=ufIXnWeRm2hcXXHYKNO9WEwyL6I8o4Zh)
 
 ### Aplicação Mobile
- [Clique aqui para acessar a aplicação web](https://expo.dev/artifacts/eas/wZmn4DaSoTTS852AmYiyaJ.aab)
+ [Clique aqui para download da aplicação mobile](https://expo.dev/artifacts/eas/wZmn4DaSoTTS852AmYiyaJ.aab)
 
 # Documentação
 
