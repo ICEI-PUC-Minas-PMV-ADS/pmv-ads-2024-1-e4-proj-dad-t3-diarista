@@ -13,7 +13,6 @@ const RoutesApp = () => {
         <BrowserRouter> 
             <Fragment> 
                 <Routes> 
-                    {/* Redireciona a rota raiz (/) para a página Home (/home) */} 
                     <Route path="/" element={<Navigate to="/home" />} /> 
                     <Route path="/home" element={<Home />} /> 
                     <Route path="/login" element={<Login />} /> 

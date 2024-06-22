@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
-import "moment/locale/pt-br"; 
+import "moment/locale/pt-br";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import Header from "../../components/HeaderSaory2";
-import axios from "axios"; 
+import axios from "axios";
 
-moment.locale("pt-br"); 
+moment.locale("pt-br");
 const localizer = momentLocalizer(moment);
 
 const messages = {
@@ -34,8 +34,19 @@ const App = () => {
   const [location, setLocation] = useState("");
   const [notes, setNotes] = useState("");
   const [notifications, setNotifications] = useState(false);
-  const [evaluation, setEvaluation] = useState(""); 
+  const [evaluation, setEvaluation] = useState("");
   const [selectEvent, setSelectEvent] = useState(null);
+
+  useEffect(() => {
+    const storedEvents = localStorage.getItem('events');
+    if (storedEvents) {
+      setEvents(JSON.parse(storedEvents));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('events', JSON.stringify(events));
+  }, [events]);
 
   const handleSelectSlot = (slotInfo) => {
     setShowModal(true);
@@ -46,7 +57,7 @@ const App = () => {
     setLocation("");
     setNotes("");
     setNotifications(false);
-    setEvaluation(""); 
+    setEvaluation("");
   };
 
   const handleSelectedEvent = (event) => {
@@ -57,7 +68,7 @@ const App = () => {
     setLocation(event.location || "");
     setNotes(event.notes || "");
     setNotifications(event.notifications || false);
-    setEvaluation(event.evaluation || ""); 
+    setEvaluation(event.evaluation || "");
   };
 
   const saveEvent = async () => {
@@ -83,9 +94,8 @@ const App = () => {
         setEvents([...events, { ...eventDetails, id: events.length + 1 }]);
       }
 
-     
       try {
-        await axios.post('https://backend-puc-diarista.onrender.com', eventDetails);
+        await axios.post('http://localhost:5000/events', eventDetails); 
       } catch (error) {
         console.error('Erro ao enviar dados:', error);
       }
@@ -96,7 +106,7 @@ const App = () => {
       setLocation("");
       setNotes("");
       setNotifications(false);
-      setEvaluation(""); // Reset evaluation state
+      setEvaluation("");
       setSelectEvent(null);
     }
   };
@@ -111,7 +121,7 @@ const App = () => {
       setLocation("");
       setNotes("");
       setNotifications(false);
-      setEvaluation(""); 
+      setEvaluation("");
       setSelectEvent(null);
     }
   };
@@ -128,8 +138,8 @@ const App = () => {
         selectable={true}
         onSelectSlot={handleSelectSlot}
         onSelectEvent={handleSelectedEvent}
-        messages={messages} 
-        views={['month', 'week', 'day', 'agenda']} 
+        messages={messages}
+        views={['month', 'week', 'day', 'agenda']}
       />
 
       {showModal && (
@@ -161,7 +171,7 @@ const App = () => {
                     setLocation("");
                     setNotes("");
                     setNotifications(false);
-                    setEvaluation(""); 
+                    setEvaluation("");
                     setSelectEvent(null);
                   }}
                 />
@@ -227,27 +237,27 @@ const App = () => {
                   Avaliação da Diária:
                 </label>
                 <div className="d-flex justify-content-between mt-2">
-                  <span 
+                  <span
                     role="button"
                     onClick={() => setEvaluation("Muito Bom")}
                     style={{ fontSize: "1.5rem", cursor: "pointer" }}
                   >😀</span>
-                  <span 
+                  <span
                     role="button"
                     onClick={() => setEvaluation("Bom")}
                     style={{ fontSize: "1.5rem", cursor: "pointer" }}
                   >😊</span>
-                  <span 
+                  <span
                     role="button"
                     onClick={() => setEvaluation("Médio")}
                     style={{ fontSize: "1.5rem", cursor: "pointer" }}
                   >😐</span>
-                  <span 
+                  <span
                     role="button"
                     onClick={() => setEvaluation("Ruim")}
                     style={{ fontSize: "1.5rem", cursor: "pointer" }}
                   >😟</span>
-                  <span 
+                  <span
                     role="button"
                     onClick={() => setEvaluation("Muito Ruim")}
                     style={{ fontSize: "1.5rem", cursor: "pointer" }}
@@ -288,9 +298,3 @@ const App = () => {
 };
 
 export default App;
-
-
-
-
-
-

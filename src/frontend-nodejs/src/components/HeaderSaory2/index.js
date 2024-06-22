@@ -11,17 +11,19 @@ function Header() {
             <img src={LOGO} alt="Logo"/>
         </S.LeftSide> 
         <S.CenterSide>
-          <S.Title>Agenda</S.Title> 
+          <S.Title>Controle Financeiro</S.Title> 
         </S.CenterSide>
         <S.RightSide>
             <Link to="/Home">INÍCIO</Link>
             <Link to="/Services">SERVIÇOS</Link>
             <Link to="/Agendamento">AGENDA</Link>
             <Link to="/Gastos">FINANÇAS</Link>
-            <S.Notification href="#">
-              <img src={SINO} alt="Notificações"/>
-              <span>1</span>
-            </S.Notification>
+            <Link to="/Agendamento">
+              <S.Notification>
+                <img src={SINO} alt="Notificações"/>
+                <span>1</span>
+              </S.Notification>
+            </Link>
         </S.RightSide>
      </S.Container> 
   );

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 1120px;
@@ -11,13 +11,9 @@ export const Container = styled.div`
   justify-content: space-around;
   padding: 15px 0px;
   gap: 10px;
-  align-items: center;
-  flex-direction: column;
 
   @media (max-width: 750px) {
     display: grid;
-    gap: 20px;
-    text-align: center;
   }
 `;
 
@@ -26,9 +22,7 @@ export const InputContent = styled.div`
   flex-direction: column;
 `;
 
-export const Label = styled.label`
-  margin-bottom: 5px;
-`;
+export const Label = styled.label``;
 
 export const Input = styled.input`
   outline: none;
@@ -36,7 +30,6 @@ export const Input = styled.input`
   padding: 5px 10px;
   font-size: 15px;
   border: 1px solid #ccc;
-  margin-bottom: 10px;
 `;
 
 export const RadioGroup = styled.div`
@@ -44,23 +37,20 @@ export const RadioGroup = styled.div`
   align-items: center;
 
   input {
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 5px;
+    accent-color: black;
+    margin-top: 0;
   }
 `;
 
 export const Button = styled.button`
-  padding: 10px 20px;
+  padding: 5px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   color: white;
-  background-color: #7eb174;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #5c8f5e;
-  }
+  background-color: #7EB174;
 `;
 
 export const Table = styled.table`
@@ -71,12 +61,9 @@ export const Table = styled.table`
   border-radius: 5px;
   max-width: 1120px;
   margin: 20px auto;
-  border-collapse: collapse;
 `;
 
-export const Thead = styled.thead`
-  border-bottom: 2px solid #ccc;
-`;
+export const Thead = styled.thead``;
 
 export const Tbody = styled.tbody``;
 
@@ -84,20 +71,31 @@ export const Tr = styled.tr``;
 
 export const Th = styled.th`
   text-align: start;
-  padding: 10px;
+  border-bottom: inset;
+  padding-bottom: 5px;
+  text-align: ${(props) => (props.alignCenter ? "center" : "start")};
+  width: ${(props) => (props.width ? props.width + "%" : "auto")};
 `;
 
-export const Td = styled.td`
-padding: 10px;
-text-align: ${(props) => (props.alignCenter ? 'center' : 'start')};
-border-bottom: 1px solid #ccc;
+export const Resume = styled.div`
+  max-width: 1120px;
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  margin-top: 60px;
+  justify-content: space-around;
+`;
 
-/* Estilos para destacar o total */
-${(props) =>
-  props.total &&
-  `
-  font-weight: bold;
-  background-color: #f2f2f2;
-  text-align: right;
-`}
+export const ResumeItem = styled.div`
+  flex: 1;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
 `;

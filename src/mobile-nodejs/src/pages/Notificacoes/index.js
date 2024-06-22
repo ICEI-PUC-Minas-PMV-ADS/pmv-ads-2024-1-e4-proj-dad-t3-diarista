@@ -27,15 +27,15 @@ export default function Notificacoes() {
   };
 
   const navigateToAgendamento = () => {
-    navigation.navigate('Agendamento'); // Navega para a tela de Agendamento
+    navigation.navigate('Agendamento'); 
   };
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Notificações</Text>
       <TouchableOpacity
-        style={[styles.button, { backgroundColor: '#4CAF50' }]} // Estilização para o botão verde
-        onPress={navigateToAgendamento} // Navega para Agendamento ao pressionar o botão
+        style={[styles.button, { backgroundColor: '#4CAF50' }]} 
+        onPress={navigateToAgendamento} 
       >
         <Text style={styles.buttonText}>Tarefa agendada</Text>
       </TouchableOpacity>

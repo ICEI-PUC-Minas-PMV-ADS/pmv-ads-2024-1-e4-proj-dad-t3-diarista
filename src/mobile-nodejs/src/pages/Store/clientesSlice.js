@@ -13,4 +13,3 @@ const clientesSlice = createSlice({
 export const { addCliente } = clientesSlice.actions;
 export default clientesSlice.reducer;
 
-//Gerenciado de estado dos clientes cadastrados fazer instalacao do npm install @reduxjs/toolkit react-redux

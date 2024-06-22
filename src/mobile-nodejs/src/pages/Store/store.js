@@ -6,4 +6,3 @@ export const store = configureStore({
     clientes: clientesReducer,
   },
 });
-//Gerenciado de estado dos clientes cadastrados fazer instalacao do npm install @reduxjs/toolkit react-redux

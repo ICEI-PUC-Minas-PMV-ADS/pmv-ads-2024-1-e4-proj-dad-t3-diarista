@@ -7,8 +7,8 @@ const Login = () => {
         email: '',
         password: ''
     });
-    const [message, setMessage] = useState(''); // Estado para a mensagem de feedback
-    const [showMessage, setShowMessage] = useState(false); // Estado para controlar a exibição do pop-up
+    const [message, setMessage] = useState(''); 
+    const [showMessage, setShowMessage] = useState(false); 
 
     const handleChange = (e) => {
         setFormData({
@@ -32,7 +32,6 @@ const Login = () => {
             const data = await response.json();
 
             if (response.ok) {
-                // Login bem-sucedido
                 console.log("Login bem-sucedido!", data.token);
                 setMessage("Login realizado com sucesso!");
                 setShowMessage(true);
@@ -40,7 +39,6 @@ const Login = () => {
                     window.location.href = '/Gastos';
                 }, 1000);
             } else {
-                // Login falhou
                 console.error("Falha no login:", data.msg);
                 setMessage(`Falha no login: ${data.msg}`);
                 setShowMessage(true);
@@ -51,7 +49,6 @@ const Login = () => {
             setShowMessage(true);
         }
 
-        // Oculta a mensagem após 3 segundos
         setTimeout(() => {
             setShowMessage(false);
         }, 3000);
@@ -79,7 +76,7 @@ const Login = () => {
                     />
                     <Button type="submit">Entrar</Button>
                 </LoginForm>
-                {showMessage && <MessagePopup>{message}</MessagePopup>} {/* Exibe o pop-up se showMessage for true */}
+                {showMessage && <MessagePopup>{message}</MessagePopup>} 
             </LoginContainer>
         </div>
     );

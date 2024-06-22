@@ -18,10 +18,12 @@ function Header() {
             <Link to="/Services">SERVIÇOS</Link>
             <Link to="/Agendamento">AGENDA</Link>
             <Link to="/Gastos">FINANÇAS</Link>
-            <S.Notification href="#">
-              <img src={SINO} alt="Notificações"/>
-              <span>1</span>
-            </S.Notification>
+            <Link to="/Agendamento">
+              <S.Notification>
+                <img src={SINO} alt="Notificações"/>
+                <span>1</span>
+              </S.Notification>
+            </Link>
         </S.RightSide>
      </S.Container> 
   );

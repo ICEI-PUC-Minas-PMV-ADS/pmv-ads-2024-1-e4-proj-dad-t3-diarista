@@ -1,7 +1,7 @@
 import React from 'react'; 
 import { Link } from 'react-router-dom'; 
 import PropTypes from 'prop-types'; 
-import { Card1 } from './styles'; // Importar o estilo Card1
+import { Card1 } from './styles'; 
 
 const TaskCard = ({ image, title, link }) => ( 
   <Card1> 

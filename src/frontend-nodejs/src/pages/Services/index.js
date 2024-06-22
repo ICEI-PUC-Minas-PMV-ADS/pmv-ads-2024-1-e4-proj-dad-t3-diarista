@@ -6,7 +6,6 @@ import planejador from '../../assets/iconPlanejador.png';
 import gastos from '../../assets/iconCredito.png';
 import icon from '../../assets/icon.png';
 
-
 function Services() {
   return (
   

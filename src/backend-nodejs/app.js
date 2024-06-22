@@ -13,11 +13,9 @@ app.use("/user", userRoutes);
 const routes = require("./routes/router");
 app.use("/api", routes);
 
-// Adicione as rotas de clientes
 const clienteRoutes = require("./routes/clienteRoutes");
 app.use("/api", clienteRoutes);
 
-// Credenciais do banco de dados
 const dbUser = process.env.DB_USER;
 const dbPassword = process.env.DB_PASS;
 

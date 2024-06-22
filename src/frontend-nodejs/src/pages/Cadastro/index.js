@@ -20,8 +20,8 @@ const RegisterForm = () => {
     confirmPassword: '',
     location: ''
   });
-  const [message, setMessage] = useState(''); // Estado para a mensagem de feedback
-  const [showMessage, setShowMessage] = useState(false); // Estado para controlar a exibição do pop-up
+  const [message, setMessage] = useState(''); 
+  const [showMessage, setShowMessage] = useState(false); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,7 +35,6 @@ const RegisterForm = () => {
       console.log(response.data);
       setMessage('Cadastro realizado com sucesso!');
       setShowMessage(true);
-      // Limpar o formulário após o registro bem-sucedido
       setFormData({
         name: '',
         email: '',
@@ -49,7 +48,6 @@ const RegisterForm = () => {
       setShowMessage(true);
     }
 
-    // Oculta a mensagem após 3 segundos
     setTimeout(() => {
       setShowMessage(false);
     }, 3000);
@@ -105,7 +103,7 @@ const RegisterForm = () => {
             <Button type="submit">Registrar</Button>
           </CadastroForm>
         </FormWrapper>
-        {showMessage && <MessagePopup>{message}</MessagePopup>} {/* Exibe o pop-up se showMessage for true */}
+        {showMessage && <MessagePopup>{message}</MessagePopup>} 
       </CadastroContainer>
     </div>
   );

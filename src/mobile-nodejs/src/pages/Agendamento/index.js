@@ -11,7 +11,7 @@ const App = () => {
   const [location, setLocation] = useState('');
   const [notes, setNotes] = useState('');
   const [notifications, setNotifications] = useState(false);
-  const [evaluation, setEvaluation] = useState(""); // New state for evaluation
+  const [evaluation, setEvaluation] = useState(""); 
   const [selectEvent, setSelectEvent] = useState(null);
   const [markedDates, setMarkedDates] = useState({});
 
@@ -45,7 +45,7 @@ const App = () => {
     setLocation(event.location || '');
     setNotes(event.notes || '');
     setNotifications(event.notifications || false);
-    setEvaluation(event.evaluation || ""); // Set evaluation state
+    setEvaluation(event.evaluation || ""); 
   };
 
   const saveEvent = () => {
@@ -57,7 +57,7 @@ const App = () => {
         notes,
         notifications,
         date: selectedDate,
-        evaluation // Include evaluation in event details
+        evaluation 
       };
 
       if (selectEvent) {
@@ -91,7 +91,7 @@ const App = () => {
     setNotes('');
     setNotifications(false);
     setSelectEvent(null);
-    setEvaluation(''); // Reset evaluation
+    setEvaluation(''); 
   };
 
   const cancelEvent = () => {

@@ -3,7 +3,6 @@ const { Service: ServiceModel } = require("../models/Service");
 const serviceController = {
     create: async (req, res) => {
         try {
-            // Verificação básica dos dados de entrada
             const service = { 
                  name: req.body.name,
                  date: req.body.date,

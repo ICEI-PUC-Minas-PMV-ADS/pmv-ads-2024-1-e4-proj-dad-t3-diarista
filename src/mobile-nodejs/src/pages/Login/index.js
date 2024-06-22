@@ -29,13 +29,11 @@ const Login = () => {
             const data = await response.json();
 
             if (response.ok) {
-                // Login bem-sucedido
                 console.log("Login bem-sucedido!", data.token);
                 setTimeout(() => {
                     navigation.navigate('Gastos');
                 }, 1000);
             } else {
-                // Login falhou
                 Alert.alert("Falha no login", data.msg);
             }
         } catch (error) {

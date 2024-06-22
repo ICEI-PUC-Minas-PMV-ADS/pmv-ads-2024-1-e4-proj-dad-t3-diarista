@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '../../../src/components/HeaderSaory5';
 import * as S from './styles';
 
-const backendUrl = 'https://backend-puc-diarista.onrender.com'; // Definir o URL do backend
+const backendUrl = 'https://backend-puc-diarista.onrender.com'; 
 
 function ClienteForm({ onSubmit }) {
   const [nome, setNome] = useState('');
@@ -59,7 +59,7 @@ function CadastroCliente() {
 
   const fetchClientes = async () => {
     try {
-      const response = await fetch(`${backendUrl}/api/clientes`); // Utilize o backendUrl
+      const response = await fetch(`${backendUrl}/api/clientes`); 
       if (response.ok) {
         const data = await response.json();
         setClientes(data);
@@ -77,7 +77,7 @@ function CadastroCliente() {
 
   const handleClienteSubmit = async (cliente) => {
     try {
-      const response = await fetch(`${backendUrl}/api/clientes`, { // Utilize o backendUrl
+      const response = await fetch(`${backendUrl}/api/clientes`, { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -87,7 +87,7 @@ function CadastroCliente() {
 
       if (response.ok) {
         const newCliente = await response.json();
-        fetchClientes(); // Recarrega a lista de clientes após a adição de um novo cliente
+        fetchClientes(); 
       } else {
         console.error('Erro ao cadastrar cliente:', response.statusText);
       }

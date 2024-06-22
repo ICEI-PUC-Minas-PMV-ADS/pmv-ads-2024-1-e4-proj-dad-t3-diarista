@@ -4,7 +4,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, FlatList } 
 import { addCliente } from '../Store/clientesSlice';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const backendUrl = 'https://backend-puc-diarista.onrender.com'; // Definir o URL do backend
+const backendUrl = 'https://backend-puc-diarista.onrender.com'; 
 
 export default function CadastroCliente() {
   const [nome, setNome] = useState('');
@@ -16,7 +16,7 @@ export default function CadastroCliente() {
 
   const fetchClientes = async () => {
     try {
-      const response = await fetch(`${backendUrl}/api/clientes`); // Utilize o backendUrl
+      const response = await fetch(`${backendUrl}/api/clientes`);
       if (response.ok) {
         const data = await response.json();
         setClientes(data);
@@ -46,7 +46,7 @@ export default function CadastroCliente() {
     const cliente = { nome, telefone, local };
 
     try {
-      const response = await fetch(`${backendUrl}/api/clientes`, { // Utilize o backendUrl
+      const response = await fetch(`${backendUrl}/api/clientes`, { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -56,7 +56,7 @@ export default function CadastroCliente() {
 
       if (response.ok) {
         const newCliente = await response.json();
-        fetchClientes(); // Recarrega a lista de clientes após a adição de um novo cliente
+        fetchClientes(); 
         dispatch(addCliente(newCliente));
         setNome('');
         setTelefone('');

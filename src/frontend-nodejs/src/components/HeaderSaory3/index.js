@@ -15,10 +15,12 @@ function Header() {
         <S.RightSide>
             <Link to="/Home">INÍCIO</Link>
             <Link to="/Cadastro">INSCREVER</Link>
-            <S.Notification href="#">
-              <img src={SINO} alt="Notificações"/>
-              <span>1</span>
-            </S.Notification>
+            <Link to="/Agendamento">
+              <S.Notification>
+                <img src={SINO} alt="Notificações"/>
+                <span>1</span>
+              </S.Notification>
+            </Link>
         </S.RightSide>
      </S.Container> 
   );

@@ -47,7 +47,7 @@ const App = () => {
     const newArrayTransactions = [...transactionsList, transaction];
     setTransactionsList(newArrayTransactions);
     await AsyncStorage.setItem('transactions', JSON.stringify(newArrayTransactions));
-    setIsExpense(null); // Reset isExpense state
+    setIsExpense(null); 
   };
 
   const handleDeleteTransaction = async (id) => {
@@ -102,7 +102,6 @@ const TransactionForm = ({ handleAdd, isExpense, setIsExpense }) => {
       return;
     }
 
-    // Replace comma with dot and ensure it's a valid number
     const amountValue = parseFloat(amount.replace(',', '.'));
 
     if (isNaN(amountValue)) {
@@ -209,7 +208,7 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
     borderRadius: 5,
     padding: 10,
-    width: '30%', // Definindo um tamanho fixo para as molduras de entrada e saída
+    width: '30%', 
   },
   resumeLabel: {
     fontSize: 18,
@@ -250,20 +249,20 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#ccc',
     borderRadius: 5,
-    backgroundColor: '#f0f0f0', // Light gray background for unselected buttons
+    backgroundColor: '#f0f0f0', 
   },
   selectedButtonIncome: {
-    backgroundColor: '#A5D6A7', // Light green for selected "Entrada"
+    backgroundColor: '#A5D6A7', 
   },
   selectedButtonExpense: {
-    backgroundColor: '#EF9A9A', // Light red for selected "Saída"
+    backgroundColor: '#EF9A9A', 
   },
   radioText: {
-    color: '#333', // Dark gray text color for better visibility
+    color: '#333', 
     textAlign: 'center',
   },
   selectedText: {
-    color: '#fff', // White text color for selected buttons
+    color: '#fff', 
   },
   addButton: {
     backgroundColor: '#4CAF50',
@@ -272,7 +271,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   addButtonDisabled: {
-    backgroundColor: '#9E9E9E', // Gray background for disabled button
+    backgroundColor: '#9E9E9E', 
   },
   addButtonText: {
     color: 'white',

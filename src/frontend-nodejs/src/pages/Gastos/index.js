@@ -1,187 +1,162 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Container, Input, Button, Table, Th, Td, RadioGroup } from './styles';
-import Header from '../../components/HeaderSaory1';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import GlobalStyle from "../../styles/global";
+import Header from "../../components/HeaderSaory1";
+import * as C from "./styles"; 
+import Grid from "../../components/Grid";
 
-const apiUrl = 'https://backend-puc-diarista.onrender.com';
+const apiUrl = "https://backend-puc-diarista.onrender.com";
 
 const App = () => {
-  const [userId, setUserId] = useState('');
-  const [userName, setUserName] = useState(''); // Adicionando estado para o nome do usuário
-  const [amount, setAmount] = useState('');
-  const [type, setType] = useState('');
-  const [userList, setUserList] = useState([]);
+  const data = localStorage.getItem("transactions");
+  const [transactionsList, setTransactionsList] = useState(
+    data ? JSON.parse(data) : []
+  );
+  const [income, setIncome] = useState(0);
+  const [expense, setExpense] = useState(0);
   const [total, setTotal] = useState(0);
-  const [totalEntradas, setTotalEntradas] = useState(0);
-  const [totalSaidas, setTotalSaidas] = useState(0);
-  const [loadingUser, setLoadingUser] = useState(false);
-  const [loadingTransaction, setLoadingTransaction] = useState(false);
-  const [error, setError] = useState('');
 
   useEffect(() => {
-    const fetchUserList = async () => {
-      try {
-        const response = await axios.get(`${apiUrl}/user`);
-        setUserList(response.data);
-      } catch (error) {
-        console.error('Erro ao buscar lista de usuários:', error);
-      }
+    const updateTransactionData = () => {
+      const amountExpense = transactionsList
+        .filter((item) => item.expense)
+        .map((transaction) => Number(transaction.amount));
+
+      const amountIncome = transactionsList
+        .filter((item) => !item.expense)
+        .map((transaction) => Number(transaction.amount));
+
+      const expense = amountExpense.reduce((acc, cur) => acc + cur, 0).toFixed(2);
+      const income = amountIncome.reduce((acc, cur) => acc + cur, 0).toFixed(2);
+
+      const total = Math.abs(income - expense).toFixed(2);
+
+      setIncome(`R$ ${income}`);
+      setExpense(`R$ ${expense}`);
+      setTotal(`${Number(income) < Number(expense) ? "-" : ""}R$ ${total}`);
     };
 
-    fetchUserList();
-  }, []);
+    updateTransactionData();
+  }, [transactionsList]);
 
-  const fetchUserData = async () => {
-    if (!userId) {
-      return;
-    }
+  const handleAddTransaction = async (transaction) => {
+    const newArrayTransactions = [...transactionsList, transaction];
+    setTransactionsList(newArrayTransactions);
+    localStorage.setItem("transactions", JSON.stringify(newArrayTransactions));
 
     try {
-      const [totalResponse, entradasResponse, saidasResponse] = await Promise.all([
-        axios.get(`${apiUrl}/user/${userId}/total`),
-        axios.get(`${apiUrl}/user/${userId}/total-entradas`),
-        axios.get(`${apiUrl}/user/${userId}/total-saidas`),
-      ]);
-
-      setTotal(totalResponse.data.total);
-      setTotalEntradas(entradasResponse.data.totalEntradas);
-      setTotalSaidas(saidasResponse.data.totalSaidas);
+      await axios.post(`${apiUrl}/user/${transaction.userId}/transactions`, transaction);
     } catch (error) {
-      console.error('Erro ao buscar dados do usuário:', error);
+      console.error("Erro ao adicionar transação:", error);
     }
   };
 
-  useEffect(() => {
-    fetchUserData();
-  }, [userId]);
-
-  const handleSearchUser = async () => {
-    setLoadingUser(true);
-    setError('');
+  const handleDeleteTransaction = async (id) => {
+    const newArray = transactionsList.filter((transaction) => transaction.id !== id);
+    setTransactionsList(newArray);
+    localStorage.setItem("transactions", JSON.stringify(newArray));
 
     try {
-      const response = await axios.get(`${apiUrl}/user?name=${userName}`);
-      const user = response.data.find((user) => user.name === userName);
-
-      if (user) {
-        setUserId(user._id);
-        setUserName(user.name); // Atualizando userName com o nome do usuário encontrado
-      } else {
-        setError('Usuário não encontrado.');
-      }
+      await axios.delete(`${apiUrl}/user/transaction/${id}`);
     } catch (error) {
-      setError('Erro ao buscar usuário.');
-    } finally {
-      setLoadingUser(false);
-    }
-  };
-
-  const handleAddTransaction = async () => {
-    setLoadingTransaction(true);
-    setError('');
-
-    try {
-      await axios.post(`${apiUrl}/user/${userId}/transactions`, { amount, type });
-      setAmount('');
-      setType('');
-
-      // Após adicionar a transação, atualiza os dados do usuário
-      await fetchUserData();
-    } catch (error) {
-      setError('Erro ao adicionar transação.');
-    } finally {
-      setLoadingTransaction(false);
+      console.error("Erro ao deletar transação:", error);
     }
   };
 
   return (
     <>
       <Header />
-      <Container>
-        <div className="search-container">
-          <label htmlFor="userName">Selecione o Usuário:</label>
-          <select
-            id="userName"
-            value={userId}
-            onChange={(e) => {
-              const selectedUserId = e.target.value;
-              setUserId(selectedUserId);
+      <C.Resume>
+        <C.ResumeItem>
+          <span>Entradas</span>
+          <strong>{income}</strong>
+        </C.ResumeItem>
+        <C.ResumeItem>
+          <span>Saídas</span>
+          <strong>{expense}</strong>
+        </C.ResumeItem>
+        <C.ResumeItem>
+          <span>Total</span>
+          <strong>{total}</strong>
+        </C.ResumeItem>
+      </C.Resume>
+      <C.Container>
+        <TransactionForm
+          handleAdd={handleAddTransaction}
+          transactionsList={transactionsList}
+          setTransactionsList={setTransactionsList}
+        />
+      </C.Container>
+      <Grid itens={transactionsList} setItens={setTransactionsList} onDelete={handleDeleteTransaction} />
+      <GlobalStyle />
+    </>
+  );
+};
 
-              // Encontrar o nome do usuário correspondente ao _id selecionado
-              const selectedUser = userList.find(user => user._id === selectedUserId);
-              if (selectedUser) {
-                setUserName(selectedUser.name); // Atualizando userName com o nome correspondente
-              }
-            }}
-          >
-            <option value="">Selecione um usuário</option>
-            {userList.map((user) => (
-              <option key={user._id} value={user._id}>{user.name}</option>
-            ))}
-          </select>
-          <Button onClick={handleSearchUser} disabled={loadingUser}>
-            {loadingUser ? 'Carregando...' : 'Selecionar'}
-          </Button>
-        </div>
-        {error && <p>{error}</p>}
-        {userId && (
-          <div>
-            <label>ID do Usuário Selecionado:</label>
-            <span>{userId}</span>
-          </div>
-        )}
-        <div>
-          <label htmlFor="amount">Valor:</label>
-          <Input
-            type="number"
-            id="amount"
-            value={amount}
-            onChange={(e) => setAmount(e.target.value)}
-          />
-        </div>
-        <div>
-          <label>Tipo:</label>
-          <RadioGroup>
-            <input
-              type="radio"
-              id="entrada"
-              value="entrada"
-              checked={type === 'entrada'}
-              onChange={() => setType('entrada')}
-            />
-            <label htmlFor="entrada">Entrada</label>
-            <input
-              type="radio"
-              id="saida"
-              value="saida"
-              checked={type === 'saida'}
-              onChange={() => setType('saida')}
-            />
-            <label htmlFor="saida">Saída</label>
-          </RadioGroup>
-        </div>
-        <Button onClick={handleAddTransaction} disabled={!userId || loadingTransaction}>
-          {loadingTransaction ? 'Adicionando...' : 'Adicionar Transação'}
-        </Button>
-        <Table>
-          <thead>
-            <tr>
-              <Th>Nome</Th>
-              <Th>Total de Entradas</Th>
-              <Th>Total de Saídas</Th>
-              <Th>Total</Th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <Td>{userName}</Td> {/* Exibindo o nome do usuário selecionado */}
-              <Td>{totalEntradas}</Td>
-              <Td>{totalSaidas}</Td>
-              <Td style={{ fontWeight: 'bold', backgroundColor: '#f2f2f2' }}>{total}</Td>
-            </tr>
-          </tbody>
-        </Table>
-      </Container>
+const TransactionForm = ({ handleAdd, transactionsList, setTransactionsList }) => {
+  const [desc, setDesc] = useState("");
+  const [amount, setAmount] = useState("");
+  const [isExpense, setIsExpense] = useState(null);
+
+  const handleSave = () => {
+    if (!desc || !amount) {
+      alert("Informe a descrição e o valor!");
+      return;
+    } else if (amount < 1) {
+      alert("O valor tem que ser positivo!");
+      return;
+    }
+
+    const transaction = {
+      id: transactionsList.length + 1,
+      desc: desc,
+      amount: amount,
+      expense: isExpense,
+      userId: "dummyUserId" 
+    };
+
+    handleAdd(transaction);
+
+    setDesc("");
+    setAmount("");
+    setIsExpense(null);
+  };
+
+  const isFormValid = desc && amount && isExpense !== null;
+
+  return (
+    <>
+      <C.InputContent>
+        <C.Label>Descrição</C.Label>
+        <C.Input value={desc} onChange={(e) => setDesc(e.target.value)} />
+      </C.InputContent>
+      <C.InputContent>
+        <C.Label>Valor</C.Label>
+        <C.Input
+          value={amount}
+          type="number"
+          onChange={(e) => setAmount(e.target.value)}
+        />
+      </C.InputContent>
+      <C.RadioGroup>
+        <C.Input
+          type="radio"
+          id="rIncome"
+          name="group1"
+          onChange={() => setIsExpense(false)}
+        />
+        <C.Label htmlFor="rIncome">Entrada</C.Label>
+        <C.Input
+          type="radio"
+          id="rExpenses"
+          name="group1"
+          onChange={() => setIsExpense(true)}
+        />
+        <C.Label htmlFor="rExpenses">Saída</C.Label>
+      </C.RadioGroup>
+      <C.Button onClick={handleSave} disabled={!isFormValid}>
+        ADICIONAR
+      </C.Button>
     </>
   );
 };
