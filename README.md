@@ -1,6 +1,5 @@
 # DiaristaAPP
 
-
 `Análise e Desenv. de Sistemas`
 
 `DISCIPLINA: Projeto`
@@ -23,11 +22,8 @@ O projeto tem como objetivo o desenvolvimento de um software prático e intuitiv
 
 ## Instruções de utilização
 
-### Aplicação Web
-[Clique aqui para acessar a aplicação web](https://diarista-app-git-master-saory-s-projects.vercel.app/?_vercel_share=ufIXnWeRm2hcXXHYKNO9WEwyL6I8o4Zh)
-
-### Aplicação Mobile
- [Clique aqui para download da aplicação mobile](https://expo.dev/artifacts/eas/wZmn4DaSoTTS852AmYiyaJ.aab)
+### Aplicação Front-End (Kenia Beauty Clinic)
+[Clique aqui para acessar o front-end do Kenia Beauty Clinic](https://kenia-beauty-clinic-frontend.vercel.app/login)
 
 # Documentação
 
